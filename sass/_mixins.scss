@@ -13,3 +13,23 @@
     background-position: center;
     background-repeat: no-repeat;
 }
+
+@mixin logoImgSettings {
+    border: $borderSettings;
+    width: 100%;
+    height: 100px;
+}
+
+@mixin logoHeadSettings {
+    margin-top: 10px;
+    border: $borderSettings;
+    width: 100%;
+    height: 50px;
+}
+
+@mixin logoTextSettings {
+    border: $borderSettings;
+    width: 100%;
+    height: 130px;
+    margin-top: 10px;
+}

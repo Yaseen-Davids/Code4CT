@@ -340,6 +340,10 @@
   grid-gap: 50px;
   padding: 40px;
   margin-top: 150px;
+  font-family: 'Poppins';
+  text-align: center;
+  color: white;
+  background: black;
 }
 
 #main_logo #logo_code {
@@ -348,13 +352,27 @@
 }
 
 #main_logo #logo_code #logo_img1 {
-  border: 1px solid black;
-  width: 100%;
-  height: 100px;
   background: url("../images/laptop_logo.png");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+  border: 1px solid black;
+  width: 100%;
+  height: 100px;
+}
+
+#main_logo #logo_code #logo_header1 {
+  margin-top: 10px;
+  border: 1px solid black;
+  width: 100%;
+  height: 50px;
+}
+
+#main_logo #logo_code #logo_text1 {
+  border: 1px solid black;
+  width: 100%;
+  height: 130px;
+  margin-top: 10px;
 }
 
 #main_logo #logo_communication {
@@ -363,13 +381,27 @@
 }
 
 #main_logo #logo_communication #logo_img2 {
+  background: url("../images/speaker_logo.png");
   border: 1px solid black;
   width: 100%;
   height: 100px;
-  background: url("../images/speaker_logo.png");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+#main_logo #logo_communication #logo_header2 {
+  margin-top: 10px;
+  border: 1px solid black;
+  width: 100%;
+  height: 50px;
+}
+
+#main_logo #logo_communication #logo_text2 {
+  border: 1px solid black;
+  width: 100%;
+  height: 130px;
+  margin-top: 10px;
 }
 
 #main_logo #logo_solve {
@@ -378,13 +410,27 @@
 }
 
 #main_logo #logo_solve #logo_img3 {
+  background: url("../images/wrench_logo.png");
   border: 1px solid black;
   width: 100%;
   height: 100px;
-  background: url("../images/wrench_logo.png");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+#main_logo #logo_solve #logo_header3 {
+  margin-top: 10px;
+  border: 1px solid black;
+  width: 100%;
+  height: 50px;
+}
+
+#main_logo #logo_solve #logo_text3 {
+  border: 1px solid black;
+  width: 100%;
+  height: 130px;
+  margin-top: 10px;
 }
 
 #main_logo #logo_career {
@@ -393,13 +439,27 @@
 }
 
 #main_logo #logo_career #logo_img4 {
+  background: url("../images/file_logo.png");
   border: 1px solid black;
   width: 100%;
   height: 100px;
-  background: url("../images/file_logo.png");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+#main_logo #logo_career #logo_header4 {
+  margin-top: 10px;
+  border: 1px solid black;
+  width: 100%;
+  height: 50px;
+}
+
+#main_logo #logo_career #logo_text4 {
+  border: 1px solid black;
+  width: 100%;
+  height: 130px;
+  margin-top: 10px;
 }
 
 @media only screen and (min-device-width: 1px) and (max-device-width: 500px) and (-webkit-min-device-pixel-ratio: 2) {

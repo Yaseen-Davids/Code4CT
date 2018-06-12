@@ -347,18 +347,25 @@
     grid-gap: 50px;
     padding: 40px;
     margin-top: 150px;
-    // background: black;
+    font-family: 'Poppins';
+    text-align: center;
+    color: white;
+    background: black;
 
     #logo_code{
         grid-area: logo_code;
         border: $borderSettings;
 
         #logo_img1{
-            border: $borderSettings;
-            width: 100%;
-            height: 100px;
             background: url('../images/laptop_logo.png');
             @include containBgImg;
+            @include logoImgSettings;
+        }
+        #logo_header1{
+            @include logoHeadSettings;
+        }
+        #logo_text1{
+            @include logoTextSettings;
         }
     }
 
@@ -367,11 +374,15 @@
         border: $borderSettings;
 
         #logo_img2{
-            border: $borderSettings;
-            width: 100%;
-            height: 100px;
             background: url('../images/speaker_logo.png');
+            @include logoImgSettings;            
             @include containBgImg;
+        }
+        #logo_header2{
+            @include logoHeadSettings;
+        }
+        #logo_text2{
+            @include logoTextSettings;
         }
     }
 
@@ -380,11 +391,15 @@
         border: $borderSettings;
 
         #logo_img3{
-            border: $borderSettings;
-            width: 100%;
-            height: 100px;
             background: url('../images/wrench_logo.png');
+            @include logoImgSettings;
             @include containBgImg;
+        }
+        #logo_header3{
+            @include logoHeadSettings;
+        }
+        #logo_text3{
+            @include logoTextSettings;
         }
     }
 
@@ -393,11 +408,15 @@
         border: $borderSettings;
 
         #logo_img4{
-            border: $borderSettings;
-            width: 100%;
-            height: 100px;
             background: url('../images/file_logo.png');
+            @include logoImgSettings;
             @include containBgImg;
+        }
+        #logo_header4{
+            @include logoHeadSettings;
+        }
+        #logo_text4{
+            @include logoTextSettings;
         }
     }
 }
