@@ -1,0 +1,177 @@
+@media only screen
+  and (min-device-width: 1px)
+  and (max-device-width: 500px)
+  and (-webkit-min-device-pixel-ratio: 2){
+      #navbar{
+        height: 90px;
+        padding: 5px;
+        top: 0;
+    
+        #nav_logo{
+            margin-left: 2px;
+            height: 90px;
+            width: 25%;
+        }
+    
+        #nav_links{
+            margin-right: 10px;
+            height: 75px;
+            width: 65%;
+            padding: 5px;
+            
+            #links_box{
+                display: none;
+                width: 100%;
+                height: 40px;
+                margin-top: 20px;
+    
+                ul{
+                    margin-top: 10px;              
+                    a{
+                        font-size: 0.5em;
+                        li{
+                            margin-right: 35px;
+                        }
+                    }
+                    
+                }
+            }
+    
+            #search_box{
+                display: none;
+                width: 33%;
+                height: 40px;
+                margin-top: 20px;
+    
+                input{
+                    margin-top: 10px;
+                    height: 30px;
+                    width: 200px;
+    
+                    &:focus{
+                        width: 250px
+                    }
+                }
+                #search_icon{
+                    margin-top: 10px;
+                    height: 28px;
+                    width: 50px;
+                }
+            }
+        }
+    }
+
+    #the_slider{
+        grid-area: the_slider;
+        border: $borderSettings;
+        height: 90vh;
+        overflow: hidden;
+    
+        #slider_box{
+            overflow: hidden;
+    
+            #img_1{
+                margin-left: 0vw;
+            }
+    
+            #img_2{
+                margin-left: -100vw;
+                display: none;
+            }
+    
+            #img_3{
+                margin-left: -100vw;
+                display: none;
+            }
+    
+            #img_4{
+                margin-left: -100vw;
+                display: none;
+            }
+    
+            #back_slide{
+                position: absolute;
+                width: 0;
+                height: 0;
+                border-top: 50px solid transparent;
+                border-right: 100px solid white;
+                border-bottom: 50px solid transparent;
+                top: 430px;
+                left: 20px;
+                background: transparent;
+    
+                &:hover{
+                    border-right-color: black;
+                }
+            }
+    
+            #next_slide{
+                position: absolute;
+                width: 0;
+                height: 0;
+                border-top: 50px solid transparent;
+                border-left: 100px solid white;
+                border-bottom: 50px solid transparent;
+                top: 430px;
+                right: 20px;
+    
+                &:hover{
+                    border-left-color: black;
+                }
+            }
+        }
+    
+        img{
+            height: 70vh;
+            width: 100vw;
+        }
+    }
+
+    #main_content{
+        grid-area: main_content;
+        border: $borderSettings;
+        height: 1600px;
+        display: grid;
+        grid-template-areas: 'intro_info'
+        'intro_img'
+        ;
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 50px;
+    
+        #intro_info{
+            grid-area: intro_info;
+            border: $borderSettings;
+            height: 400px;
+        }
+    
+        #intro_img{
+            grid-area: intro_img;
+            border: $borderSettings;
+            height: 400px;
+            display: grid;
+            grid-template-areas: 'intro_img1'
+            'intro_img2'
+            'intro_img3'
+            'intro_img4'
+            ;
+            grid-template-columns: 1fr;
+            grid-gap: 10px;
+    
+            #intro_img1{
+                height: 192.5px;
+            }
+            #intro_img2{
+                height: 192.5px;
+            }
+            #intro_img3{
+                height: 192.5px;
+            }
+            #intro_img4{
+                height: 192.5px;
+            }
+        }
+    }
+}

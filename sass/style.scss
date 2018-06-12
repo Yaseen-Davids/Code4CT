@@ -1,0 +1,405 @@
+// This is the sass stylesheet
+
+
+// This is the imported partials
+@import 'variables';
+@import 'mixins';
+
+// This is my fonts
+@font-face{
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Regular.ttf');
+}
+
+@font-face{
+    font-family: 'OpenSans';
+    src: url('../fonts/OpenSans-Light.ttf');
+}
+
+// This is the code
+
+* {
+    margin: 0;
+}
+
+#grid_container{
+    display: grid;
+    grid-template-areas: 'navbar'
+    'the_slider'
+    'main_content'
+    'main_logo'
+    ;
+    grid-template-columns: 1fr;
+}
+
+#navbar{
+    grid-area: navbar;
+    border: $borderSettings;
+    height: 90px;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: white;
+
+    #nav_logo{
+        margin-left: 20px;
+        height: 90px;
+        border: $borderSettings;
+        float: left;
+        width: 25%;
+        background: url("../images/code4ct_logo.jpg");
+        @include containBgImg;
+    }
+
+    #nav_links{
+        margin-right: 10px;
+        height: 75px;
+        border: $borderSettings;
+        float: right;
+        width: 65%;
+        padding: 5px;
+        font-family: 'Poppins';
+        
+        #links_box{
+            width: 65%;
+            height: 40px;
+            border: $borderSettings;
+            margin-top: 20px;
+            float: left;
+
+            ul{
+                margin-top: 10px;
+                list-style: none;
+                .selected{
+                    color: $themeColor;
+                    &:hover{
+                        color: $themeColor;
+                    }
+                }                
+                a{
+                    font-size: 1.35em;
+                    color: rgb(131, 131, 131);
+                    transition: color 0.3s;
+                    &:hover{
+                        transition: color 0.3s;
+                        color: rgb(173, 173, 173);
+                    }
+                    li{
+                        border-bottom: 1px solid transparent;
+                        float: left;
+                        margin-right: 35px;
+                        transition: border 0.6s;
+
+                        &:hover{
+                            transition: border 0.6s;
+                            border-bottom-color: rgb(131, 131, 131);
+                        }
+                    }
+                }
+                
+            }
+        }
+
+        #search_box{
+            width: 33%;
+            height: 40px;
+            border: $borderSettings;
+            margin-top: 20px;
+            float: right;
+
+            input{
+                margin-top: 10px;
+                height: 30px;
+                width: 200px;
+                transition: width 0.6s;
+                outline: $themeColor;
+                float: left;
+                border: 1px solid $themeColor;
+
+                &::placeholder{
+                    color: $themeColor;
+                }
+
+                &:focus{
+                    transition: width 0.6s;
+                    width: 250px
+                }
+            }
+            #search_icon{
+                margin-top: 10px;
+                height: 28px;
+                width: 50px;
+                float: left;
+                border: 1px solid $themeColor;
+            }
+        }
+    }
+}
+
+#the_slider{
+    grid-area: the_slider;
+    border: $borderSettings;
+    height: 90vh;
+    overflow: hidden; 
+
+    #slider_box{
+        overflow: hidden;
+
+        #img_1{
+            margin-left: 0vw;
+        }
+
+        #img_2{
+            margin-left: -100vw;
+            display: none;
+        }
+
+        #img_3{
+            margin-left: -100vw;
+            display: none;
+        }
+
+        #img_4{
+            margin-left: -100vw;
+            display: none;
+        }
+
+        #back_slide{
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-top: 35px solid transparent;
+            border-right: 50px solid white;
+            border-bottom: 35px solid transparent;
+            border-radius: 5px;            
+            top: 430px;
+            left: 20px;
+            background: transparent;
+            transition: all 0.3s;
+
+            &:hover{
+                transition: all 0.3s;                
+                border-right-color: black;
+            }
+        }
+
+        #next_slide{
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-top: 35px solid transparent;
+            border-left: 50px solid white;
+            border-bottom: 35px solid transparent;
+            border-radius: 5px;
+            top: 430px;
+            right: 20px;
+            transition: all 0.3s;
+
+            &:hover{
+                transition: all 0.3s;                
+                border-left-color: black;
+            }
+        }
+    }
+
+    img{
+        height: 100vh;
+        width: 100vw;
+    }
+}
+
+
+#header_btn{
+    margin-top: 40px;
+}
+
+#header_text{
+    position: absolute;
+    background: rgba(80, 80, 80, 0.699);
+    top: -150px;
+    opacity: 0;
+    color: white;
+    margin-left: 200px;
+    margin-right: 200px;
+    padding: 50px;
+    text-align: center;
+    font-family: 'OpenSans', sans-serif;
+
+    h3{
+        margin-top: 10px;
+    }
+
+    button{
+        width: 180px;
+        padding: 15px;
+        font-size: 1.4em;
+        border: none;
+        border-radius: 3px;
+        color: white;
+        background: transparent;
+        border: 2px solid white;
+        transition: all 0.4s;
+
+        &:hover{
+            transition: all 0.4s;            
+            width: 220px;
+        }
+    }
+}
+
+#main_content{
+    grid-area: main_content;
+    border: $borderSettings;
+    height: 450px;
+    display: grid;
+    grid-template-areas: 'intro_info intro_img'
+    ;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 150px;
+    background-color: white;
+
+    #intro_info{
+        grid-area: intro_info;
+        border: $borderSettings;
+        height: 420px;
+        font-family: 'Poppins';
+
+        h3{
+            font-size: 1.5em;
+            border-bottom: 1px solid black;
+            width: 40%;
+
+            #solid_border{
+                border-bottom: 3px solid $themeColor;
+            }
+        }
+        h5{
+            margin-top: 30px;
+            font-weight: lighter;
+            font-size: 1.1em;
+        }
+    }
+
+    #intro_img{
+        grid-area: intro_img;
+        border: $borderSettings;
+        height: 420px;
+        display: grid;
+        grid-template-areas: 'intro_img1 intro_img2'
+        'intro_img3 intro_img4'
+        ;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+
+        img{
+            height: 100%;
+            width: 100%;
+            transition: all 0.5s;
+
+            &:hover{
+                transition: all 0.5s;                
+                transform: scale(1.5);
+            }
+        }
+
+        #intro_img1{
+            grid-area: intro_img1;
+            border: $borderSettings;
+            height: 195px;
+            overflow: hidden;
+            box-shadow: 5px 5px 10px grey;
+        }
+        #intro_img2{
+            grid-area: intro_img2;
+            border: $borderSettings;
+            height: 195px;
+            overflow: hidden;
+            box-shadow: 5px 5px 10px grey;            
+        }
+        #intro_img3{
+            grid-area: intro_img3;
+            border: $borderSettings;
+            height: 195px;
+            overflow: hidden;
+            box-shadow: 5px 5px 10px grey;            
+        }
+        #intro_img4{
+            grid-area: intro_img4;
+            border: $borderSettings;
+            height: 195px;
+            overflow: hidden;
+            box-shadow: 5px 5px 10px grey;            
+        }
+    }
+}
+
+#main_logo{
+    grid-area: main_logo;
+    height: 300px;
+    border: $borderSettings;
+    display: grid;
+    grid-template-areas: 'logo_code logo_communication logo_solve logo_career';
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 50px;
+    padding: 40px;
+    margin-top: 150px;
+    // background: black;
+
+    #logo_code{
+        grid-area: logo_code;
+        border: $borderSettings;
+
+        #logo_img1{
+            border: $borderSettings;
+            width: 100%;
+            height: 100px;
+            background: url('../images/laptop_logo.png');
+            @include containBgImg;
+        }
+    }
+
+    #logo_communication{
+        grid-area: logo_communication;
+        border: $borderSettings;
+
+        #logo_img2{
+            border: $borderSettings;
+            width: 100%;
+            height: 100px;
+            background: url('../images/speaker_logo.png');
+            @include containBgImg;
+        }
+    }
+
+    #logo_solve{
+        grid-area: logo_solve;
+        border: $borderSettings;
+
+        #logo_img3{
+            border: $borderSettings;
+            width: 100%;
+            height: 100px;
+            background: url('../images/wrench_logo.png');
+            @include containBgImg;
+        }
+    }
+
+    #logo_career{
+        grid-area: logo_career;
+        border: $borderSettings;
+
+        #logo_img4{
+            border: $borderSettings;
+            width: 100%;
+            height: 100px;
+            background: url('../images/file_logo.png');
+            @include containBgImg;
+        }
+    }
+}
+
+@import 'devices';

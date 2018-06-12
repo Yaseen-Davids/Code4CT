@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Code4CT</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="favicon" href="./images/title_image.png">
+    <link rel="stylesheet" type="text/css" media="screen" href="./sass/style.css" />
+    <!-- <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet"> -->
+    
+</head>
+<body>
+    
+    <div id="container">
+
+        <div id="grid_container">
+
+            <div id="navbar">
+                <a href="index.html"><div id="nav_logo"></div></a>
+                <div id="nav_links">
+                    <div id="links_box">
+                        <ul>
+                            <a href="#home" class="selected" onclick="backToTop()" id="homeBtn"><li>Home</li></a>
+                            <a href="#"><li>Courses</li></a>
+                            <a href="#"><li>Portfolio</li></a>
+                            <a href="#"><li>Contact</li></a>
+                            <a href="#"><li>About</li></a>
+                        </ul>
+                    </div>
+                    <div id="search_box">
+                        <input type="search" placeholder="search..">
+                        <div id="search_icon"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="the_slider">
+                <div id="slider_box">
+                    <img src="./images/code4ct_homepage.jpg" id="img_1">
+                    <img src="./images/homepage_2.jpg" id="img_2">
+                    <img src="./images/homepage_3.png" id="img_3">
+                    <img src="./images/homepage_4.jpg" id="img_4">
+                    <div id="back_slide" onclick="backSlide()"></div>
+                    <div id="next_slide" onclick="nextSlide()"></div>
+                </div>
+            </div>
+
+            <div id="header_text">
+                <h1>Code For Cape Town</h1>
+                <h3>Code for Cape Town (Code4CT) is a programme that introduces young girls to basic web building skills and exposes them to opportunities in the Information and Communication Technologies (ICT) sector. Participants are trained in web development, design principles, as well as courses in professional development. Code4CT aims to inspire a generation of young girls who are well-prepared with a toolkit of technical and soft skills in order to achieve high impact in the workplace.</h3>
+                <div id="header_btn">
+                    <button id="start_coding_btn">Start Coding</button>
+                </div>
+                
+            </div>
+            
+
+            <div id="main_content">
+                <div id="intro_info">
+                    <h3><span id="solid_border">Who</span> we are : </h3>
+                    <h5>Code for Cape Town (Code4CT) is a programme that introduces young girls to basic web building skills and exposes them to opportunities in the Information and Communication Technologies (ICT) sector. Participants are trained in web development, design principles, as well as courses in professional development. Code4CT aims to inspire a generation of young girls who are well-prepared with a toolkit of technical and soft skills in order to achieve high impact in the workplace.</h5>
+                </div>
+                <div id="intro_img">
+                    <div id="intro_img1">
+                        <img src="./images/info_img1.jpg">
+                    </div>
+                    <div id="intro_img2">
+                        <img src="./images/info_img2.jpg">                        
+                    </div>
+                    <div id="intro_img3">
+                        <img src="./images/info_img3.jpg">  
+                    </div>
+                    <div id="intro_img4">
+                        <img src="./images/info_img4.jpg">  
+                    </div>
+                </div>
+            </div>
+
+            <div id="main_logo">
+                <div id="logo_code">
+                    <div id="logo_img1"></div>
+                </div>
+                <div id="logo_communication">
+                    <div id="logo_img2"></div>
+                </div>
+                <div id="logo_solve">
+                    <div id="logo_img3"></div>
+                </div>
+                <div id="logo_career">
+                    <div id="logo_img4"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="./js/script.js"></script>    
+    <script src="./js/jquery-3.3.1.min.js"></script>
+</body>
+</html>

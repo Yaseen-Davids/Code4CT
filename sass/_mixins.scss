@@ -1,0 +1,15 @@
+// This is the mixins partial
+
+// This is for background images that contain
+@mixin containBgImg{
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+@mixin coverBgImg{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
