@@ -1,7 +1,7 @@
 // This is the variables for sass partial
 
 // This is the default border settings
-$borderSettings: 1px solid black;
+$borderSettings: none;
 // black
 // transparent
 // 1px solid black
@@ -9,3 +9,5 @@ $borderSettings: 1px solid black;
 
 // This is the theme color
 $themeColor: #e1918a;
+
+$imgShadow: 5px 5px 10px grey;

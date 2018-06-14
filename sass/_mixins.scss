@@ -33,3 +33,17 @@
     height: 130px;
     margin-top: 10px;
 }
+
+@mixin imageZoomHover{
+    transition: all 0.5s;
+
+    &:hover{
+        transition: all 0.5s;                
+        transform: scale(1.5);
+    }
+}
+
+@mixin introImageSettings{
+    height: 195px;
+    overflow: hidden;
+}
