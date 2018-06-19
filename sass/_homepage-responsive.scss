@@ -478,6 +478,7 @@
             'member_3'
             'member_4'
             ;
+            grid-template-columns: 1fr;
             grid-gap: 10px;
 
             // This is the image and text of member 1
@@ -486,6 +487,7 @@
                 border: $borderSettings;
                 display: grid;
                 grid-template-areas: 'member1_img member1_info';
+                grid-template-columns: 1fr 1fr;
                 grid-gap: 10px;
                 height: 242.5px;
 
@@ -520,6 +522,7 @@
                 border: $borderSettings;
                 display: grid;
                 grid-template-areas: 'member2_img member2_info';
+                grid-template-columns: 1fr 1fr;
                 grid-gap: 10px;
                 height: 242.5px;
 
@@ -554,6 +557,7 @@
                 border: $borderSettings;
                 display: grid;
                 grid-template-areas: 'member3_img member3_info';
+                grid-template-columns: 1fr 1fr;
                 grid-gap: 10px;
                 height: 242.5px;
 
@@ -588,6 +592,7 @@
                 border: $borderSettings;
                 display: grid;
                 grid-template-areas: 'member4_img member4_info';
+                grid-template-columns: 1fr 1fr;
                 grid-gap: 10px;
                 height: 242.5px;
 

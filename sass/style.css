@@ -27,6 +27,7 @@
   top: 0;
   z-index: 10;
   background: white;
+  border-bottom: 1px solid #cfcfcf;
 }
 
 #navbar #nav_logo {
@@ -269,20 +270,28 @@
 }
 
 #header_text button {
-  width: 180px;
-  padding: 15px;
-  font-size: 1.4em;
+  margin-top: 20px;
   border: none;
-  border-radius: 3px;
-  color: white;
+  outline: none;
   background: #e1918a;
-  border: 2px solid #e1918a;
-  transition: all 0.4s;
+  color: white;
+  width: 100px;
+  height: 40px;
+  font-family: 'Poppins';
+  transition: width 0.6s;
+  width: 150px;
+  height: 50px;
+  font-size: 1em;
 }
 
 #header_text button:hover {
-  transition: all 0.4s;
-  width: 220px;
+  transition: width 0.6s;
+  width: 135px;
+}
+
+#header_text button:hover {
+  transition: width 0.6s;
+  width: 200px;
 }
 
 #main_content {
@@ -538,7 +547,7 @@
 }
 
 #home_portfolio img {
-  height: 100%;
+  height: 220px;
   width: 100%;
   transition: all 0.5s;
 }
@@ -590,10 +599,22 @@
   box-shadow: 5px 5px 10px grey;
 }
 
+#home_portfolio #home_portfolio_images #home_portfolio_img5 img {
+  height: 440px;
+  width: 100%;
+  transition: all 0.5s;
+}
+
+#home_portfolio #home_portfolio_images #home_portfolio_img5 img:hover {
+  transition: all 0.5s;
+  transform: scale(1.5);
+}
+
 #home_portfolio #home_portfolio_images #home_portfolio_gall {
   grid-area: home_portfolio_gall;
   border: none;
   display: grid;
+  height: 440px;
   grid-template-areas: 'home_portfolio_img1 home_portfolio_img2' 'home_portfolio_img3 home_portfolio_img4';
   grid-template-columns: 1fr 1fr;
   grid-gap: 10px;
@@ -671,8 +692,28 @@
 
 #the_team #the_team_members h4 {
   color: grey;
-  margin-top: 10px;
   font-weight: lighter;
+}
+
+#the_team #the_team_members button {
+  margin-top: 20px;
+  border: none;
+  outline: none;
+  background: #e1918a;
+  color: white;
+  width: 100px;
+  height: 40px;
+  font-family: 'Poppins';
+  transition: width 0.6s;
+}
+
+#the_team #the_team_members button:hover {
+  transition: width 0.6s;
+  width: 135px;
+}
+
+#the_team #the_team_members hr {
+  margin-bottom: 8px;
 }
 
 #the_team #the_team_members #member_1 {
@@ -751,6 +792,7 @@
   grid-template-columns: 1fr 1fr;
   grid-gap: 10px;
   height: 242.5px;
+  margin-top: 50px;
 }
 
 #the_team #the_team_members #member_3 #member3_img {
@@ -785,6 +827,7 @@
   grid-template-columns: 1fr 1fr;
   grid-gap: 10px;
   height: 242.5px;
+  margin-top: 50px;
 }
 
 #the_team #the_team_members #member_4 #member4_img {
@@ -964,6 +1007,7 @@
   font-family: 'OpenSans';
   font-size: 1.2em;
   font-weight: lighter;
+  text-align: center;
 }
 
 #subscribe_box #subscribe_box_content {
@@ -994,7 +1038,6 @@
   height: 30px;
   font-size: 0.9em;
   color: grey;
-  margin-left: 150px;
 }
 
 #subscribe_box #subscribe_box_content #the_subscribeform button {
@@ -1415,6 +1458,7 @@
     margin-top: 10px;
     display: grid;
     grid-template-areas: 'member_1' 'member_2' 'member_3' 'member_4';
+    grid-template-columns: 1fr;
     grid-gap: 10px;
   }
   #the_team #the_team_members #member_1 {
@@ -1422,6 +1466,7 @@
     border: none;
     display: grid;
     grid-template-areas: 'member1_img member1_info';
+    grid-template-columns: 1fr 1fr;
     grid-gap: 10px;
     height: 242.5px;
   }
@@ -1450,6 +1495,7 @@
     border: none;
     display: grid;
     grid-template-areas: 'member2_img member2_info';
+    grid-template-columns: 1fr 1fr;
     grid-gap: 10px;
     height: 242.5px;
   }
@@ -1478,6 +1524,7 @@
     border: none;
     display: grid;
     grid-template-areas: 'member3_img member3_info';
+    grid-template-columns: 1fr 1fr;
     grid-gap: 10px;
     height: 242.5px;
   }
@@ -1506,6 +1553,7 @@
     border: none;
     display: grid;
     grid-template-areas: 'member4_img member4_info';
+    grid-template-columns: 1fr 1fr;
     grid-gap: 10px;
     height: 242.5px;
   }
