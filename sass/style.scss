@@ -22,6 +22,7 @@
     margin: 0;
 }
 
+// This is the main grid container that contains the main items
 #grid_container{
     display: grid;
     grid-template-areas: 'navbar'
@@ -30,10 +31,13 @@
     'main_logo'
     'home_portfolio'
     'the_team'
+    'statistic_section'
+    'subscribe_box'
     ;
     grid-template-columns: 1fr;
 }
 
+// This is the navbar section
 #navbar{
     grid-area: navbar;
     border: $borderSettings;
@@ -41,9 +45,10 @@
     padding: 5px;
     position: sticky;
     top: 0;
-    z-index: 1000;
+    z-index: 10;
     background: white;
 
+    // This is the logo in the navbar
     #nav_logo{
         margin-left: 20px;
         height: 90px;
@@ -54,7 +59,30 @@
         @include containBgImg;
     }
 
+    #nav_menu_btn{
+        display: none;
+        margin-right: 20px;
+        height: 70px;
+        float: right;
+        border: $borderSettings;
+        width: 15%;
+
+        #menu_line1{
+            border: 1px solid $themeColor;
+            margin-top: 20px;
+            transition: all 0.3s;
+        }
+        #menu_line2{
+            @include menu_hamburger_lines;
+        }
+        #menu_line3{
+            @include menu_hamburger_lines;
+        }
+    }
+
+    // This is the navbar links
     #nav_links{
+        visibility: visible;
         margin-right: 10px;
         height: 75px;
         border: $borderSettings;
@@ -63,6 +91,7 @@
         padding: 5px;
         font-family: 'Poppins';
         
+        // This is box that contains the links
         #links_box{
             width: 65%;
             height: 40px;
@@ -70,6 +99,7 @@
             margin-top: 20px;
             float: left;
 
+            // This is the unordered list of the nav links
             ul{
                 margin-top: 10px;
                 list-style: none;
@@ -80,7 +110,7 @@
                     }
                 }                
                 a{
-                    font-size: 1.07em;
+                    font-size: 1.3em;
                     color: rgb(131, 131, 131);
                     transition: color 0.3s;
                     &:hover{
@@ -90,7 +120,7 @@
                     li{
                         border-bottom: 1px solid transparent;
                         float: left;
-                        margin-right: 35px;
+                        margin-right: 40px;
                         transition: border 0.6s;
 
                         &:hover{
@@ -103,6 +133,7 @@
             }
         }
 
+        // This is the search box inside the navbar
         #search_box{
             width: 33%;
             height: 40px;
@@ -110,10 +141,11 @@
             margin-top: 20px;
             float: right;
 
+            // This is the input field inside the search box
             input{
                 margin-top: 10px;
                 height: 30px;
-                width: 180px;
+                width: 220px;
                 transition: width 0.6s;
                 outline: $themeColor;
                 float: left;
@@ -125,9 +157,10 @@
 
                 &:focus{
                     transition: width 0.6s;
-                    width: 210px
+                    width: 250px
                 }
             }
+            // This is the search icon inside the search box
             #search_icon{
                 margin-top: 10px;
                 height: 28px;
@@ -139,34 +172,41 @@
     }
 }
 
+// This is the home slider
 #the_slider{
     grid-area: the_slider;
     border: $borderSettings;
     height: 90vh;
     overflow: hidden; 
 
+    // This is the slider box
     #slider_box{
         overflow: hidden;
 
+        // This is image 1 of the slider
         #img_1{
             margin-left: 0vw;
         }
 
+        // This is image 2 of the slider
         #img_2{
             margin-left: -100vw;
             display: none;
         }
 
+        // This is image 3 of the slider
         #img_3{
             margin-left: -100vw;
             display: none;
         }
 
+        // This is image 4 of the slider
         #img_4{
             margin-left: -100vw;
             display: none;
         }
 
+        // This is the back button slider
         #back_slide{
             position: absolute;
             width: 0;
@@ -186,6 +226,7 @@
             }
         }
 
+        // This is the next button slider
         #next_slide{
             position: absolute;
             width: 0;
@@ -205,6 +246,7 @@
         }
     }
 
+    // This is the image properties of the slider
     img{
         height: 100vh;
         width: 100vw;
@@ -212,26 +254,47 @@
 }
 
 
+// This is the button inside the header
 #header_btn{
     margin-top: 40px;
 }
 
+// This is the text inside the header
 #header_text{
     position: absolute;
     background: rgba(80, 80, 80, 0.699);
-    top: -150px;
-    opacity: 0;
     color: white;
     margin-left: 200px;
     margin-right: 200px;
     padding: 50px;
+    top: 200px;
+    opacity: 1;
     text-align: center;
     font-family: 'OpenSans', sans-serif;
+    animation-name: slideDown;
+    animation-duration: 1s;
+
+    // This is the animation that changes the position of the text in the header
+    @keyframes slideDown {
+        0% {
+            top: -150px;
+            opacity: 0;
+        }
+        50% {
+            top: 0px;
+            opacity: 0;
+        }
+        100% {
+            top: 200px;
+            opacity: 1;
+        }
+    }
 
     h3{
         margin-top: 10px;
     }
 
+    // This is the button inside the header text
     button{
         width: 180px;
         padding: 15px;
@@ -239,8 +302,8 @@
         border: none;
         border-radius: 3px;
         color: white;
-        background: transparent;
-        border: 2px solid white;
+        background: $themeColor;
+        border: 2px solid $themeColor;
         transition: all 0.4s;
 
         &:hover{
@@ -250,6 +313,7 @@
     }
 }
 
+// This is the main content that contains the intro image and info
 #main_content{
     grid-area: main_content;
     border: $borderSettings;
@@ -264,6 +328,7 @@
     margin-top: 100px;
     background-color: white;
 
+    // This is the intro info
     #intro_info{
         grid-area: intro_info;
         border: $borderSettings;
@@ -284,6 +349,7 @@
             font-weight: lighter;
             font-size: 1.1em;
         }
+        // This is the button inside the intro info
         button{
             margin-top: 20px;
             border: none;
@@ -302,6 +368,7 @@
         }
     }
 
+    // This is the intro image
     #intro_img{
         grid-area: intro_img;
         border: $borderSettings;
@@ -313,12 +380,14 @@
         grid-template-columns: 1fr 1fr;
         grid-gap: 20px;
 
+        // This is the images settings inside the intro image section
         img{
             height: 100%;
             width: 100%;
             @include imageZoomHover;
         }
 
+        // This is the images inside the intro image section
         #intro_img1{
             grid-area: intro_img1;
             border: $borderSettings;
@@ -346,6 +415,7 @@
     }
 }
 
+// This is the logo section
 #main_logo{
     grid-area: main_logo;
     height: 300px;
@@ -362,10 +432,12 @@
     background: black;
     font-size: 1em;
 
+    // This is the logo code image and text
     #logo_code{
         grid-area: logo_code;
         border: $borderSettings;
 
+        // This is the logo code image
         #logo_img1{
             background: url('../images/laptop_logo.png');
             @include containBgImg;
@@ -379,10 +451,12 @@
         }
     }
 
+    // This is the logo communication image and text
     #logo_communication{
         grid-area: logo_communication;
         border: $borderSettings;
 
+        // This is the logo communication image
         #logo_img2{
             background: url('../images/speaker_logo.png');
             @include logoImgSettings;            
@@ -396,10 +470,12 @@
         }
     }
 
+    // This is the solve section image and text
     #logo_solve{
         grid-area: logo_solve;
         border: $borderSettings;
 
+        // This is the solve image
         #logo_img3{
             background: url('../images/wrench_logo.png');
             @include logoImgSettings;
@@ -413,10 +489,12 @@
         }
     }
 
+    // This is the career section image and text
     #logo_career{
         grid-area: logo_career;
         border: $borderSettings;
 
+        // This is the career section image
         #logo_img4{
             background: url('../images/file_logo.png');
             @include logoImgSettings;
@@ -431,6 +509,7 @@
     }
 }
 
+// This is the portfolio section
 #home_portfolio{
     grid-area: home_portfolio;
     border: $borderSettings;
@@ -443,12 +522,14 @@
     margin-left: 100px;
     margin-right: 100px;
 
+    // This is the image section inside the portfolio
     img{
         height: 100%;
         width: 100%;
         @include imageZoomHover;
     }
 
+    // This is the porfolio header
     #home_portfolio_header{
         grid-area: home_portfolio_header;
         border: $borderSettings;
@@ -472,6 +553,7 @@
         }
     }
 
+    // This is the portfolio images
     #home_portfolio_images{
         grid-area: home_portfolio_images;
         border: $borderSettings;
@@ -482,13 +564,15 @@
         grid-gap: 10px;
         margin-top: 7px;
 
+        // This is the large image inside the portfolio section
         #home_portfolio_img5{
             grid-area: home_portfolio_img5;
             border: $borderSettings;
             overflow: hidden;
+            box-shadow: $imgShadow; 
         }
-            
 
+        // This is the portfolio gallery (small images)
         #home_portfolio_gall{
             grid-area: home_portfolio_gall;
             border: $borderSettings;
@@ -499,24 +583,28 @@
             grid-template-columns: 1fr 1fr;
             grid-gap: 10px;
 
+            // This is image 1 of the portfolio section
             #home_portfolio_img1{
                 grid-area: home_portfolio_img1;
                 border: $borderSettings;
                 overflow: hidden;
                 box-shadow: $imgShadow;     
             }
+            // This is image 2 of the portfolio section
             #home_portfolio_img2{
                 grid-area: home_portfolio_img2;
                 border: $borderSettings;
                 overflow: hidden;
                 box-shadow: $imgShadow;     
             }
+            // This is image 3 of the portfolio section
             #home_portfolio_img3{
                 grid-area: home_portfolio_img3;
                 border: $borderSettings;
                 overflow: hidden;
                 box-shadow: $imgShadow;     
             }
+            // This is image 4 of the portfolio section
             #home_portfolio_img4{
                 grid-area: home_portfolio_img4;
                 border: $borderSettings;
@@ -527,6 +615,7 @@
     }
 }
 
+// This is the team section
 #the_team{
     grid-area: the_team;
     border: $borderSettings;
@@ -540,11 +629,25 @@
     ;
     grid-template-columns: 1fr;
 
+    // This is the heading of the team section
     #the_team_head{
         grid-area: the_team_head;
         border: $borderSettings;
         height: 150px;
+        font-family: 'Poppins';
+
+        h3{
+            font-size: 1.5em;
+            border-bottom: 1px solid black;
+            width: 20%;
+
+            #solid_border{
+                border-bottom: 3px solid $themeColor;
+            }
+        }
     }
+
+    // This is the team members
     #the_team_members{
         grid-area: the_team_members;
         border: $borderSettings;
@@ -554,16 +657,26 @@
         grid-template-areas: 'member_1 member_2'
         'member_3 member_4'
         ;
+        grid-template-columns: 1fr 1fr;
         grid-gap: 10px;
+        font-family: 'Poppins';
+        font-weight: normal;
 
+        h4{
+            @include theTeamTextInfo;
+        }
+
+        // This is the image and text of member 1
         #member_1{
             grid-area: member_1;
             border: $borderSettings;
             display: grid;
             grid-template-areas: 'member1_img member1_info';
+            grid-template-columns: 1fr 1fr;
             grid-gap: 10px;
             height: 242.5px;
 
+            // This is the image of member 1
             #member1_img{
                 grid-area: member1_img;
                 border: $borderSettings;
@@ -572,6 +685,7 @@
                 // border-radius: 50%;
             }
 
+            // This is the text of member 1
             #member1_info{
                 grid-area: member1_info;
                 border: $borderSettings;
@@ -587,14 +701,17 @@
             }
         }
         
+        // This is the image and text of member 2
         #member_2{
             grid-area: member_2;
             border: $borderSettings;
             display: grid;
             grid-template-areas: 'member2_img member2_info';
+            grid-template-columns: 1fr 1fr;
             grid-gap: 10px;
             height: 242.5px;
 
+            // This is the image of member 2
             #member2_img{
                 grid-area: member2_img;
                 border: $borderSettings;
@@ -602,6 +719,7 @@
                 @include containBgImg;
             }
 
+            // This is the text of member 2
             #member2_info{
                 grid-area: member2_info;
                 border: $borderSettings;
@@ -618,14 +736,17 @@
             }
         }
         
+        // This is the image and text of member 3
         #member_3{
             grid-area: member_3;
             border: $borderSettings;
             display: grid;
             grid-template-areas: 'member3_img member3_info';
+            grid-template-columns: 1fr 1fr;
             grid-gap: 10px;
             height: 242.5px;
 
+            // This is the image of member 3
             #member3_img{
                 grid-area: member3_img;
                 border: $borderSettings;
@@ -633,6 +754,7 @@
                 @include containBgImg;
             }
 
+            // This is the text of member 3
             #member3_info{
                 grid-area: member3_info;
                 border: $borderSettings;
@@ -649,14 +771,17 @@
             }
         }
 
+        // This is the image and text of member 1
         #member_4{
             grid-area: member_4;
             border: $borderSettings;
             display: grid;
             grid-template-areas: 'member4_img member4_info';
+            grid-template-columns: 1fr 1fr;
             grid-gap: 10px;
             height: 242.5px;
 
+            // This is the image of member 1
             #member4_img{
                 grid-area: member4_img;
                 border: $borderSettings;
@@ -664,6 +789,7 @@
                 @include containBgImg;
             }
 
+            // This is the text of member 1
             #member4_info{
                 grid-area: member4_info;
                 border: $borderSettings;
@@ -682,4 +808,141 @@
     }
 }
 
-@import 'devices';
+#statistic_section{
+    grid-area: statistic_section;
+    margin-top: 100px;
+    border: $borderSettings;
+    height: 200px;
+    display: grid;
+    grid-template-areas: 'statistic_box';
+    grid-template-columns: 1fr;
+    color: white;
+    background: black;
+
+    #statistic_box{
+        grid-area: statistic_box;
+        border: $borderSettings;
+        display: grid;
+        grid-template-areas: 'number_coffee number_girls number_projects number_hours';
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 50px;
+        margin-left: 100px;
+        margin-right: 100px;
+        padding: 10px;
+        font-family: 'OpenSans';
+
+        #number_coffee{
+            grid-area: number_coffee;
+            border: $borderSettings;
+
+            #coffee_value{
+                @include statistics_box;
+                @include statistics_border;
+                margin-top: 35px;
+            }
+            #coffee_header{
+                @include statistics_box;
+            }
+        }
+        #number_girls{
+            grid-area: number_girls;
+            border: $borderSettings;
+
+            #girls_value{
+                @include statistics_box;
+                @include statistics_border;
+                margin-top: 35px;
+            }
+            #girls_header{
+                @include statistics_box;
+            }
+        }
+        #number_projects{
+            grid-area: number_projects;
+            border: $borderSettings;
+
+            #project_value{
+                @include statistics_box;
+                @include statistics_border;
+                margin-top: 35px;
+            }
+            #project_header{
+                @include statistics_box;
+            }
+        }
+        #number_hours{
+            grid-area: number_hours;
+            border: $borderSettings;
+
+            #hours_value{
+                @include statistics_box;
+                @include statistics_border;
+                margin-top: 35px;
+            }
+            #hours_header{
+                @include statistics_box;
+            }
+        }
+    }
+}
+
+
+// This is the subscribe section
+#subscribe_box{
+    grid-area: subscribe_box;
+    height: 200px;
+    border: $borderSettings;
+    margin-top: 80px;
+    font-family: 'OpenSans';
+    font-size: 1.2em;
+    font-weight: lighter;
+
+    #subscribe_box_content{
+        height: 200px;
+        margin-left: 300px;
+        margin-right: 300px;
+        border: $borderSettings;
+
+        h3{
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        h4{
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        #the_subscribeform{
+            border: $borderSettings;
+            height: auto;
+            margin-top: 20px;
+            padding: 5px;
+
+            input{
+                height: 30px;
+                font-size: 0.9em;
+                color: grey;
+                margin-left: 150px;
+            }
+
+            button{
+                font-size: 0.9em;
+                height: 35px;
+                width: 90px;
+                background: $themeColor;
+                border: none;
+                outline: none;
+                color: white;
+                transition: all 0.5s;
+
+                &:hover{
+                    transition: all 0.5s;
+                    width: 120px;
+                }
+            }
+        }
+    }
+}
+
+@import 'homepage-responsive';

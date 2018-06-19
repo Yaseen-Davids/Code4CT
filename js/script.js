@@ -132,10 +132,106 @@ function backToTop() {
     })
 }
 
-onload = function slideHeadInfo() {
-    let headerInfo = document.getElementById("header_text");
+function changeToClose() {
+    let line1 = document.getElementById("menu_line1");
+    let line2 = document.getElementById("menu_line2");
+    let line3 = document.getElementById("menu_line3");
+    let navbarLinks = document.getElementById("nav_links");
 
-    headerInfo.style.top = "250px";
-    headerInfo.style.opacity = "1";
-    headerInfo.style.transition = "all 0.95s";
+    if (line1.style.marginTop == "30px"){
+        line1.style.marginTop = "20px";
+        line1.style.transform = "rotate(0deg)";
+        line2.style.transform = "rotate(0deg)";
+        line2.style.marginTop = "10px";
+        line2.style.transition = "all 0.3s";
+        line1.style.transition = "all 0.3s";
+        line3.style.opacity = "1";
+        line3.style.transition = "all 0.3s";
+    }
+    else{
+        line1.style.marginTop = "30px";
+        line1.style.transform = "rotate(45deg)";
+        line1.style.transition = "all 0.3s";
+        line2.style.marginTop = "0px";
+        line2.style.transform = "rotate(-45deg)";
+        line2.style.transition = "all 0.3s";
+        line3.style.opacity = "0";
+        line3.style.transition = "all 0.3s";
+    }
+
+    if (navbarLinks.style.visibility == "visible"){
+        navbarLinks.style.visibility = "collapse";
+        navbarLinks.style.height = "0vh";
+        navbarLinks.style.transition = "all 0.7s";
+    }
+    else{
+        navbarLinks.style.visibility = "visible";
+        navbarLinks.style.height = "80vh";
+        navbarLinks.style.transition = "all 0.7s";
+    }
+}
+
+onload = function countUpStatistics() {
+    let coffeeNumber = document.getElementById("coffee_value");
+    let girlsNumber = document.getElementById("girls_value");
+    let projectNumber = document.getElementById("project_value");
+    let codingNumber = document.getElementById("hours_value");
+    let statisticsPos = document.getElementById("statistic_section").offsetTop -500;
+    let statisticSection = document.getElementById("statistic_section");
+
+    function countUpTimer() {
+        let coffeeValue = 0;
+        setInterval(function() {
+            if (coffeeValue == 3000){
+                clearInterval;
+            }
+            else{
+                coffeeValue += 20;
+                coffeeNumber.innerHTML = coffeeValue + "+";
+                coffeeNumber.style.fontSize = "1.5em";
+                coffeeNumber.style.fontWeight = "bolder";
+            }
+        },10);
+
+        let girlsValue = 0;
+        setInterval(function(){
+            if (girlsValue == 780){
+                clearInterval;
+            }
+            else{
+                girlsValue += 20;
+                girlsNumber.innerHTML = girlsValue + "+";
+                girlsNumber.style.fontSize = "1.5em";
+                girlsNumber.style.fontWeight = "bolder";
+            }
+        },50);
+
+        let projectValue = 0;
+        setInterval(function(){
+            if (projectValue == 3120){
+                clearInterval;
+            }
+            else{
+                projectValue += 20;
+                projectNumber.innerHTML = projectValue + "+";
+                projectNumber.style.fontSize = "1.5em";
+                projectNumber.style.fontWeight = "bolder";
+            }
+        },10);
+
+        let codingValue = 7000;
+        setInterval(function(){
+            if (codingValue == 8765){
+                clearInterval;
+            }
+            else{
+                codingValue += 5;
+                codingNumber.innerHTML = codingValue + "+";
+                codingNumber.style.fontSize = "1.5em";
+                codingNumber.style.fontWeight = "bolder";
+            }
+        },0);
+    }
+
+    countUpTimer();
 }

@@ -1,0 +1,1304 @@
+// This is the media query for mobile devices
+@media only screen
+  and (min-device-width: 1px)
+  and (max-device-width: 499px)
+  and (-webkit-min-device-pixel-ratio: 2){
+    // This is the navbar section
+    #navbar{
+        height: 70px;
+        padding: 5px;
+        top: 0;
+        padding: 0px;
+
+        // This is the logo in the navbar
+        #nav_logo{
+            margin-left: 20px;
+            height: 70px;
+            width: 35%;
+            @include containBgImg;
+        }
+
+        #nav_menu_btn{
+            display: block;
+        }
+
+        // This is the navbar links
+        #nav_links{
+            position: absolute;
+            background: rgb(0, 0, 0);
+            height: 0vh;
+            z-index: 10000;
+            visibility: collapse;
+            width: 100vw;
+            padding: 0px;
+            margin-top: 70px;
+            margin-right: 0px;
+            
+            // This is box that contains the links
+            #links_box{
+                width: 65%;
+                height: 40px;
+                float: left;
+                text-align: center;
+
+                // This is the unordered list of the nav links
+                ul{
+                    margin-top: 10px;            
+                    a{
+                        font-size: 1.07em;
+                        color: rgb(255, 255, 255);
+                        li{
+                            margin-left: 85px;
+                            margin-right: 50px;
+                            margin-top: 40px;  
+                        }
+                    }
+                }
+            }
+
+            // This is the search box inside the navbar
+            #search_box{
+                display: none;
+            }
+        }
+    }
+
+    #the_slider{
+        grid-area: the_slider;
+        border: $borderSettings;
+        height: 90vh;
+        overflow: hidden; 
+
+        // This is the slider box
+        #slider_box{
+            overflow: hidden;
+
+            // This is image 1 of the slider
+            #img_1{
+                margin-left: 0vw;
+            }
+
+            // This is image 2 of the slider
+            #img_2{
+                margin-left: -100vw;
+                display: none;
+            }
+
+            // This is image 3 of the slider
+            #img_3{
+                margin-left: -100vw;
+                display: none;
+            }
+
+            // This is image 4 of the slider
+            #img_4{
+                margin-left: -100vw;
+                display: none;
+            }
+
+            // This is the back button slider
+            #back_slide{
+                position: absolute;
+                width: 0;
+                height: 0;
+                border-top: 15px solid transparent;
+                border-right: 25px solid white;
+                border-bottom: 15px solid transparent;
+                border-radius: 5px;            
+                top: 250px;
+                left: 20px;
+            }
+
+            // This is the next button slider
+            #next_slide{
+                position: absolute;
+                width: 0;
+                height: 0;
+                border-top: 15px solid transparent;
+                border-left: 25px solid white;
+                border-bottom: 15px solid transparent;
+                border-radius: 5px;
+                top: 250px;
+                right: 20px;
+            }
+        }
+
+        // This is the image properties of the slider
+        img{
+            height: 80vh;
+            width: 100%;
+        }
+    }
+
+    #header_btn{
+        margin-top: 10px;
+    }
+
+    // This is the text inside the header
+    #header_text{
+        margin-left: 50px;
+        margin-right: 50px;
+        padding: 20px;
+        font-size: 0.6em;
+        top: 120px;
+        animation-name: slideDown;
+        animation-duration: 1s;
+
+        @keyframes slideDown {
+            0% {
+                top: -150px;
+                opacity: 0;
+            }
+            50% {
+                top: 0px;
+                opacity: 0;
+            }
+            100% {
+                top: 120px;
+                opacity: 1;
+            }
+        }
+
+        h3{
+            margin-top: 10px;
+        }
+
+        // This is the button inside the header text
+        button{
+            width: 100px;
+            padding: 10px;
+            font-size: 1em;
+            border-radius: 3px;
+            transition: all 0.4s;
+
+            &:hover{
+                transition: all 0.4s;            
+                width: 130px;
+            }
+        }
+    }
+
+    #main_content{
+        height: 1400px;
+        display: grid;
+        grid-template-areas: 'intro_info'
+        'intro_img'
+        ;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 100px;
+
+        // This is the intro info
+        #intro_info{
+            height: 400px;
+
+            h3{
+                font-size: 1.1em;
+                width: 40%;
+
+                #solid_border{
+                    border-bottom: 3px solid $themeColor;
+                }
+            }
+            h5{
+                margin-top: 30px;
+                font-size: 0.9em;
+            }
+            // This is the button inside the intro info
+            button{
+                margin-top: 20px;
+                width: 100px;
+                height: 40px;
+                font-family: 'Poppins';
+                transition: width 0.6s;
+
+                &:hover{
+                    transition: width 0.6s;
+                    width: 135px;
+                }
+            }
+        }
+
+        // This is the intro image
+        #intro_img{
+            height: 900px;
+            display: grid;
+            grid-template-areas: 'intro_img1'
+            'intro_img2'
+            'intro_img3'
+            'intro_img4'
+            ;
+            grid-template-columns: 1fr;
+            grid-gap: 20px;
+
+            // This is the images settings inside the intro image section
+            img{
+                height: 200px;
+                width: 100%;
+                @include imageZoomHover;
+            }
+
+            // This is the images inside the intro image section
+            #intro_img1{
+                height: 200px; 
+            }
+            #intro_img2{
+                height: 200px; 
+            }
+            #intro_img3{        
+                height: 200px;  
+            }
+            #intro_img4{     
+                height: 200px;         
+            }
+        }
+    }
+    #main_logo{
+        grid-area: main_logo;
+        height: 1250px;
+        display: grid;
+        grid-template-areas: 'logo_code'
+        'logo_communication'
+        'logo_solve'
+        'logo_career';
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+        padding: 40px;
+        margin-top: 100px;
+        color: white;
+        background: black;
+        font-size: 0.8em;
+
+        // This is the logo code image and text
+        #logo_code{
+            grid-area: logo_code;
+            border: $borderSettings;
+
+            // This is the logo code image
+            #logo_img1{
+                background: url('../images/laptop_logo.png');
+                @include containBgImg;
+                @include logoImgSettings;
+            }
+            #logo_header1{
+                @include logoHeadSettings;
+                height: 40px;
+            }
+            #logo_text1{
+                height: 100px;
+            }
+        }
+
+        // This is the logo communication image and text
+        #logo_communication{
+            grid-area: logo_communication;
+            border: $borderSettings;
+            margin-top: 50px;
+
+            // This is the logo communication image
+            #logo_img2{
+                background: url('../images/speaker_logo.png');        
+                @include containBgImg;
+                @include logoImgSettings;
+            }
+            #logo_header2{
+                @include logoHeadSettings;
+                height: 40px;
+            }
+            #logo_text2{
+                height: 100px;
+            }
+        }
+
+        // This is the solve section image and text
+        #logo_solve{
+            grid-area: logo_solve;
+            border: $borderSettings;
+            margin-top: 50px;
+
+            // This is the solve image
+            #logo_img3{
+                background: url('../images/wrench_logo.png');
+                @include logoImgSettings;
+                @include containBgImg;
+            }
+            #logo_header3{
+                @include logoHeadSettings;
+                height: 40px;
+            }
+            #logo_text3{
+                height: 100px;
+            }
+        }
+
+        // This is the career section image and text
+        #logo_career{
+            grid-area: logo_career;
+            border: $borderSettings;
+            margin-top: 50px;
+
+            // This is the career section image
+            #logo_img4{
+                background: url('../images/file_logo.png');
+                @include logoImgSettings;
+                @include containBgImg;
+            }
+            #logo_header4{
+                @include logoHeadSettings;
+                height: 40px;
+            }
+            #logo_text4{
+                height: 100px;
+            }
+        }
+    }
+
+    // This is the portfolio section
+    #home_portfolio{
+        margin-top: 100px;
+        display: grid;
+        grid-template-areas: 'home_portfolio_header'
+        'home_portfolio_images';
+        grid-template-columns: 1fr;
+        margin-left: 10px;
+        margin-right: 10px;
+        height: 1300px;
+
+        // This is the image section inside the portfolio
+        img{
+            height: 200px;
+            width: 100%;
+            @include imageZoomHover;
+        }
+
+        // This is the porfolio header
+        #home_portfolio_header{
+            height: 220px;
+            font-family: 'Poppins';
+
+            h3{
+                font-size: 0.9em;
+                border-bottom: 1px solid black;
+                width: 70%;
+            }
+            h5{
+                margin-top: 30px;
+                font-weight: lighter;
+                font-size: 0.8em;
+                margin-top: 15px;
+            }
+        }
+
+        // This is the portfolio images
+        #home_portfolio_images{
+            height: 1070px;
+            display: grid;
+            grid-template-areas: 'home_portfolio_gall'
+            'home_portfolio_img5';
+            grid-template-columns: 1fr;
+
+            // This is the large image inside the portfolio section
+            #home_portfolio_img5{
+                height: 200px;
+            }
+
+            // This is the portfolio gallery (small images)
+            #home_portfolio_gall{
+                display: grid;
+                grid-template-areas: 'home_portfolio_img1'
+                'home_portfolio_img2'
+                'home_portfolio_img3'
+                'home_portfolio_img4'
+                ;
+                grid-template-columns: 1fr;
+                grid-gap: 10px;
+                height: 850px;
+
+                // This is image 1 of the portfolio section
+                #home_portfolio_img1{
+                    height: 200px; 
+                }
+                // This is image 2 of the portfolio section
+                #home_portfolio_img2{
+                    height: 200px;     
+                }
+                // This is image 3 of the portfolio section
+                #home_portfolio_img3{  
+                    height: 200px;  
+                }
+                // This is image 4 of the portfolio section
+                #home_portfolio_img4{
+                    height: 200px;
+                }
+            }
+        }
+    }
+
+    // This is the team section
+    #the_team{
+        height: 1200px;
+        margin-top: 100px;
+        margin-left: 10px;
+        margin-right: 10px;
+        display: grid;
+        grid-template-areas: 'the_team_head'
+        'the_team_members'
+        ;
+        grid-template-columns: 1fr;
+
+        // This is the heading of the team section
+        #the_team_head{
+            grid-area: the_team_head;
+            border: $borderSettings;
+            height: 150px;
+            font-family: 'Poppins';
+
+            h3{
+                font-size: 0.9em;
+                border-bottom: 1px solid black;
+                width: 70%;
+
+                #solid_border{
+                    border-bottom: 3px solid $themeColor;
+                }
+            }
+        }
+
+        // This is the team members
+        #the_team_members{
+            grid-area: the_team_members;
+            border: $borderSettings;
+            height: 1050px;
+            margin-top: 10px;
+            display: grid;
+            grid-template-areas: 'member_1'
+            'member_2'
+            'member_3'
+            'member_4'
+            ;
+            grid-gap: 10px;
+
+            // This is the image and text of member 1
+            #member_1{
+                grid-area: member_1;
+                border: $borderSettings;
+                display: grid;
+                grid-template-areas: 'member1_img member1_info';
+                grid-gap: 10px;
+                height: 242.5px;
+
+                // This is the image of member 1
+                #member1_img{
+                    grid-area: member1_img;
+                    border: $borderSettings;
+                    background: url("../images/emma_img.png");
+                    @include containBgImg;
+                    // border-radius: 50%;
+                }
+
+                // This is the text of member 1
+                #member1_info{
+                    grid-area: member1_info;
+                    border: $borderSettings;
+
+                    #emma_name{
+                        border: $borderSettings;
+                        height: 60px;
+                    }
+                    #emma_info{
+                        border: $borderSettings;
+                        height: 179px;
+                    }
+                }
+            }
+            
+            // This is the image and text of member 2
+            #member_2{
+                grid-area: member_2;
+                border: $borderSettings;
+                display: grid;
+                grid-template-areas: 'member2_img member2_info';
+                grid-gap: 10px;
+                height: 242.5px;
+
+                // This is the image of member 2
+                #member2_img{
+                    grid-area: member2_img;
+                    border: $borderSettings;
+                    background: url("../images/andrea_img.png");
+                    @include containBgImg;
+                }
+
+                // This is the text of member 2
+                #member2_info{
+                    grid-area: member2_info;
+                    border: $borderSettings;
+
+                    #andrea_name{
+                        border: $borderSettings;
+                        height: 60px;
+                    }
+
+                    #andrea_info{
+                        border: $borderSettings;
+                        height: 179px;
+                    }
+                }
+            }
+            
+            // This is the image and text of member 3
+            #member_3{
+                grid-area: member_3;
+                border: $borderSettings;
+                display: grid;
+                grid-template-areas: 'member3_img member3_info';
+                grid-gap: 10px;
+                height: 242.5px;
+
+                // This is the image of member 3
+                #member3_img{
+                    grid-area: member3_img;
+                    border: $borderSettings;
+                    background: url("../images/tegan_img.png");
+                    @include containBgImg;
+                }
+
+                // This is the text of member 3
+                #member3_info{
+                    grid-area: member3_info;
+                    border: $borderSettings;
+
+                    #tegan_name{
+                        border: $borderSettings;
+                        height: 60px;
+                    }
+
+                    #tegan_info{
+                        border: $borderSettings;
+                        height: 179px;
+                    }
+                }
+            }
+
+            // This is the image and text of member 1
+            #member_4{
+                grid-area: member_4;
+                border: $borderSettings;
+                display: grid;
+                grid-template-areas: 'member4_img member4_info';
+                grid-gap: 10px;
+                height: 242.5px;
+
+                // This is the image of member 1
+                #member4_img{
+                    grid-area: member4_img;
+                    border: $borderSettings;
+                    background: url("../images/tracy_img.png");
+                    @include containBgImg;
+                }
+
+                // This is the text of member 1
+                #member4_info{
+                    grid-area: member4_info;
+                    border: $borderSettings;
+
+                    #tracy_name{
+                        border: $borderSettings;
+                        height: 60px;
+                    }
+
+                    #tracy_info{
+                        border: $borderSettings;
+                        height: 179px;
+                    }
+                }
+            }
+        }
+    }
+
+    #statistic_section{
+        margin-top: 100px;
+        height: 600px;
+
+        #statistic_box{
+            display: grid;
+            grid-template-areas: 'number_coffee'
+            'number_girls'
+            'number_projects'
+            'number_hours';
+            grid-template-columns: 1fr;
+            grid-gap: 10px;
+            margin-left: 80px;
+            margin-right: 0px;
+            padding: 10px;
+
+            #number_coffee{
+                #coffee_value{
+                    margin-top: 15px;
+                }
+            }
+            #number_girls{
+                #girls_value{
+                    margin-top: 15px;
+                }
+            }
+            #number_projects{
+                #project_value{
+                    margin-top: 15px;
+                }
+            }
+            #number_hours{
+                #hours_value{
+                    margin-top: 15px;
+                }
+            }
+        }
+    }
+
+    // This is the subscribe section
+    #subscribe_box{
+        height: 240px;
+        margin-top: 50px;
+        font-size: 1em;
+        text-align: center;
+
+        #subscribe_box_content{
+            height: 230px;
+            margin-left: 10px;
+            margin-right: 10px;
+
+            h3{
+                margin-top: 10px;
+            }
+
+            h4{
+                margin-top: 20px;
+            }
+
+            #the_subscribeform{
+                height: auto;
+                margin-top: 20px;
+                padding: 5px;
+
+                input{
+                    height: 30px;
+                    font-size: 0.9em;
+                    margin-left: 0px;
+                    width: 286px;
+                    text-align: center;
+                }
+
+                button{
+                    font-size: 0.9em;
+                    height: 35px;
+                    width: 80px;
+                    margin-top: 10px;
+
+                    &:hover{
+                        width: 120px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+ 
+@media only screen
+  and (min-device-width: 500px)
+  and (max-device-width: 900px)
+  and (-webkit-min-device-pixel-ratio: 2){
+    // This is the navbar section
+#navbar{
+    height: 90px;
+    padding: 5px;
+    top: 0;
+
+    // This is the logo in the navbar
+    #nav_logo{
+        margin-left: 10px;
+        height: 90px;
+        width: 20%;
+    }
+
+    #nav_menu_btn{
+        display: none;
+    }
+
+    // This is the navbar links
+    #nav_links{
+        visibility: visible;
+        margin-right: 10px;
+        height: 75px;
+        width: 75%;
+        padding: 5px;
+        
+        // This is box that contains the links
+        #links_box{
+            width: 60%;
+            height: 40px;
+            margin-top: 20px;
+            float: left;
+
+            // This is the unordered list of the nav links
+            ul{
+                margin-top: 10px;      
+                a{
+                    font-size: 0.85em;
+                    li{
+                        margin-right: 10px;
+                    }
+                }
+                
+            }
+        }
+
+        // This is the search box inside the navbar
+        #search_box{
+            width: 37%;
+            height: 40px;
+            margin-top: 20px;
+
+            // This is the input field inside the search box
+            input{
+                margin-top: 10px;
+                height: 20px;
+                width: 150px;
+
+                &:focus{
+                    width: 170px
+                }
+            }
+            // This is the search icon inside the search box
+            #search_icon{
+                margin-top: 10px;
+                height: 18px;
+                width: 30px;
+            }
+        }
+    }
+}
+
+    #the_slider{
+        grid-area: the_slider;
+        border: $borderSettings;
+        height: 90vh;
+        overflow: hidden; 
+
+        // This is the slider box
+        #slider_box{
+            overflow: hidden;
+
+            // This is image 1 of the slider
+            #img_1{
+                margin-left: 0vw;
+            }
+
+            // This is image 2 of the slider
+            #img_2{
+                margin-left: -100vw;
+                display: none;
+            }
+
+            // This is image 3 of the slider
+            #img_3{
+                margin-left: -100vw;
+                display: none;
+            }
+
+            // This is image 4 of the slider
+            #img_4{
+                margin-left: -100vw;
+                display: none;
+            }
+
+            // This is the back button slider
+            #back_slide{
+                position: absolute;
+                width: 0;
+                height: 0;
+                border-top: 15px solid transparent;
+                border-right: 25px solid white;
+                border-bottom: 15px solid transparent;
+                border-radius: 5px;            
+                top: 350px;
+                left: 20px;
+            }
+
+            // This is the next button slider
+            #next_slide{
+                position: absolute;
+                width: 0;
+                height: 0;
+                border-top: 15px solid transparent;
+                border-left: 25px solid white;
+                border-bottom: 15px solid transparent;
+                border-radius: 5px;
+                top: 350px;
+                right: 20px;
+            }
+        }
+
+        // This is the image properties of the slider
+        img{
+            height: 80vh;
+            width: 100%;
+        }
+    }
+
+    #header_btn{
+        margin-top: 10px;
+    }
+
+    // This is the text inside the header
+    #header_text{
+        margin-left: 100px;
+        margin-right: 100px;
+        font-size: 0.8em;
+        top: 200px;
+
+        @keyframes slideDown {
+            0% {
+                top: -150px;
+                opacity: 0;
+            }
+            50% {
+                top: 0px;
+                opacity: 0;
+            }
+            100% {
+                top: 200px;
+                opacity: 1;
+            }
+        }
+
+        h3{
+            margin-top: 10px;
+        }
+
+        // This is the button inside the header text
+        button{
+            width: 100px;
+            padding: 10px;
+            font-size: 1em;
+            border-radius: 3px;
+            transition: all 0.4s;
+
+            &:hover{
+                transition: all 0.4s;            
+                width: 130px;
+            }
+        }
+    }
+
+    #main_content{
+        height: 850px;
+        display: grid;
+        grid-template-areas: 'intro_info'
+        'intro_img'
+        ;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-top: 100px;
+
+        // This is the intro info
+        #intro_info{
+            height: 350px;
+
+            h3{
+                font-size: 1.5em;
+                width: 30%;
+            }
+            h5{
+                margin-top: 30px;
+                font-size: 1.1em;
+            }
+        }
+
+        // This is the intro image
+        #intro_img{
+            height: 450px;
+            display: grid;
+            grid-template-areas: 'intro_img1 intro_img2'
+            'intro_img3 intro_img4'
+            ;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 20px;
+        }
+    }
+    #main_logo{
+        grid-area: main_logo;
+        height: 600px;
+        display: grid;
+        grid-template-areas: 'logo_code logo_communication'
+        'logo_solve logo_career';
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+        padding: 40px;
+        margin-top: 100px;
+        font-size: 0.9em;
+    }
+
+    // This is the portfolio section
+    #home_portfolio{
+        display: grid;
+        grid-template-areas: 'home_portfolio_header'
+        'home_portfolio_images';
+        grid-template-columns: 1fr;
+        margin-left: 50px;
+        margin-right: 50px;
+        height: 1000px;
+
+        // This is the image section inside the portfolio
+        img{
+            height: 200px;
+            width: 100%;
+            @include imageZoomHover;
+        }
+
+        // This is the porfolio header
+        #home_portfolio_header{
+            height: 200px;
+
+            h3{
+                font-size: 1.2em;
+                width: 40%;
+            }
+            h5{
+                margin-top: 30px;
+                font-size: 1em;
+                margin-top: 15px;
+            }
+        }
+
+        // This is the portfolio images
+        #home_portfolio_images{
+            height: 750px;
+            display: grid;
+            grid-template-areas: 'home_portfolio_gall'
+            'home_portfolio_img5';
+            grid-template-columns: 1fr;
+
+            // This is the large image inside the portfolio section
+            #home_portfolio_img5{
+                height: 300px;
+
+                img{
+                    height: 300px;
+                }
+            }
+
+            // This is the portfolio gallery (small images)
+            #home_portfolio_gall{
+                display: grid;
+                grid-template-areas: 'home_portfolio_img1 home_portfolio_img2'
+                'home_portfolio_img3 home_portfolio_img4'
+                ;
+                grid-template-columns: 1fr 1fr;
+                grid-gap: 10px;
+                height: 450px;
+
+                // This is image 1 of the portfolio section
+                #home_portfolio_img1{
+                    height: 200px; 
+                }
+                // This is image 2 of the portfolio section
+                #home_portfolio_img2{
+                    height: 200px;     
+                }
+                // This is image 3 of the portfolio section
+                #home_portfolio_img3{  
+                    height: 200px;  
+                }
+                // This is image 4 of the portfolio section
+                #home_portfolio_img4{
+                    height: 200px;
+                }
+            }
+        }
+    }
+
+    // This is the team section
+    #the_team{
+        height: 680px;
+        margin-left: 50px;
+        margin-right: 50px;
+
+        // This is the heading of the team section
+        #the_team_head{
+            height: 150px;
+
+            h3{
+                font-size: 0.9em;
+                width: 70%;
+            }
+        }
+
+        // This is the team members
+        #the_team_members{
+            height: 500px;
+            display: grid;
+            grid-template-areas: 'member_1  member_2'
+            'member_3 member_4'
+            ;
+            grid-gap: 10px;
+            grid-template-columns: 1fr 1fr;
+
+            // This is the image and text of member 1
+            #member_1{
+                grid-gap: 10px;
+                height: 242.5px;
+
+                // This is the text of member 1
+                #member1_info{
+                    #emma_name{
+                        height: 60px;
+                    }
+                    #emma_info{
+                        height: 179px;
+                    }
+                }
+            }
+            
+            // This is the image and text of member 2
+            #member_2{
+                grid-gap: 10px;
+                height: 242.5px;
+
+                // This is the text of member 2
+                #member2_info{
+                    #andrea_name{
+                        height: 60px;
+                    }
+                    #andrea_info{
+                        height: 179px;
+                    }
+                }
+            }
+            
+            // This is the image and text of member 3
+            #member_3{
+                grid-gap: 10px;
+                height: 242.5px;
+
+                // This is the text of member 3
+                #member3_info{
+                    #tegan_name{
+                        height: 60px;
+                    }
+                    #tegan_info{
+                        height: 179px;
+                    }
+                }
+            }
+
+            // This is the image and text of member 1
+            #member_4{
+                grid-gap: 10px;
+                height: 242.5px;
+            
+                // This is the text of member 1
+                #member4_info{
+                    #tracy_name{
+                        height: 60px;
+                    }
+                    #tracy_info{
+                        height: 179px;
+                    }
+                }
+            }
+        }
+    }
+
+    #statistic_section{
+        margin-top: 100px;
+        height: 300px;
+
+        #statistic_box{
+            display: grid;
+            grid-template-areas: 'number_coffee number_girls'
+            'number_projects number_hours';
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 10px;
+            margin-left: 80px;
+            margin-right: 0px;
+            padding: 10px;
+
+            #number_coffee{
+                #coffee_value{
+                    margin-top: 15px;
+                }
+            }
+            #number_girls{
+                #girls_value{
+                    margin-top: 15px;
+                }
+            }
+            #number_projects{
+                #project_value{
+                    margin-top: 15px;
+                }
+            }
+            #number_hours{
+                #hours_value{
+                    margin-top: 15px;
+                }
+            }
+        }
+    }
+
+    // This is the subscribe section
+    #subscribe_box{
+        height: 200px;
+        margin-top: 50px;
+        font-size: 1em;
+        text-align: center;
+
+        #subscribe_box_content{
+            height: 200px;
+            margin-left: 10px;
+            margin-right: 10px;
+
+            h3{
+                margin-top: 10px;
+            }
+
+            h4{
+                margin-top: 20px;
+            }
+
+            #the_subscribeform{
+                height: auto;
+                margin-top: 20px;
+                padding: 5px;
+
+                input{
+                    height: 30px;
+                    font-size: 0.9em;
+                    margin-left: 0px;
+                    width: 286px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+  }
+
+@media only screen
+  and (min-device-width: 1200px)
+  and (max-device-width: 1300px)
+  and (-webkit-min-device-pixel-ratio: 2){
+      #navbar{
+        height: 90px;
+        padding: 5px;
+        top: 0;
+    
+        #nav_logo{
+            margin-left: 20px;
+            height: 90px;
+            width: 25%;
+        }
+    
+        #nav_links{
+            margin-right: 10px;
+            height: 75px;
+            width: 65%;
+            padding: 5px;
+            
+            #links_box{
+                width: 65%;
+                height: 40px;
+                margin-top: 20px;
+    
+                ul{
+                    margin-top: 10px;           
+                    a{
+                        font-size: 1.07em;
+                        li{
+                            margin-right: 35px;
+                        }
+                    }
+                    
+                }
+            }
+    
+            #search_box{
+                width: 33%;
+                height: 40px;
+                margin-top: 20px;
+    
+                input{
+                    margin-top: 10px;
+                    height: 30px;
+                    width: 180px;
+    
+                    &:focus{
+                        width: 210px;
+                    }
+                }
+                #search_icon{
+                    margin-top: 10px;
+                    height: 28px;
+                    width: 50px;
+                }
+            }
+        }
+    }
+    #main_content{
+        height: 450px;
+        display: grid;
+        grid-gap: 50px;
+        margin-left: 100px;
+        margin-right: 100px;
+        margin-top: 150px;
+    
+        #intro_info{
+            height: 420px;
+    
+            h3{
+                font-size: 1.5em;
+                width: 40%;
+            }
+            h5{
+                margin-top: 30px;
+                font-size: 1.1em;
+            }
+        }
+    
+        #intro_img{
+            height: 420px;
+            grid-gap: 20px;
+    
+            img{
+                height: 100%;
+                width: 100%;
+            }
+    
+            #intro_img1{
+                height: 195px;
+                overflow: hidden;
+            }
+            #intro_img2{
+                height: 195px;           
+            }
+            #intro_img3{
+                height: 195px;          
+            }
+            #intro_img4{
+                height: 195px;           
+            }
+        }
+    }
+    #main_logo{
+        height: 300px;
+        grid-gap: 50px;
+        padding: 40px;
+        margin-top: 150px;
+        font-size: 0.9em;
+        font-weight: lighter;
+    }
+  }
