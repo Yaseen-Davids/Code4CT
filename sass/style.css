@@ -14,7 +14,7 @@
 
 #grid_container {
   display: grid;
-  grid-template-areas: 'navbar' 'the_slider' 'main_content' 'main_logo' 'home_portfolio' 'the_team' 'statistic_section' 'subscribe_box';
+  grid-template-areas: 'navbar' 'the_slider' 'main_content' 'main_logo' 'home_portfolio' 'the_team' 'statistic_section' 'subscribe_box' 'sponsor_carousel';
   grid-template-columns: 1fr;
 }
 
@@ -162,7 +162,7 @@
 #the_slider {
   grid-area: the_slider;
   border: none;
-  height: 90vh;
+  height: 900px;
   overflow: hidden;
 }
 
@@ -1003,7 +1003,7 @@
   grid-area: subscribe_box;
   height: 200px;
   border: none;
-  margin-top: 80px;
+  margin-top: 20px;
   font-family: 'OpenSans';
   font-size: 1.2em;
   font-weight: lighter;
@@ -1054,6 +1054,69 @@
 #subscribe_box #subscribe_box_content #the_subscribeform button:hover {
   transition: all 0.5s;
   width: 120px;
+}
+
+#sponsor_carousel {
+  grid-area: sponsor_carousel;
+  height: 150px;
+  border: none;
+  margin-top: 20px;
+  overflow: hidden;
+  padding: 10px;
+  position: relative;
+  background: black;
+}
+
+#sponsor_carousel img {
+  height: 150px;
+  width: 200px;
+}
+
+#sponsor_carousel .sponsor_logo {
+  height: 150px;
+  width: 200px;
+  border: none;
+  position: absolute;
+}
+
+#sponsor_carousel #sponsor_logo1 {
+  margin-left: 0px;
+}
+
+#sponsor_carousel #sponsor_logo2 {
+  margin-left: 250px;
+}
+
+#sponsor_carousel #sponsor_logo3 {
+  margin-left: 500px;
+}
+
+#sponsor_carousel #sponsor_logo4 {
+  margin-left: 750px;
+}
+
+#sponsor_carousel #sponsor_logo5 {
+  margin-left: 1000px;
+}
+
+#sponsor_carousel #sponsor_logo6 {
+  margin-left: 1250px;
+}
+
+#sponsor_carousel #sponsor_logo7 {
+  margin-left: 1500px;
+}
+
+#sponsor_carousel #sponsor_logo8 {
+  margin-left: -250px;
+}
+
+#sponsor_carousel #sponsor_logo9 {
+  margin-left: -500px;
+}
+
+#sponsor_carousel #sponsor_logo10 {
+  margin-left: -750px;
 }
 
 @media only screen and (min-device-width: 1px) and (max-device-width: 499px) and (-webkit-min-device-pixel-ratio: 2) {

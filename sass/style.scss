@@ -33,6 +33,7 @@
     'the_team'
     'statistic_section'
     'subscribe_box'
+    'sponsor_carousel'
     ;
     grid-template-columns: 1fr;
 }
@@ -177,7 +178,7 @@
 #the_slider{
     grid-area: the_slider;
     border: $borderSettings;
-    height: 90vh;
+    height: 900px;
     overflow: hidden; 
 
     // This is the slider box
@@ -892,7 +893,7 @@
     grid-area: subscribe_box;
     height: 200px;
     border: $borderSettings;
-    margin-top: 80px;
+    margin-top: 20px;
     font-family: 'OpenSans';
     font-size: 1.2em;
     font-weight: lighter;
@@ -942,6 +943,60 @@
                 }
             }
         }
+    }
+}
+
+#sponsor_carousel{
+    grid-area: sponsor_carousel;
+    height: 150px;
+    border: $borderSettings;
+    margin-top: 20px;
+    overflow: hidden;
+    padding: 10px;
+    position: relative;
+    background: black;
+
+    img{
+        height: 150px;
+        width: 200px;
+    }
+
+    .sponsor_logo{
+        height: 150px;
+        width: 200px;
+        border: $borderSettings;
+        position: absolute;
+    }
+
+    #sponsor_logo1{
+        margin-left: 0px;
+    }
+    #sponsor_logo2{
+        margin-left: 250px;
+    }
+    #sponsor_logo3{
+        margin-left: 500px;
+    }
+    #sponsor_logo4{
+        margin-left: 750px;
+    }
+    #sponsor_logo5{
+        margin-left: 1000px;
+    }
+    #sponsor_logo6{
+        margin-left: 1250px;
+    }
+    #sponsor_logo7{
+        margin-left: 1500px;
+    }
+    #sponsor_logo8{
+        margin-left: -250px;
+    }
+    #sponsor_logo9{
+        margin-left: -500px;
+    }
+    #sponsor_logo10{
+        margin-left: -750px;
     }
 }
 

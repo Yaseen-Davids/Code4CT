@@ -1,48 +1,3 @@
-// // This is a function that runs when the user scrolls on the website
-// onscroll = function navbarSize() {
-//     let theNavLogo = document.getElementById("nav_logo");
-//     let theNavMain = document.getElementById("navbar");
-//     let theNavLinks = document.getElementById("links_box");
-//     let theLinksBox = document.getElementById("nav_links");
-//     let theNavSearch = document.getElementById("search_box");
-
-//     // These are the changes to be made if the condition is met
-//     if (window.scrollY >= 100){
-//         theNavLogo.style.height = "80px";
-//         theNavLogo.style.transition = "all 0.5s";
-
-//         theNavMain.style.height = "80px";
-//         theNavMain.style.transition = "all 0.5s";
-
-//         theLinksBox.style.height = "70px";
-//         theLinksBox.style.transition = "all 0.5s";
-
-//         theNavLinks.style.marginTop = "10px";
-//         theNavLinks.style.transition = "all 0.5s";
-
-//         theNavSearch.style.marginTop = "10px";
-//         theNavSearch.style.transition = "all 0.5s";
-//     }
-
-//     // These are the changes to be made if the condition is not met    
-//     else if (window.scrollY < 100){
-//         theNavMain.style.height = "100px";
-//         theNavMain.style.transition = "all 0.5s";
-
-//         theNavLogo.style.height = "100px";
-//         theNavLogo.style.transition = "all 0.5s";
-
-//         theLinksBox.style.height = "85px";
-//         theLinksBox.style.transition = "all 0.5s";
-        
-//         theNavLinks.style.marginTop = "20px";
-//         theNavLinks.style.transition = "all 0.5s";
-
-//         theNavSearch.style.marginTop = "20px";
-//         theNavSearch.style.transition = "all 0.5s";
-//     }
-// }
-
 // This is the slide counter
 let slideNow = 0;
 
@@ -234,4 +189,63 @@ onload = function countUpStatistics() {
     }
 
     countUpTimer();
+
+    function startCarousel() {
+        let sponsor1 = document.getElementById("sponsor_logo1");
+        let sponsor2 = document.getElementById("sponsor_logo2");
+        let sponsor3 = document.getElementById("sponsor_logo3");
+        let sponsor4 = document.getElementById("sponsor_logo4");
+        let sponsor5 = document.getElementById("sponsor_logo5");
+        let sponsor6 = document.getElementById("sponsor_logo6");
+        let sponsor7 = document.getElementById("sponsor_logo7");
+        let sponsor8 = document.getElementById("sponsor_logo8");
+        let sponsor9 = document.getElementById("sponsor_logo9");
+        let sponsor10 = document.getElementById("sponsor_logo10");
+    
+        let theSponsors = [sponsor1, sponsor2, sponsor3, sponsor4, sponsor5, sponsor6,sponsor7, sponsor8, sponsor9, 
+            sponsor10];
+    
+        for (let i = 0; i < theSponsors.length; i++){
+            $(theSponsors[i]).animate({marginLeft: "+=250px"},1000);
+        }
+
+        function checkSponsorPos() {
+            if (sponsor7.style.marginLeft == "1750px"){
+                sponsor7.style.marginLeft = "-750px";
+            }
+            if (sponsor1.style.marginLeft == "1750px"){
+                sponsor1.style.marginLeft = "-750px";
+            }
+            if (sponsor2.style.marginLeft == "1750px"){
+                sponsor2.style.marginLeft = "-750px";
+            }
+            if (sponsor3.style.marginLeft == "1750px"){
+                sponsor3.style.marginLeft = "-750px";
+            }
+            if (sponsor4.style.marginLeft == "1750px"){
+                sponsor4.style.marginLeft = "-750px";
+            }
+            if (sponsor5.style.marginLeft == "1750px"){
+                sponsor5.style.marginLeft = "-750px";
+            }
+            if (sponsor6.style.marginLeft == "1750px"){
+                sponsor6.style.marginLeft = "-750px";
+            }
+            if (sponsor8.style.marginLeft == "1750px"){
+                sponsor8.style.marginLeft = "-750px";
+            }
+            if (sponsor9.style.marginLeft == "1750px"){
+                sponsor9.style.marginLeft = "-750px";
+            }
+            if (sponsor10.style.marginLeft == "1750px"){
+                sponsor10.style.marginLeft = "-750px";
+            }
+        }
+
+        setInterval(checkSponsorPos, 1100);
+    }
+
+    setInterval(startCarousel, 2000);
+    
 }
+
