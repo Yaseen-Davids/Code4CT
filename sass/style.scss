@@ -34,6 +34,8 @@
     'statistic_section'
     'subscribe_box'
     'sponsor_carousel'
+    'homepage_about_section'
+    'footer'
     ;
     grid-template-columns: 1fr;
 }
@@ -164,11 +166,13 @@
             }
             // This is the search icon inside the search box
             #search_icon{
+                border: 1px solid $themeColor;
                 margin-top: 10px;
                 height: 28px;
                 width: 50px;
                 float: left;
-                border: 1px solid $themeColor;
+                background: url("../images/search.png");
+                @include containBgImg;
             }
         }
     }
@@ -178,7 +182,7 @@
 #the_slider{
     grid-area: the_slider;
     border: $borderSettings;
-    height: 900px;
+    height: 100vh;
     overflow: hidden; 
 
     // This is the slider box
@@ -997,6 +1001,120 @@
     }
     #sponsor_logo10{
         margin-left: -750px;
+    }
+}
+
+#homepage_about_section{
+    grid-area: homepage_about_section;
+    height: 260px;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    grid-gap: 10px;
+    border: $borderSettings;
+    display: grid;
+    grid-template-areas: 'home_about_info home_about_links home_about_support';
+    grid-template-columns: 1fr 1fr 1fr;
+    font-family: 'Poppins';
+
+    h4{
+        font-weight: lighter;
+    }
+
+    img{
+        transform: scale(0.6);
+        height: 50px;
+    }
+
+    #home_about_info{
+        grid-area: home_about_info;
+
+        #home_about_info_header{
+            height: 50px;
+            border: $borderSettings;
+        }
+
+        #home_about_info_contact1{
+           @include homeContactInfo;
+
+            #home_phone_logo{
+                @include homeAboutLogo;
+                border: 1px solid black;
+            }
+            #home_phone_number{
+                @include homeAboutLogoText;
+            }
+        }
+        #home_about_info_contact2{
+            @include homeContactInfo;
+
+            #home_email_logo{
+                @include homeAboutLogo;
+                border: 1px solid red;
+            }
+            #home_email_address{
+                @include homeAboutLogoText;
+            }
+        }
+
+        #home_about_info_contact3{
+            @include homeContactInfo;
+            height: 70px;
+
+            #home_location_logo{
+                @include homeAboutLogo;
+                border: 1px solid black;
+            }
+            #home_location{
+                @include homeAboutLogoText;
+                height: 70px;
+                h4{
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+    #home_about_links{
+        grid-area: home_about_links;
+        border: $borderSettings;
+        margin-left: 100px;
+        @include homeAboutLinks;
+    }
+    #home_about_support{
+        grid-area: home_about_support;
+        border: $borderSettings;
+        margin-left: 100px;
+        @include homeAboutLinks;
+    }
+}
+
+#footer{
+    grid-area: footer;
+    background: $themeColor;
+    font-family: 'Poppins';
+    color: white;
+    padding: 12px;
+    
+    h3{
+        margin-left: 100px;
+        float: left;
+    }
+
+    #footer_icons{
+        float: right;
+        height: 30px;
+        width: 50%;
+
+        h3{
+            float: left;
+        }
+
+        img{
+            height: 25px;
+            margin-left: 30px;
+            float: left;
+        }
     }
 }
 

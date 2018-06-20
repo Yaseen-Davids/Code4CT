@@ -93,6 +93,52 @@
 
     &:hover{
         transition: width 0.6s;
-        width: 135px;
+        width: 110px;
+    }
+}
+
+@mixin homeContactInfo{
+    margin-top: 10px;
+    height: 50px;
+    border: $borderSettings;
+}
+
+@mixin homeAboutLogo{
+    float: left;
+    height: 50px;
+    width: 12%;
+    border-radius: 4px;
+}
+
+@mixin homeAboutLogoText{
+    float: right;
+    height: 50px;
+    width: 83%;
+    border: $borderSettings;
+
+    h4{
+        margin-top: 10px;
+    }
+}
+
+@mixin homeAboutLinks{
+    ul{
+        margin-top: 20px;
+        li{
+            margin-top: 10px;
+            list-style: square;
+
+            a{
+                color: #333;
+                text-decoration: none;
+                border-bottom: 1px solid transparent;
+                transition: all 0.4s;
+
+                &:hover{
+                    border-color: black;
+                    transition: all 0.4s;
+                }
+            }
+        }
     }
 }

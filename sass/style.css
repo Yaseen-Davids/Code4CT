@@ -14,7 +14,7 @@
 
 #grid_container {
   display: grid;
-  grid-template-areas: 'navbar' 'the_slider' 'main_content' 'main_logo' 'home_portfolio' 'the_team' 'statistic_section' 'subscribe_box' 'sponsor_carousel';
+  grid-template-areas: 'navbar' 'the_slider' 'main_content' 'main_logo' 'home_portfolio' 'the_team' 'statistic_section' 'subscribe_box' 'sponsor_carousel' 'homepage_about_section' 'footer';
   grid-template-columns: 1fr;
 }
 
@@ -152,17 +152,21 @@
 }
 
 #navbar #nav_links #search_box #search_icon {
+  border: 1px solid #e1918a;
   margin-top: 10px;
   height: 28px;
   width: 50px;
   float: left;
-  border: 1px solid #e1918a;
+  background: url("../images/search.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 #the_slider {
   grid-area: the_slider;
   border: none;
-  height: 900px;
+  height: 100vh;
   overflow: hidden;
 }
 
@@ -286,7 +290,7 @@
 
 #header_text button:hover {
   transition: width 0.6s;
-  width: 135px;
+  width: 110px;
 }
 
 #header_text button:hover {
@@ -345,7 +349,7 @@
 
 #main_content #intro_info button:hover {
   transition: width 0.6s;
-  width: 135px;
+  width: 110px;
 }
 
 #main_content #intro_img {
@@ -709,7 +713,7 @@
 
 #the_team #the_team_members button:hover {
   transition: width 0.6s;
-  width: 135px;
+  width: 110px;
 }
 
 #the_team #the_team_members hr {
@@ -1117,6 +1121,203 @@
 
 #sponsor_carousel #sponsor_logo10 {
   margin-left: -750px;
+}
+
+#homepage_about_section {
+  grid-area: homepage_about_section;
+  height: 260px;
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  grid-gap: 10px;
+  border: none;
+  display: grid;
+  grid-template-areas: 'home_about_info home_about_links home_about_support';
+  grid-template-columns: 1fr 1fr 1fr;
+  font-family: 'Poppins';
+}
+
+#homepage_about_section h4 {
+  font-weight: lighter;
+}
+
+#homepage_about_section img {
+  transform: scale(0.6);
+  height: 50px;
+}
+
+#homepage_about_section #home_about_info {
+  grid-area: home_about_info;
+}
+
+#homepage_about_section #home_about_info #home_about_info_header {
+  height: 50px;
+  border: none;
+}
+
+#homepage_about_section #home_about_info #home_about_info_contact1 {
+  margin-top: 10px;
+  height: 50px;
+  border: none;
+}
+
+#homepage_about_section #home_about_info #home_about_info_contact1 #home_phone_logo {
+  float: left;
+  height: 50px;
+  width: 12%;
+  border-radius: 4px;
+  border: 1px solid black;
+}
+
+#homepage_about_section #home_about_info #home_about_info_contact1 #home_phone_number {
+  float: right;
+  height: 50px;
+  width: 83%;
+  border: none;
+}
+
+#homepage_about_section #home_about_info #home_about_info_contact1 #home_phone_number h4 {
+  margin-top: 10px;
+}
+
+#homepage_about_section #home_about_info #home_about_info_contact2 {
+  margin-top: 10px;
+  height: 50px;
+  border: none;
+}
+
+#homepage_about_section #home_about_info #home_about_info_contact2 #home_email_logo {
+  float: left;
+  height: 50px;
+  width: 12%;
+  border-radius: 4px;
+  border: 1px solid red;
+}
+
+#homepage_about_section #home_about_info #home_about_info_contact2 #home_email_address {
+  float: right;
+  height: 50px;
+  width: 83%;
+  border: none;
+}
+
+#homepage_about_section #home_about_info #home_about_info_contact2 #home_email_address h4 {
+  margin-top: 10px;
+}
+
+#homepage_about_section #home_about_info #home_about_info_contact3 {
+  margin-top: 10px;
+  height: 50px;
+  border: none;
+  height: 70px;
+}
+
+#homepage_about_section #home_about_info #home_about_info_contact3 #home_location_logo {
+  float: left;
+  height: 50px;
+  width: 12%;
+  border-radius: 4px;
+  border: 1px solid black;
+}
+
+#homepage_about_section #home_about_info #home_about_info_contact3 #home_location {
+  float: right;
+  height: 50px;
+  width: 83%;
+  border: none;
+  height: 70px;
+}
+
+#homepage_about_section #home_about_info #home_about_info_contact3 #home_location h4 {
+  margin-top: 10px;
+}
+
+#homepage_about_section #home_about_info #home_about_info_contact3 #home_location h4 {
+  margin-top: 0;
+}
+
+#homepage_about_section #home_about_links {
+  grid-area: home_about_links;
+  border: none;
+  margin-left: 100px;
+}
+
+#homepage_about_section #home_about_links ul {
+  margin-top: 20px;
+}
+
+#homepage_about_section #home_about_links ul li {
+  margin-top: 10px;
+  list-style: square;
+}
+
+#homepage_about_section #home_about_links ul li a {
+  color: #333;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: all 0.4s;
+}
+
+#homepage_about_section #home_about_links ul li a:hover {
+  border-color: black;
+  transition: all 0.4s;
+}
+
+#homepage_about_section #home_about_support {
+  grid-area: home_about_support;
+  border: none;
+  margin-left: 100px;
+}
+
+#homepage_about_section #home_about_support ul {
+  margin-top: 20px;
+}
+
+#homepage_about_section #home_about_support ul li {
+  margin-top: 10px;
+  list-style: square;
+}
+
+#homepage_about_section #home_about_support ul li a {
+  color: #333;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: all 0.4s;
+}
+
+#homepage_about_section #home_about_support ul li a:hover {
+  border-color: black;
+  transition: all 0.4s;
+}
+
+#footer {
+  grid-area: footer;
+  background: #e1918a;
+  font-family: 'Poppins';
+  color: white;
+  padding: 12px;
+}
+
+#footer h3 {
+  margin-left: 100px;
+  float: left;
+}
+
+#footer #footer_icons {
+  float: right;
+  height: 30px;
+  width: 50%;
+}
+
+#footer #footer_icons h3 {
+  float: left;
+}
+
+#footer #footer_icons img {
+  height: 25px;
+  margin-left: 30px;
+  float: left;
 }
 
 @media only screen and (min-device-width: 1px) and (max-device-width: 499px) and (-webkit-min-device-pixel-ratio: 2) {
