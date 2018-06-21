@@ -1,0 +1,60 @@
+#about_grid_container{
+    display: grid;
+    grid-template-areas: 'navbar'
+    'the_section1'
+    'about_intro_info'
+    ;
+    grid-template-columns: 1fr;
+}
+
+#the_section1{
+    grid-area: the_section1;
+    @include headerSection;
+}
+
+#about_intro_info{
+    grid-area: about_intro_info;
+    border: $borderSettings;
+    height: 350px;
+    margin-top: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+    display: grid;
+    grid-template-areas: 'about_intro_text about_intro_img';
+    grid-template-columns: 1fr 40%;
+    grid-gap: 20px;
+
+    #about_intro_text{
+        grid-area: about_intro_text;
+        border: $borderSettings;
+        font-family: 'Poppins';
+
+        h3{
+            font-size: 1.5em;
+            border-bottom: 1px solid black;
+            width: 40%;
+
+            #solid_border{
+                border-bottom: 3px solid $themeColor;
+            }
+        }
+        h5{
+            margin-top: 30px;
+            font-weight: lighter;
+            font-size: 1em;
+        }
+        button{
+            @include readMoreButton;
+        }
+    }
+
+    #about_intro_img{
+        grid-area: about_intro_img;
+        border: $borderSettings;
+
+        img{
+            height: 100%;
+            width: 100%;
+        }
+    }
+}

@@ -151,3 +151,25 @@
     background: white;
     // transition: all 0.5s;
 }
+
+@mixin headerSection{
+    height: 250px;
+    background: rgb(235, 235, 235);
+    font-family: 'Poppins';
+    text-align: center;
+    color: $contactTextColor;
+
+    h2{
+        margin-top: 70px;
+        font-size: 1.8em;
+    }
+
+    h4{
+        margin-top: 10px;
+    }
+
+    a{
+        color: $themeColor;
+        text-decoration: none;
+    }
+}

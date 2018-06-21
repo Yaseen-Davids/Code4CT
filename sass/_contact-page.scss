@@ -1,7 +1,7 @@
 #contact_grid_container{
     display: grid;
     grid-template-areas: 'navbar'
-    'contact_section1'
+    'the_section1'
     'contact_form_box'
     'contact_map_box'
     'homepage_about_section'
@@ -10,27 +10,9 @@
     grid-template-columns: 1fr;
 }
 
-#contact_section1{
-    grid-area: contact_section1;
-    height: 250px;
-    background: rgb(235, 235, 235);
-    font-family: 'Poppins';
-    text-align: center;
-    color: $contactTextColor;
-
-    h2{
-        margin-top: 70px;
-        font-size: 1.8em;
-    }
-
-    h4{
-        margin-top: 10px;
-    }
-
-    a{
-        color: $themeColor;
-        text-decoration: none;
-    }
+#the_section1{
+    grid-area: the_section1;
+    @include headerSection;
 }
 
 #contact_form_box{

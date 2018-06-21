@@ -20,7 +20,7 @@
 
 #navbar {
   grid-area: navbar;
-  border: none;
+  border: 1px solid black;
   height: 90px;
   padding: 5px;
   position: sticky;
@@ -33,7 +33,7 @@
 #navbar #nav_logo {
   margin-left: 20px;
   height: 90px;
-  border: none;
+  border: 1px solid black;
   float: left;
   width: 25%;
   background: url("../images/code4ct_logo.jpg");
@@ -47,7 +47,7 @@
   margin-right: 20px;
   height: 70px;
   float: right;
-  border: none;
+  border: 1px solid black;
   width: 15%;
 }
 
@@ -73,7 +73,7 @@
   visibility: visible;
   margin-right: 10px;
   height: 75px;
-  border: none;
+  border: 1px solid black;
   float: right;
   width: 65%;
   padding: 5px;
@@ -83,7 +83,7 @@
 #navbar #nav_links #links_box {
   width: 65%;
   height: 40px;
-  border: none;
+  border: 1px solid black;
   margin-top: 20px;
   float: left;
 }
@@ -127,7 +127,7 @@
 #navbar #nav_links #search_box {
   width: 33%;
   height: 40px;
-  border: none;
+  border: 1px solid black;
   margin-top: 20px;
   float: right;
 }
@@ -165,7 +165,7 @@
 
 #the_slider {
   grid-area: the_slider;
-  border: none;
+  border: 1px solid black;
   height: 90vh;
   overflow: hidden;
   position: relative;
@@ -289,7 +289,7 @@
 
 #main_content {
   grid-area: main_content;
-  border: none;
+  border: 1px solid black;
   height: 450px;
   display: grid;
   grid-template-areas: 'intro_info intro_img';
@@ -303,7 +303,7 @@
 
 #main_content #intro_info {
   grid-area: intro_info;
-  border: none;
+  border: 1px solid black;
   height: 420px;
   font-family: 'Poppins';
 }
@@ -343,7 +343,7 @@
 
 #main_content #intro_img {
   grid-area: intro_img;
-  border: none;
+  border: 1px solid black;
   height: 420px;
   display: grid;
   grid-template-areas: 'intro_img1 intro_img2' 'intro_img3 intro_img4';
@@ -364,7 +364,7 @@
 
 #main_content #intro_img #intro_img1 {
   grid-area: intro_img1;
-  border: none;
+  border: 1px solid black;
   height: 195px;
   overflow: hidden;
   box-shadow: 5px 5px 10px grey;
@@ -372,7 +372,7 @@
 
 #main_content #intro_img #intro_img2 {
   grid-area: intro_img2;
-  border: none;
+  border: 1px solid black;
   height: 195px;
   overflow: hidden;
   box-shadow: 5px 5px 10px grey;
@@ -380,7 +380,7 @@
 
 #main_content #intro_img #intro_img3 {
   grid-area: intro_img3;
-  border: none;
+  border: 1px solid black;
   height: 195px;
   overflow: hidden;
   box-shadow: 5px 5px 10px grey;
@@ -388,7 +388,7 @@
 
 #main_content #intro_img #intro_img4 {
   grid-area: intro_img4;
-  border: none;
+  border: 1px solid black;
   height: 195px;
   overflow: hidden;
   box-shadow: 5px 5px 10px grey;
@@ -397,7 +397,7 @@
 #main_logo {
   grid-area: main_logo;
   height: 300px;
-  border: none;
+  border: 1px solid black;
   display: grid;
   grid-template-areas: 'logo_code logo_communication logo_solve logo_career';
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -413,7 +413,7 @@
 
 #main_logo #logo_code {
   grid-area: logo_code;
-  border: none;
+  border: 1px solid black;
 }
 
 #main_logo #logo_code #logo_img1 {
@@ -421,20 +421,20 @@
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  border: none;
+  border: 1px solid black;
   width: 100%;
   height: 100px;
 }
 
 #main_logo #logo_code #logo_header1 {
   margin-top: 10px;
-  border: none;
+  border: 1px solid black;
   width: 100%;
   height: 50px;
 }
 
 #main_logo #logo_code #logo_text1 {
-  border: none;
+  border: 1px solid black;
   width: 100%;
   height: 130px;
   margin-top: 10px;
@@ -442,12 +442,12 @@
 
 #main_logo #logo_communication {
   grid-area: logo_communication;
-  border: none;
+  border: 1px solid black;
 }
 
 #main_logo #logo_communication #logo_img2 {
   background: url("../images/speaker_logo.png");
-  border: none;
+  border: 1px solid black;
   width: 100%;
   height: 100px;
   background-size: contain;
@@ -457,13 +457,13 @@
 
 #main_logo #logo_communication #logo_header2 {
   margin-top: 10px;
-  border: none;
+  border: 1px solid black;
   width: 100%;
   height: 50px;
 }
 
 #main_logo #logo_communication #logo_text2 {
-  border: none;
+  border: 1px solid black;
   width: 100%;
   height: 130px;
   margin-top: 10px;
@@ -471,12 +471,12 @@
 
 #main_logo #logo_solve {
   grid-area: logo_solve;
-  border: none;
+  border: 1px solid black;
 }
 
 #main_logo #logo_solve #logo_img3 {
   background: url("../images/wrench_logo.png");
-  border: none;
+  border: 1px solid black;
   width: 100%;
   height: 100px;
   background-size: contain;
@@ -486,13 +486,13 @@
 
 #main_logo #logo_solve #logo_header3 {
   margin-top: 10px;
-  border: none;
+  border: 1px solid black;
   width: 100%;
   height: 50px;
 }
 
 #main_logo #logo_solve #logo_text3 {
-  border: none;
+  border: 1px solid black;
   width: 100%;
   height: 130px;
   margin-top: 10px;
@@ -500,12 +500,12 @@
 
 #main_logo #logo_career {
   grid-area: logo_career;
-  border: none;
+  border: 1px solid black;
 }
 
 #main_logo #logo_career #logo_img4 {
   background: url("../images/file_logo.png");
-  border: none;
+  border: 1px solid black;
   width: 100%;
   height: 100px;
   background-size: contain;
@@ -515,13 +515,13 @@
 
 #main_logo #logo_career #logo_header4 {
   margin-top: 10px;
-  border: none;
+  border: 1px solid black;
   width: 100%;
   height: 50px;
 }
 
 #main_logo #logo_career #logo_text4 {
-  border: none;
+  border: 1px solid black;
   width: 100%;
   height: 130px;
   margin-top: 10px;
@@ -529,7 +529,7 @@
 
 #home_portfolio {
   grid-area: home_portfolio;
-  border: none;
+  border: 1px solid black;
   height: 600px;
   margin-top: 100px;
   display: grid;
@@ -552,7 +552,7 @@
 
 #home_portfolio #home_portfolio_header {
   grid-area: home_portfolio_header;
-  border: none;
+  border: 1px solid black;
   height: 150px;
   font-family: 'Poppins';
 }
@@ -576,7 +576,7 @@
 
 #home_portfolio #home_portfolio_images {
   grid-area: home_portfolio_images;
-  border: none;
+  border: 1px solid black;
   height: 440px;
   display: grid;
   grid-template-areas: 'home_portfolio_gall home_portfolio_img5';
@@ -587,7 +587,7 @@
 
 #home_portfolio #home_portfolio_images #home_portfolio_img5 {
   grid-area: home_portfolio_img5;
-  border: none;
+  border: 1px solid black;
   overflow: hidden;
   box-shadow: 5px 5px 10px grey;
 }
@@ -605,7 +605,7 @@
 
 #home_portfolio #home_portfolio_images #home_portfolio_gall {
   grid-area: home_portfolio_gall;
-  border: none;
+  border: 1px solid black;
   display: grid;
   height: 440px;
   grid-template-areas: 'home_portfolio_img1 home_portfolio_img2' 'home_portfolio_img3 home_portfolio_img4';
@@ -615,35 +615,35 @@
 
 #home_portfolio #home_portfolio_images #home_portfolio_gall #home_portfolio_img1 {
   grid-area: home_portfolio_img1;
-  border: none;
+  border: 1px solid black;
   overflow: hidden;
   box-shadow: 5px 5px 10px grey;
 }
 
 #home_portfolio #home_portfolio_images #home_portfolio_gall #home_portfolio_img2 {
   grid-area: home_portfolio_img2;
-  border: none;
+  border: 1px solid black;
   overflow: hidden;
   box-shadow: 5px 5px 10px grey;
 }
 
 #home_portfolio #home_portfolio_images #home_portfolio_gall #home_portfolio_img3 {
   grid-area: home_portfolio_img3;
-  border: none;
+  border: 1px solid black;
   overflow: hidden;
   box-shadow: 5px 5px 10px grey;
 }
 
 #home_portfolio #home_portfolio_images #home_portfolio_gall #home_portfolio_img4 {
   grid-area: home_portfolio_img4;
-  border: none;
+  border: 1px solid black;
   overflow: hidden;
   box-shadow: 5px 5px 10px grey;
 }
 
 #the_team {
   grid-area: the_team;
-  border: none;
+  border: 1px solid black;
   height: 700px;
   margin-top: 150px;
   margin-left: 100px;
@@ -655,7 +655,7 @@
 
 #the_team #the_team_head {
   grid-area: the_team_head;
-  border: none;
+  border: 1px solid black;
   height: 150px;
   font-family: 'Poppins';
 }
@@ -672,7 +672,7 @@
 
 #the_team #the_team_members {
   grid-area: the_team_members;
-  border: none;
+  border: 1px solid black;
   height: 500px;
   margin-top: 10px;
   display: grid;
@@ -711,7 +711,7 @@
 
 #the_team #the_team_members #member_1 {
   grid-area: member_1;
-  border: none;
+  border: 1px solid black;
   display: grid;
   grid-template-areas: 'member1_img member1_info';
   grid-template-columns: 1fr 1fr;
@@ -721,7 +721,7 @@
 
 #the_team #the_team_members #member_1 #member1_img {
   grid-area: member1_img;
-  border: none;
+  border: 1px solid black;
   background: url("../images/emma_img.png");
   background-size: contain;
   background-position: center;
@@ -730,22 +730,22 @@
 
 #the_team #the_team_members #member_1 #member1_info {
   grid-area: member1_info;
-  border: none;
+  border: 1px solid black;
 }
 
 #the_team #the_team_members #member_1 #member1_info #emma_name {
-  border: none;
+  border: 1px solid black;
   height: 60px;
 }
 
 #the_team #the_team_members #member_1 #member1_info #emma_info {
-  border: none;
+  border: 1px solid black;
   height: 179px;
 }
 
 #the_team #the_team_members #member_2 {
   grid-area: member_2;
-  border: none;
+  border: 1px solid black;
   display: grid;
   grid-template-areas: 'member2_img member2_info';
   grid-template-columns: 1fr 1fr;
@@ -755,7 +755,7 @@
 
 #the_team #the_team_members #member_2 #member2_img {
   grid-area: member2_img;
-  border: none;
+  border: 1px solid black;
   background: url("../images/andrea_img.png");
   background-size: contain;
   background-position: center;
@@ -764,22 +764,22 @@
 
 #the_team #the_team_members #member_2 #member2_info {
   grid-area: member2_info;
-  border: none;
+  border: 1px solid black;
 }
 
 #the_team #the_team_members #member_2 #member2_info #andrea_name {
-  border: none;
+  border: 1px solid black;
   height: 60px;
 }
 
 #the_team #the_team_members #member_2 #member2_info #andrea_info {
-  border: none;
+  border: 1px solid black;
   height: 179px;
 }
 
 #the_team #the_team_members #member_3 {
   grid-area: member_3;
-  border: none;
+  border: 1px solid black;
   display: grid;
   grid-template-areas: 'member3_img member3_info';
   grid-template-columns: 1fr 1fr;
@@ -790,7 +790,7 @@
 
 #the_team #the_team_members #member_3 #member3_img {
   grid-area: member3_img;
-  border: none;
+  border: 1px solid black;
   background: url("../images/tegan_img.png");
   background-size: contain;
   background-position: center;
@@ -799,22 +799,22 @@
 
 #the_team #the_team_members #member_3 #member3_info {
   grid-area: member3_info;
-  border: none;
+  border: 1px solid black;
 }
 
 #the_team #the_team_members #member_3 #member3_info #tegan_name {
-  border: none;
+  border: 1px solid black;
   height: 60px;
 }
 
 #the_team #the_team_members #member_3 #member3_info #tegan_info {
-  border: none;
+  border: 1px solid black;
   height: 179px;
 }
 
 #the_team #the_team_members #member_4 {
   grid-area: member_4;
-  border: none;
+  border: 1px solid black;
   display: grid;
   grid-template-areas: 'member4_img member4_info';
   grid-template-columns: 1fr 1fr;
@@ -825,7 +825,7 @@
 
 #the_team #the_team_members #member_4 #member4_img {
   grid-area: member4_img;
-  border: none;
+  border: 1px solid black;
   background: url("../images/tracy_img.png");
   background-size: contain;
   background-position: center;
@@ -834,23 +834,23 @@
 
 #the_team #the_team_members #member_4 #member4_info {
   grid-area: member4_info;
-  border: none;
+  border: 1px solid black;
 }
 
 #the_team #the_team_members #member_4 #member4_info #tracy_name {
-  border: none;
+  border: 1px solid black;
   height: 60px;
 }
 
 #the_team #the_team_members #member_4 #member4_info #tracy_info {
-  border: none;
+  border: 1px solid black;
   height: 179px;
 }
 
 #statistic_section {
   grid-area: statistic_section;
   margin-top: 100px;
-  border: none;
+  border: 1px solid black;
   height: 200px;
   display: grid;
   grid-template-areas: 'statistic_box';
@@ -861,7 +861,7 @@
 
 #statistic_section #statistic_box {
   grid-area: statistic_box;
-  border: none;
+  border: 1px solid black;
   display: grid;
   grid-template-areas: 'number_coffee number_girls number_projects number_hours';
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -874,11 +874,11 @@
 
 #statistic_section #statistic_box #number_coffee {
   grid-area: number_coffee;
-  border: none;
+  border: 1px solid black;
 }
 
 #statistic_section #statistic_box #number_coffee #coffee_value {
-  border: none;
+  border: 1px solid black;
   height: 50px;
   font-size: 1.1em;
   border-top: 5px solid #e1918a;
@@ -897,18 +897,18 @@
 }
 
 #statistic_section #statistic_box #number_coffee #coffee_header {
-  border: none;
+  border: 1px solid black;
   height: 50px;
   font-size: 1.1em;
 }
 
 #statistic_section #statistic_box #number_girls {
   grid-area: number_girls;
-  border: none;
+  border: 1px solid black;
 }
 
 #statistic_section #statistic_box #number_girls #girls_value {
-  border: none;
+  border: 1px solid black;
   height: 50px;
   font-size: 1.1em;
   border-top: 5px solid #e1918a;
@@ -927,18 +927,18 @@
 }
 
 #statistic_section #statistic_box #number_girls #girls_header {
-  border: none;
+  border: 1px solid black;
   height: 50px;
   font-size: 1.1em;
 }
 
 #statistic_section #statistic_box #number_projects {
   grid-area: number_projects;
-  border: none;
+  border: 1px solid black;
 }
 
 #statistic_section #statistic_box #number_projects #project_value {
-  border: none;
+  border: 1px solid black;
   height: 50px;
   font-size: 1.1em;
   border-top: 5px solid #e1918a;
@@ -957,18 +957,18 @@
 }
 
 #statistic_section #statistic_box #number_projects #project_header {
-  border: none;
+  border: 1px solid black;
   height: 50px;
   font-size: 1.1em;
 }
 
 #statistic_section #statistic_box #number_hours {
   grid-area: number_hours;
-  border: none;
+  border: 1px solid black;
 }
 
 #statistic_section #statistic_box #number_hours #hours_value {
-  border: none;
+  border: 1px solid black;
   height: 50px;
   font-size: 1.1em;
   border-top: 5px solid #e1918a;
@@ -987,7 +987,7 @@
 }
 
 #statistic_section #statistic_box #number_hours #hours_header {
-  border: none;
+  border: 1px solid black;
   height: 50px;
   font-size: 1.1em;
 }
@@ -995,7 +995,7 @@
 #subscribe_box {
   grid-area: subscribe_box;
   height: 200px;
-  border: none;
+  border: 1px solid black;
   margin-top: 20px;
   font-family: 'OpenSans';
   font-size: 1.2em;
@@ -1007,7 +1007,7 @@
   height: 200px;
   margin-left: 300px;
   margin-right: 300px;
-  border: none;
+  border: 1px solid black;
 }
 
 #subscribe_box #subscribe_box_content h3 {
@@ -1021,7 +1021,7 @@
 }
 
 #subscribe_box #subscribe_box_content #the_subscribeform {
-  border: none;
+  border: 1px solid black;
   height: auto;
   margin-top: 20px;
   padding: 5px;
@@ -1052,7 +1052,7 @@
 #sponsor_carousel {
   grid-area: sponsor_carousel;
   height: 150px;
-  border: none;
+  border: 1px solid black;
   margin-top: 20px;
   overflow: hidden;
   padding: 10px;
@@ -1068,7 +1068,7 @@
 #sponsor_carousel .sponsor_logo {
   height: 150px;
   width: 200px;
-  border: none;
+  border: 1px solid black;
   position: absolute;
 }
 
@@ -1120,7 +1120,7 @@
   margin-top: 100px;
   margin-bottom: 100px;
   grid-gap: 10px;
-  border: none;
+  border: 1px solid black;
   display: grid;
   grid-template-areas: 'home_about_info home_about_links home_about_support';
   grid-template-columns: 1fr 1fr 1fr;
@@ -1142,13 +1142,13 @@
 
 #homepage_about_section #home_about_info #home_about_info_header {
   height: 50px;
-  border: none;
+  border: 1px solid black;
 }
 
 #homepage_about_section #home_about_info #home_about_info_contact1 {
   margin-top: 10px;
   height: 50px;
-  border: none;
+  border: 1px solid black;
 }
 
 #homepage_about_section #home_about_info #home_about_info_contact1 #home_phone_logo {
@@ -1163,7 +1163,7 @@
   float: right;
   height: 50px;
   width: 83%;
-  border: none;
+  border: 1px solid black;
 }
 
 #homepage_about_section #home_about_info #home_about_info_contact1 #home_phone_number h4 {
@@ -1173,7 +1173,7 @@
 #homepage_about_section #home_about_info #home_about_info_contact2 {
   margin-top: 10px;
   height: 50px;
-  border: none;
+  border: 1px solid black;
 }
 
 #homepage_about_section #home_about_info #home_about_info_contact2 #home_email_logo {
@@ -1188,7 +1188,7 @@
   float: right;
   height: 50px;
   width: 83%;
-  border: none;
+  border: 1px solid black;
 }
 
 #homepage_about_section #home_about_info #home_about_info_contact2 #home_email_address h4 {
@@ -1198,7 +1198,7 @@
 #homepage_about_section #home_about_info #home_about_info_contact3 {
   margin-top: 10px;
   height: 50px;
-  border: none;
+  border: 1px solid black;
   height: 70px;
 }
 
@@ -1214,7 +1214,7 @@
   float: right;
   height: 50px;
   width: 83%;
-  border: none;
+  border: 1px solid black;
   height: 70px;
 }
 
@@ -1228,7 +1228,7 @@
 
 #homepage_about_section #home_about_links {
   grid-area: home_about_links;
-  border: none;
+  border: 1px solid black;
   margin-left: 100px;
 }
 
@@ -1255,7 +1255,7 @@
 
 #homepage_about_section #home_about_support {
   grid-area: home_about_support;
-  border: none;
+  border: 1px solid black;
   margin-left: 100px;
 }
 
@@ -1361,7 +1361,7 @@
   }
   #the_slider {
     grid-area: the_slider;
-    border: none;
+    border: 1px solid black;
     height: 90vh;
     overflow: hidden;
   }
@@ -1527,20 +1527,20 @@
   }
   #main_logo #logo_code {
     grid-area: logo_code;
-    border: none;
+    border: 1px solid black;
   }
   #main_logo #logo_code #logo_img1 {
     background: url("../images/laptop_logo.png");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    border: none;
+    border: 1px solid black;
     width: 100%;
     height: 100px;
   }
   #main_logo #logo_code #logo_header1 {
     margin-top: 10px;
-    border: none;
+    border: 1px solid black;
     width: 100%;
     height: 50px;
     height: 40px;
@@ -1550,7 +1550,7 @@
   }
   #main_logo #logo_communication {
     grid-area: logo_communication;
-    border: none;
+    border: 1px solid black;
     margin-top: 50px;
   }
   #main_logo #logo_communication #logo_img2 {
@@ -1558,13 +1558,13 @@
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    border: none;
+    border: 1px solid black;
     width: 100%;
     height: 100px;
   }
   #main_logo #logo_communication #logo_header2 {
     margin-top: 10px;
-    border: none;
+    border: 1px solid black;
     width: 100%;
     height: 50px;
     height: 40px;
@@ -1574,12 +1574,12 @@
   }
   #main_logo #logo_solve {
     grid-area: logo_solve;
-    border: none;
+    border: 1px solid black;
     margin-top: 50px;
   }
   #main_logo #logo_solve #logo_img3 {
     background: url("../images/wrench_logo.png");
-    border: none;
+    border: 1px solid black;
     width: 100%;
     height: 100px;
     background-size: contain;
@@ -1588,7 +1588,7 @@
   }
   #main_logo #logo_solve #logo_header3 {
     margin-top: 10px;
-    border: none;
+    border: 1px solid black;
     width: 100%;
     height: 50px;
     height: 40px;
@@ -1598,12 +1598,12 @@
   }
   #main_logo #logo_career {
     grid-area: logo_career;
-    border: none;
+    border: 1px solid black;
     margin-top: 50px;
   }
   #main_logo #logo_career #logo_img4 {
     background: url("../images/file_logo.png");
-    border: none;
+    border: 1px solid black;
     width: 100%;
     height: 100px;
     background-size: contain;
@@ -1612,7 +1612,7 @@
   }
   #main_logo #logo_career #logo_header4 {
     margin-top: 10px;
-    border: none;
+    border: 1px solid black;
     width: 100%;
     height: 50px;
     height: 40px;
@@ -1692,7 +1692,7 @@
   }
   #the_team #the_team_head {
     grid-area: the_team_head;
-    border: none;
+    border: 1px solid black;
     height: 150px;
     font-family: 'Poppins';
   }
@@ -1706,7 +1706,7 @@
   }
   #the_team #the_team_members {
     grid-area: the_team_members;
-    border: none;
+    border: 1px solid black;
     height: 1050px;
     margin-top: 10px;
     display: grid;
@@ -1716,7 +1716,7 @@
   }
   #the_team #the_team_members #member_1 {
     grid-area: member_1;
-    border: none;
+    border: 1px solid black;
     display: grid;
     grid-template-areas: 'member1_img member1_info';
     grid-template-columns: 1fr 1fr;
@@ -1725,7 +1725,7 @@
   }
   #the_team #the_team_members #member_1 #member1_img {
     grid-area: member1_img;
-    border: none;
+    border: 1px solid black;
     background: url("../images/emma_img.png");
     background-size: contain;
     background-position: center;
@@ -1733,19 +1733,19 @@
   }
   #the_team #the_team_members #member_1 #member1_info {
     grid-area: member1_info;
-    border: none;
+    border: 1px solid black;
   }
   #the_team #the_team_members #member_1 #member1_info #emma_name {
-    border: none;
+    border: 1px solid black;
     height: 60px;
   }
   #the_team #the_team_members #member_1 #member1_info #emma_info {
-    border: none;
+    border: 1px solid black;
     height: 179px;
   }
   #the_team #the_team_members #member_2 {
     grid-area: member_2;
-    border: none;
+    border: 1px solid black;
     display: grid;
     grid-template-areas: 'member2_img member2_info';
     grid-template-columns: 1fr 1fr;
@@ -1754,7 +1754,7 @@
   }
   #the_team #the_team_members #member_2 #member2_img {
     grid-area: member2_img;
-    border: none;
+    border: 1px solid black;
     background: url("../images/andrea_img.png");
     background-size: contain;
     background-position: center;
@@ -1762,19 +1762,19 @@
   }
   #the_team #the_team_members #member_2 #member2_info {
     grid-area: member2_info;
-    border: none;
+    border: 1px solid black;
   }
   #the_team #the_team_members #member_2 #member2_info #andrea_name {
-    border: none;
+    border: 1px solid black;
     height: 60px;
   }
   #the_team #the_team_members #member_2 #member2_info #andrea_info {
-    border: none;
+    border: 1px solid black;
     height: 179px;
   }
   #the_team #the_team_members #member_3 {
     grid-area: member_3;
-    border: none;
+    border: 1px solid black;
     display: grid;
     grid-template-areas: 'member3_img member3_info';
     grid-template-columns: 1fr 1fr;
@@ -1783,7 +1783,7 @@
   }
   #the_team #the_team_members #member_3 #member3_img {
     grid-area: member3_img;
-    border: none;
+    border: 1px solid black;
     background: url("../images/tegan_img.png");
     background-size: contain;
     background-position: center;
@@ -1791,19 +1791,19 @@
   }
   #the_team #the_team_members #member_3 #member3_info {
     grid-area: member3_info;
-    border: none;
+    border: 1px solid black;
   }
   #the_team #the_team_members #member_3 #member3_info #tegan_name {
-    border: none;
+    border: 1px solid black;
     height: 60px;
   }
   #the_team #the_team_members #member_3 #member3_info #tegan_info {
-    border: none;
+    border: 1px solid black;
     height: 179px;
   }
   #the_team #the_team_members #member_4 {
     grid-area: member_4;
-    border: none;
+    border: 1px solid black;
     display: grid;
     grid-template-areas: 'member4_img member4_info';
     grid-template-columns: 1fr 1fr;
@@ -1812,7 +1812,7 @@
   }
   #the_team #the_team_members #member_4 #member4_img {
     grid-area: member4_img;
-    border: none;
+    border: 1px solid black;
     background: url("../images/tracy_img.png");
     background-size: contain;
     background-position: center;
@@ -1820,14 +1820,14 @@
   }
   #the_team #the_team_members #member_4 #member4_info {
     grid-area: member4_info;
-    border: none;
+    border: 1px solid black;
   }
   #the_team #the_team_members #member_4 #member4_info #tracy_name {
-    border: none;
+    border: 1px solid black;
     height: 60px;
   }
   #the_team #the_team_members #member_4 #member4_info #tracy_info {
-    border: none;
+    border: 1px solid black;
     height: 179px;
   }
   #statistic_section {
@@ -1951,7 +1951,7 @@
   }
   #the_slider {
     grid-area: the_slider;
-    border: none;
+    border: 1px solid black;
     height: 90vh;
     overflow: hidden;
   }
@@ -2329,12 +2329,12 @@
 
 #contact_grid_container {
   display: grid;
-  grid-template-areas: 'navbar' 'contact_section1' 'contact_form_box' 'contact_map_box' 'homepage_about_section' 'footer';
+  grid-template-areas: 'navbar' 'the_section1' 'contact_form_box' 'contact_map_box' 'homepage_about_section' 'footer';
   grid-template-columns: 1fr;
 }
 
-#contact_section1 {
-  grid-area: contact_section1;
+#the_section1 {
+  grid-area: the_section1;
   height: 250px;
   background: #ebebeb;
   font-family: 'Poppins';
@@ -2342,23 +2342,23 @@
   color: #636363;
 }
 
-#contact_section1 h2 {
+#the_section1 h2 {
   margin-top: 70px;
   font-size: 1.8em;
 }
 
-#contact_section1 h4 {
+#the_section1 h4 {
   margin-top: 10px;
 }
 
-#contact_section1 a {
+#the_section1 a {
   color: #e1918a;
   text-decoration: none;
 }
 
 #contact_form_box {
   grid-area: contact_form_box;
-  border: none;
+  border: 1px solid black;
   margin-left: 100px;
   margin-right: 100px;
   margin-top: 70px;
@@ -2371,7 +2371,7 @@
 }
 
 #contact_form_box h2 {
-  border: none;
+  border: 1px solid black;
   color: #636363;
   border-bottom: 1px solid #636363;
   width: 45%;
@@ -2383,12 +2383,12 @@
 
 #contact_form_box #contact_form {
   grid-area: contact_form;
-  border: none;
+  border: 1px solid black;
 }
 
 #contact_form_box #contact_form #contact_input {
   margin-top: 20px;
-  border: none;
+  border: 1px solid black;
   height: 300px;
 }
 
@@ -2438,7 +2438,7 @@
 
 #contact_form_box #contact_info {
   grid-area: contact_info;
-  border: none;
+  border: 1px solid black;
 }
 
 #contact_form_box #contact_info h4 {
@@ -2457,7 +2457,7 @@
 #contact_form_box #contact_info #contact_info_box #contact_info_contact1 {
   margin-top: 10px;
   height: 50px;
-  border: none;
+  border: 1px solid black;
 }
 
 #contact_form_box #contact_info #contact_info_box #contact_info_contact1 #contact_phone_logo {
@@ -2472,7 +2472,7 @@
   float: right;
   height: 50px;
   width: 83%;
-  border: none;
+  border: 1px solid black;
 }
 
 #contact_form_box #contact_info #contact_info_box #contact_info_contact1 #contact_phone_number h4 {
@@ -2482,7 +2482,7 @@
 #contact_form_box #contact_info #contact_info_box #contact_info_contact2 {
   margin-top: 10px;
   height: 50px;
-  border: none;
+  border: 1px solid black;
 }
 
 #contact_form_box #contact_info #contact_info_box #contact_info_contact2 #contact_email_logo {
@@ -2497,7 +2497,7 @@
   float: right;
   height: 50px;
   width: 83%;
-  border: none;
+  border: 1px solid black;
 }
 
 #contact_form_box #contact_info #contact_info_box #contact_info_contact2 #contact_email_address h4 {
@@ -2507,7 +2507,7 @@
 #contact_form_box #contact_info #contact_info_box #contact_info_contact3 {
   margin-top: 10px;
   height: 50px;
-  border: none;
+  border: 1px solid black;
 }
 
 #contact_form_box #contact_info #contact_info_box #contact_info_contact3 #contact_location_logo {
@@ -2522,7 +2522,7 @@
   float: right;
   height: 50px;
   width: 83%;
-  border: none;
+  border: 1px solid black;
 }
 
 #contact_form_box #contact_info #contact_info_box #contact_info_contact3 #contact_location h4 {
@@ -2536,7 +2536,7 @@
 #contact_form_box #contact_info #contact_info_box #contact_info_contact4 {
   margin-top: 10px;
   height: 50px;
-  border: none;
+  border: 1px solid black;
 }
 
 #contact_form_box #contact_info #contact_info_box #contact_info_contact4 #contact_time_logo {
@@ -2551,7 +2551,7 @@
   float: right;
   height: 50px;
   width: 83%;
-  border: none;
+  border: 1px solid black;
 }
 
 #contact_form_box #contact_info #contact_info_box #contact_info_contact4 #contact_time h4 {
@@ -2564,9 +2564,100 @@
 
 #contact_map_box {
   grid-area: contact_map_box;
-  border: none;
+  border: 1px solid black;
   margin-top: 70px;
   height: 400px;
   background: grey;
+}
+
+#about_grid_container {
+  display: grid;
+  grid-template-areas: 'navbar' 'the_section1' 'about_intro_info';
+  grid-template-columns: 1fr;
+}
+
+#the_section1 {
+  grid-area: the_section1;
+  height: 250px;
+  background: #ebebeb;
+  font-family: 'Poppins';
+  text-align: center;
+  color: #636363;
+}
+
+#the_section1 h2 {
+  margin-top: 70px;
+  font-size: 1.8em;
+}
+
+#the_section1 h4 {
+  margin-top: 10px;
+}
+
+#the_section1 a {
+  color: #e1918a;
+  text-decoration: none;
+}
+
+#about_intro_info {
+  grid-area: about_intro_info;
+  border: 1px solid black;
+  height: 350px;
+  margin-top: 100px;
+  margin-left: 100px;
+  margin-right: 100px;
+  display: grid;
+  grid-template-areas: 'about_intro_text about_intro_img';
+  grid-template-columns: 1fr 40%;
+  grid-gap: 20px;
+}
+
+#about_intro_info #about_intro_text {
+  grid-area: about_intro_text;
+  border: 1px solid black;
+  font-family: 'Poppins';
+}
+
+#about_intro_info #about_intro_text h3 {
+  font-size: 1.5em;
+  border-bottom: 1px solid black;
+  width: 40%;
+}
+
+#about_intro_info #about_intro_text h3 #solid_border {
+  border-bottom: 3px solid #e1918a;
+}
+
+#about_intro_info #about_intro_text h5 {
+  margin-top: 30px;
+  font-weight: lighter;
+  font-size: 1em;
+}
+
+#about_intro_info #about_intro_text button {
+  margin-top: 20px;
+  border: none;
+  outline: none;
+  background: #e1918a;
+  color: white;
+  width: 100px;
+  height: 40px;
+  font-family: 'Poppins';
+  transition: width 0.6s;
+}
+
+#about_intro_info #about_intro_text button:hover {
+  transition: width 0.6s;
+  width: 110px;
+}
+
+#about_intro_info #about_intro_img {
+  grid-area: about_intro_img;
+  border: 1px solid black;
+}
+
+#about_intro_info #about_intro_img img {
+  height: 100%;
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */
