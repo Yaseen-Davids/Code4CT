@@ -182,8 +182,9 @@
 #the_slider{
     grid-area: the_slider;
     border: $borderSettings;
-    height: 100vh;
+    height: 90vh;
     overflow: hidden; 
+    position: relative;
 
     // This is the slider box
     #slider_box{
@@ -192,69 +193,43 @@
         // This is image 1 of the slider
         #img_1{
             margin-left: 0vw;
+            position: absolute;
         }
 
         // This is image 2 of the slider
         #img_2{
-            margin-left: -100vw;
+            margin-left: 0vw;
             display: none;
+            position: absolute;
         }
 
         // This is image 3 of the slider
         #img_3{
-            margin-left: -100vw;
+            margin-left: 0vw;
             display: none;
-        }
-
-        // This is image 4 of the slider
-        #img_4{
-            margin-left: -100vw;
-            display: none;
-        }
-
-        // This is the back button slider
-        #back_slide{
             position: absolute;
-            width: 0;
-            height: 0;
-            border-top: 35px solid transparent;
-            border-right: 50px solid white;
-            border-bottom: 35px solid transparent;
-            border-radius: 5px;            
-            top: 430px;
-            left: 20px;
-            background: transparent;
-            transition: all 0.3s;
-
-            &:hover{
-                transition: all 0.3s;                
-                border-right-color: black;
-            }
         }
 
-        // This is the next button slider
-        #next_slide{
-            position: absolute;
-            width: 0;
-            height: 0;
-            border-top: 35px solid transparent;
-            border-left: 50px solid white;
-            border-bottom: 35px solid transparent;
-            border-radius: 5px;
-            top: 430px;
-            right: 20px;
-            transition: all 0.3s;
-
-            &:hover{
-                transition: all 0.3s;                
-                border-left-color: black;
-            }
+        // Slide button 1 
+        #slideBtn_1{
+            @include sliderBtns; 
+            margin-left: 42%; 
+        }
+        // Slide button 2
+        #slideBtn_2{
+            @include sliderBtns;  
+            margin-left: 47%; 
+        }
+        // Slide button 3
+        #slideBtn_3{
+            @include sliderBtns;  
+            margin-left: 52%; 
         }
     }
 
     // This is the image properties of the slider
     img{
-        height: 100vh;
+        height: 100%;
         width: 100vw;
     }
 }
@@ -1010,7 +985,7 @@
     margin-left: 150px;
     margin-right: 150px;
     margin-top: 100px;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
     grid-gap: 10px;
     border: $borderSettings;
     display: grid;
@@ -1119,3 +1094,5 @@
 }
 
 @import 'homepage-responsive';
+
+@import 'contact-page';

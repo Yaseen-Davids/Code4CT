@@ -166,8 +166,9 @@
 #the_slider {
   grid-area: the_slider;
   border: none;
-  height: 100vh;
+  height: 90vh;
   overflow: hidden;
+  position: relative;
 }
 
 #the_slider #slider_box {
@@ -176,62 +177,50 @@
 
 #the_slider #slider_box #img_1 {
   margin-left: 0vw;
+  position: absolute;
 }
 
 #the_slider #slider_box #img_2 {
-  margin-left: -100vw;
+  margin-left: 0vw;
   display: none;
+  position: absolute;
 }
 
 #the_slider #slider_box #img_3 {
-  margin-left: -100vw;
+  margin-left: 0vw;
   display: none;
-}
-
-#the_slider #slider_box #img_4 {
-  margin-left: -100vw;
-  display: none;
-}
-
-#the_slider #slider_box #back_slide {
   position: absolute;
-  width: 0;
-  height: 0;
-  border-top: 35px solid transparent;
-  border-right: 50px solid white;
-  border-bottom: 35px solid transparent;
-  border-radius: 5px;
-  top: 430px;
-  left: 20px;
-  background: transparent;
-  transition: all 0.3s;
 }
 
-#the_slider #slider_box #back_slide:hover {
-  transition: all 0.3s;
-  border-right-color: black;
-}
-
-#the_slider #slider_box #next_slide {
+#the_slider #slider_box #slideBtn_1 {
   position: absolute;
-  width: 0;
-  height: 0;
-  border-top: 35px solid transparent;
-  border-left: 50px solid white;
-  border-bottom: 35px solid transparent;
-  border-radius: 5px;
-  top: 430px;
-  right: 20px;
-  transition: all 0.3s;
+  top: 500px;
+  height: 30px;
+  width: 50px;
+  background: white;
+  margin-left: 42%;
 }
 
-#the_slider #slider_box #next_slide:hover {
-  transition: all 0.3s;
-  border-left-color: black;
+#the_slider #slider_box #slideBtn_2 {
+  position: absolute;
+  top: 500px;
+  height: 30px;
+  width: 50px;
+  background: white;
+  margin-left: 47%;
+}
+
+#the_slider #slider_box #slideBtn_3 {
+  position: absolute;
+  top: 500px;
+  height: 30px;
+  width: 50px;
+  background: white;
+  margin-left: 52%;
 }
 
 #the_slider img {
-  height: 100vh;
+  height: 100%;
   width: 100vw;
 }
 
@@ -1129,7 +1118,7 @@
   margin-left: 150px;
   margin-right: 150px;
   margin-top: 100px;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
   grid-gap: 10px;
   border: none;
   display: grid;
@@ -1984,28 +1973,6 @@
     margin-left: -100vw;
     display: none;
   }
-  #the_slider #slider_box #back_slide {
-    position: absolute;
-    width: 0;
-    height: 0;
-    border-top: 15px solid transparent;
-    border-right: 25px solid white;
-    border-bottom: 15px solid transparent;
-    border-radius: 5px;
-    top: 350px;
-    left: 20px;
-  }
-  #the_slider #slider_box #next_slide {
-    position: absolute;
-    width: 0;
-    height: 0;
-    border-top: 15px solid transparent;
-    border-left: 25px solid white;
-    border-bottom: 15px solid transparent;
-    border-radius: 5px;
-    top: 350px;
-    right: 20px;
-  }
   #the_slider img {
     height: 80vh;
     width: 100%;
@@ -2358,5 +2325,248 @@
     font-size: 0.9em;
     font-weight: lighter;
   }
+}
+
+#contact_grid_container {
+  display: grid;
+  grid-template-areas: 'navbar' 'contact_section1' 'contact_form_box' 'contact_map_box' 'homepage_about_section' 'footer';
+  grid-template-columns: 1fr;
+}
+
+#contact_section1 {
+  grid-area: contact_section1;
+  height: 250px;
+  background: #ebebeb;
+  font-family: 'Poppins';
+  text-align: center;
+  color: #636363;
+}
+
+#contact_section1 h2 {
+  margin-top: 70px;
+  font-size: 1.8em;
+}
+
+#contact_section1 h4 {
+  margin-top: 10px;
+}
+
+#contact_section1 a {
+  color: #e1918a;
+  text-decoration: none;
+}
+
+#contact_form_box {
+  grid-area: contact_form_box;
+  border: none;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 70px;
+  height: 380px;
+  display: grid;
+  grid-template-areas: 'contact_form contact_info';
+  grid-template-columns: 1fr 35%;
+  grid-gap: 10px;
+  font-family: 'Poppins';
+}
+
+#contact_form_box h2 {
+  border: none;
+  color: #636363;
+  border-bottom: 1px solid #636363;
+  width: 45%;
+}
+
+#contact_form_box h2 #solid_border {
+  border-bottom: 3px solid #e1918a;
+}
+
+#contact_form_box #contact_form {
+  grid-area: contact_form;
+  border: none;
+}
+
+#contact_form_box #contact_form #contact_input {
+  margin-top: 20px;
+  border: none;
+  height: 300px;
+}
+
+#contact_form_box #contact_form #contact_input input {
+  padding: 8px;
+  width: 230px;
+  margin-right: 20px;
+  outline: none;
+}
+
+#contact_form_box #contact_form #contact_input input::placeholder {
+  font-family: 'Poppins';
+}
+
+#contact_form_box #contact_form #contact_input #yourPhone {
+  margin-right: 0px;
+}
+
+#contact_form_box #contact_form #contact_input #yourMessage {
+  margin-top: 20px;
+  height: 150px;
+  width: 786px;
+  outline: none;
+  padding: 5px;
+}
+
+#contact_form_box #contact_form #contact_input #yourMessage::placeholder {
+  font-family: 'Poppins';
+}
+
+#contact_form_box #contact_form #contact_input #contact_form_submitBtn {
+  margin-top: 20px;
+  border: none;
+  outline: none;
+  background: #e1918a;
+  color: white;
+  width: 100px;
+  height: 40px;
+  font-family: 'Poppins';
+  transition: width 0.6s;
+}
+
+#contact_form_box #contact_form #contact_input #contact_form_submitBtn:hover {
+  transition: width 0.6s;
+  width: 110px;
+}
+
+#contact_form_box #contact_info {
+  grid-area: contact_info;
+  border: none;
+}
+
+#contact_form_box #contact_info h4 {
+  font-weight: lighter;
+}
+
+#contact_form_box #contact_info img {
+  transform: scale(0.6);
+  height: 50px;
+}
+
+#contact_form_box #contact_info #contact_info_box {
+  margin-top: 20px;
+}
+
+#contact_form_box #contact_info #contact_info_box #contact_info_contact1 {
+  margin-top: 10px;
+  height: 50px;
+  border: none;
+}
+
+#contact_form_box #contact_info #contact_info_box #contact_info_contact1 #contact_phone_logo {
+  float: left;
+  height: 50px;
+  width: 12%;
+  border-radius: 4px;
+  border: 1px solid #616161;
+}
+
+#contact_form_box #contact_info #contact_info_box #contact_info_contact1 #contact_phone_number {
+  float: right;
+  height: 50px;
+  width: 83%;
+  border: none;
+}
+
+#contact_form_box #contact_info #contact_info_box #contact_info_contact1 #contact_phone_number h4 {
+  margin-top: 10px;
+}
+
+#contact_form_box #contact_info #contact_info_box #contact_info_contact2 {
+  margin-top: 10px;
+  height: 50px;
+  border: none;
+}
+
+#contact_form_box #contact_info #contact_info_box #contact_info_contact2 #contact_email_logo {
+  float: left;
+  height: 50px;
+  width: 12%;
+  border-radius: 4px;
+  border: 1px solid red;
+}
+
+#contact_form_box #contact_info #contact_info_box #contact_info_contact2 #contact_email_address {
+  float: right;
+  height: 50px;
+  width: 83%;
+  border: none;
+}
+
+#contact_form_box #contact_info #contact_info_box #contact_info_contact2 #contact_email_address h4 {
+  margin-top: 10px;
+}
+
+#contact_form_box #contact_info #contact_info_box #contact_info_contact3 {
+  margin-top: 10px;
+  height: 50px;
+  border: none;
+}
+
+#contact_form_box #contact_info #contact_info_box #contact_info_contact3 #contact_location_logo {
+  float: left;
+  height: 50px;
+  width: 12%;
+  border-radius: 4px;
+  border: 1px solid #616161;
+}
+
+#contact_form_box #contact_info #contact_info_box #contact_info_contact3 #contact_location {
+  float: right;
+  height: 50px;
+  width: 83%;
+  border: none;
+}
+
+#contact_form_box #contact_info #contact_info_box #contact_info_contact3 #contact_location h4 {
+  margin-top: 10px;
+}
+
+#contact_form_box #contact_info #contact_info_box #contact_info_contact3 #contact_location h4 {
+  margin-top: 0;
+}
+
+#contact_form_box #contact_info #contact_info_box #contact_info_contact4 {
+  margin-top: 10px;
+  height: 50px;
+  border: none;
+}
+
+#contact_form_box #contact_info #contact_info_box #contact_info_contact4 #contact_time_logo {
+  float: left;
+  height: 50px;
+  width: 12%;
+  border-radius: 4px;
+  border: 1px solid #616161;
+}
+
+#contact_form_box #contact_info #contact_info_box #contact_info_contact4 #contact_time {
+  float: right;
+  height: 50px;
+  width: 83%;
+  border: none;
+}
+
+#contact_form_box #contact_info #contact_info_box #contact_info_contact4 #contact_time h4 {
+  margin-top: 10px;
+}
+
+#contact_form_box #contact_info #contact_info_box #contact_info_contact4 #contact_time h4 {
+  margin-top: 10px;
+}
+
+#contact_map_box {
+  grid-area: contact_map_box;
+  border: none;
+  margin-top: 70px;
+  height: 400px;
+  background: grey;
 }
 /*# sourceMappingURL=style.css.map */
