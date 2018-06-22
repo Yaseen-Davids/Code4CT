@@ -3,6 +3,13 @@
     grid-template-areas: 'navbar'
     'the_section1'
     'about_intro_info'
+    'aboutUs_section'
+    'the_team'
+    'circle_percentages_bar'
+    'subscribe_box'
+    'sponsor_carousel'
+    'homepage_about_section'
+    'footer'
     ;
     grid-template-columns: 1fr;
 }
@@ -31,8 +38,9 @@
 
         h3{
             font-size: 1.5em;
-            border-bottom: 1px solid black;
+            border-bottom: 1px solid $contactTextColor;
             width: 40%;
+            color: $contactTextColor;
 
             #solid_border{
                 border-bottom: 3px solid $themeColor;
@@ -51,10 +59,121 @@
     #about_intro_img{
         grid-area: about_intro_img;
         border: $borderSettings;
+        overflow: hidden;
 
         img{
             height: 100%;
             width: 100%;
+            @include imageZoomHover;
         }
     }
+}
+
+#aboutUs_section{
+    grid-area: aboutUs_section;
+    border: $borderSettings;
+    margin-top: 100px;
+    height: 600px;
+    display: grid;
+    grid-template-areas: 'aboutUs_iframe aboutUs_info'
+    ;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    background: rgb(246, 246, 246);
+    font-family: 'Poppins';
+    // overflow: hidden;
+
+    #aboutUs_iframe{
+        grid-area: aboutUs_iframe;
+        height: 600px;
+
+        iframe{
+            margin-top: 50px;
+            height: 500px;
+            width: 100%;
+        }
+    }
+
+    #aboutUs_info{
+        grid-area: aboutUs_info;
+        border: $borderSettings;
+        margin-left: 20px;
+        margin-right: 50px;
+
+        h2{
+            color: $contactTextColor;
+            margin-top: 20px;
+            border-bottom: 1px solid $contactTextColor;
+            width: 35%;
+        }
+
+        h4{
+            margin-top: 20px;
+            font-weight: lighter;
+        }
+
+        #about_info_section1{
+            border: $borderSettings;
+            height: 200px;
+            margin-top: 20px;
+
+            h3{
+                color: $themeColor;
+            }
+
+            h4{
+                margin-top: 10px;
+                font-weight: lighter;
+            }
+
+            #about_vision{
+                border: $borderSettings;
+                height: 200px;  
+                float: left;
+                width: 49%;
+            }
+            #about_mission{
+                border: $borderSettings;
+                height: 200px;  
+                float: right;
+                width: 49%;
+            }
+        }
+
+        #about_info_section2{
+            border: $borderSettings;
+            height: 200px;
+            margin-top: 20px;
+
+            h3{
+                color: $themeColor;
+            }
+
+            h4{
+                margin-top: 10px;
+                font-weight: lighter;
+            }
+
+            #about_help{
+                border: $borderSettings;
+                height: 200px;  
+                float: left;
+                width: 49%;
+            }
+            #about_supports{
+                border: $borderSettings;
+                height: 200px;  
+                float: right;
+                width: 49%;
+            }
+        }
+    }
+}
+
+#circle_percentages_bar{
+    grid-area: circle_percentages_bar;
+    margin-top: 100px;
+    height: 200px;
+    border: $borderSettings;
+    background: black;
 }

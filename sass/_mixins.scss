@@ -35,10 +35,10 @@
 }
 
 @mixin imageZoomHover{
-    transition: all 0.5s;
+    transition: all 0.9s;
 
     &:hover{
-        transition: all 0.5s;                
+        transition: all 0.9s;                
         transform: scale(1.5);
     }
 }

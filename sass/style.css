@@ -20,7 +20,7 @@
 
 #navbar {
   grid-area: navbar;
-  border: 1px solid black;
+  border: none;
   height: 90px;
   padding: 5px;
   position: sticky;
@@ -33,7 +33,7 @@
 #navbar #nav_logo {
   margin-left: 20px;
   height: 90px;
-  border: 1px solid black;
+  border: none;
   float: left;
   width: 25%;
   background: url("../images/code4ct_logo.jpg");
@@ -47,7 +47,7 @@
   margin-right: 20px;
   height: 70px;
   float: right;
-  border: 1px solid black;
+  border: none;
   width: 15%;
 }
 
@@ -73,7 +73,7 @@
   visibility: visible;
   margin-right: 10px;
   height: 75px;
-  border: 1px solid black;
+  border: none;
   float: right;
   width: 70%;
   padding: 5px;
@@ -83,7 +83,7 @@
 #navbar #nav_links #links_box {
   width: 65%;
   height: 40px;
-  border: 1px solid black;
+  border: none;
   margin-top: 20px;
   float: left;
 }
@@ -127,7 +127,7 @@
 #navbar #nav_links #search_box {
   width: 33%;
   height: 40px;
-  border: 1px solid black;
+  border: none;
   margin-top: 20px;
   float: right;
 }
@@ -165,7 +165,7 @@
 
 #the_slider {
   grid-area: the_slider;
-  border: 1px solid black;
+  border: none;
   height: 90vh;
   overflow: hidden;
   position: relative;
@@ -289,7 +289,7 @@
 
 #main_content {
   grid-area: main_content;
-  border: 1px solid black;
+  border: none;
   height: 450px;
   display: grid;
   grid-template-areas: 'intro_info intro_img';
@@ -303,7 +303,7 @@
 
 #main_content #intro_info {
   grid-area: intro_info;
-  border: 1px solid black;
+  border: none;
   height: 420px;
   font-family: 'Poppins';
 }
@@ -343,7 +343,7 @@
 
 #main_content #intro_img {
   grid-area: intro_img;
-  border: 1px solid black;
+  border: none;
   height: 420px;
   display: grid;
   grid-template-areas: 'intro_img1 intro_img2' 'intro_img3 intro_img4';
@@ -354,17 +354,17 @@
 #main_content #intro_img img {
   height: 100%;
   width: 100%;
-  transition: all 0.5s;
+  transition: all 0.9s;
 }
 
 #main_content #intro_img img:hover {
-  transition: all 0.5s;
+  transition: all 0.9s;
   transform: scale(1.5);
 }
 
 #main_content #intro_img #intro_img1 {
   grid-area: intro_img1;
-  border: 1px solid black;
+  border: none;
   height: 195px;
   overflow: hidden;
   box-shadow: 5px 5px 10px grey;
@@ -372,7 +372,7 @@
 
 #main_content #intro_img #intro_img2 {
   grid-area: intro_img2;
-  border: 1px solid black;
+  border: none;
   height: 195px;
   overflow: hidden;
   box-shadow: 5px 5px 10px grey;
@@ -380,7 +380,7 @@
 
 #main_content #intro_img #intro_img3 {
   grid-area: intro_img3;
-  border: 1px solid black;
+  border: none;
   height: 195px;
   overflow: hidden;
   box-shadow: 5px 5px 10px grey;
@@ -388,7 +388,7 @@
 
 #main_content #intro_img #intro_img4 {
   grid-area: intro_img4;
-  border: 1px solid black;
+  border: none;
   height: 195px;
   overflow: hidden;
   box-shadow: 5px 5px 10px grey;
@@ -397,7 +397,7 @@
 #main_logo {
   grid-area: main_logo;
   height: 300px;
-  border: 1px solid black;
+  border: none;
   display: grid;
   grid-template-areas: 'logo_code logo_communication logo_solve logo_career';
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -413,7 +413,7 @@
 
 #main_logo #logo_code {
   grid-area: logo_code;
-  border: 1px solid black;
+  border: none;
 }
 
 #main_logo #logo_code #logo_img1 {
@@ -421,20 +421,20 @@
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  border: 1px solid black;
+  border: none;
   width: 100%;
   height: 100px;
 }
 
 #main_logo #logo_code #logo_header1 {
   margin-top: 10px;
-  border: 1px solid black;
+  border: none;
   width: 100%;
   height: 50px;
 }
 
 #main_logo #logo_code #logo_text1 {
-  border: 1px solid black;
+  border: none;
   width: 100%;
   height: 130px;
   margin-top: 10px;
@@ -442,12 +442,12 @@
 
 #main_logo #logo_communication {
   grid-area: logo_communication;
-  border: 1px solid black;
+  border: none;
 }
 
 #main_logo #logo_communication #logo_img2 {
   background: url("../images/speaker_logo.png");
-  border: 1px solid black;
+  border: none;
   width: 100%;
   height: 100px;
   background-size: contain;
@@ -457,13 +457,13 @@
 
 #main_logo #logo_communication #logo_header2 {
   margin-top: 10px;
-  border: 1px solid black;
+  border: none;
   width: 100%;
   height: 50px;
 }
 
 #main_logo #logo_communication #logo_text2 {
-  border: 1px solid black;
+  border: none;
   width: 100%;
   height: 130px;
   margin-top: 10px;
@@ -471,12 +471,12 @@
 
 #main_logo #logo_solve {
   grid-area: logo_solve;
-  border: 1px solid black;
+  border: none;
 }
 
 #main_logo #logo_solve #logo_img3 {
   background: url("../images/wrench_logo.png");
-  border: 1px solid black;
+  border: none;
   width: 100%;
   height: 100px;
   background-size: contain;
@@ -486,13 +486,13 @@
 
 #main_logo #logo_solve #logo_header3 {
   margin-top: 10px;
-  border: 1px solid black;
+  border: none;
   width: 100%;
   height: 50px;
 }
 
 #main_logo #logo_solve #logo_text3 {
-  border: 1px solid black;
+  border: none;
   width: 100%;
   height: 130px;
   margin-top: 10px;
@@ -500,12 +500,12 @@
 
 #main_logo #logo_career {
   grid-area: logo_career;
-  border: 1px solid black;
+  border: none;
 }
 
 #main_logo #logo_career #logo_img4 {
   background: url("../images/file_logo.png");
-  border: 1px solid black;
+  border: none;
   width: 100%;
   height: 100px;
   background-size: contain;
@@ -515,13 +515,13 @@
 
 #main_logo #logo_career #logo_header4 {
   margin-top: 10px;
-  border: 1px solid black;
+  border: none;
   width: 100%;
   height: 50px;
 }
 
 #main_logo #logo_career #logo_text4 {
-  border: 1px solid black;
+  border: none;
   width: 100%;
   height: 130px;
   margin-top: 10px;
@@ -529,7 +529,7 @@
 
 #home_portfolio {
   grid-area: home_portfolio;
-  border: 1px solid black;
+  border: none;
   height: 600px;
   margin-top: 100px;
   display: grid;
@@ -542,17 +542,17 @@
 #home_portfolio img {
   height: 220px;
   width: 100%;
-  transition: all 0.5s;
+  transition: all 0.9s;
 }
 
 #home_portfolio img:hover {
-  transition: all 0.5s;
+  transition: all 0.9s;
   transform: scale(1.5);
 }
 
 #home_portfolio #home_portfolio_header {
   grid-area: home_portfolio_header;
-  border: 1px solid black;
+  border: none;
   height: 150px;
   font-family: 'Poppins';
 }
@@ -576,7 +576,7 @@
 
 #home_portfolio #home_portfolio_images {
   grid-area: home_portfolio_images;
-  border: 1px solid black;
+  border: none;
   height: 440px;
   display: grid;
   grid-template-areas: 'home_portfolio_gall home_portfolio_img5';
@@ -587,7 +587,7 @@
 
 #home_portfolio #home_portfolio_images #home_portfolio_img5 {
   grid-area: home_portfolio_img5;
-  border: 1px solid black;
+  border: none;
   overflow: hidden;
   box-shadow: 5px 5px 10px grey;
 }
@@ -595,17 +595,17 @@
 #home_portfolio #home_portfolio_images #home_portfolio_img5 img {
   height: 440px;
   width: 100%;
-  transition: all 0.5s;
+  transition: all 0.9s;
 }
 
 #home_portfolio #home_portfolio_images #home_portfolio_img5 img:hover {
-  transition: all 0.5s;
+  transition: all 0.9s;
   transform: scale(1.5);
 }
 
 #home_portfolio #home_portfolio_images #home_portfolio_gall {
   grid-area: home_portfolio_gall;
-  border: 1px solid black;
+  border: none;
   display: grid;
   height: 440px;
   grid-template-areas: 'home_portfolio_img1 home_portfolio_img2' 'home_portfolio_img3 home_portfolio_img4';
@@ -615,36 +615,36 @@
 
 #home_portfolio #home_portfolio_images #home_portfolio_gall #home_portfolio_img1 {
   grid-area: home_portfolio_img1;
-  border: 1px solid black;
+  border: none;
   overflow: hidden;
   box-shadow: 5px 5px 10px grey;
 }
 
 #home_portfolio #home_portfolio_images #home_portfolio_gall #home_portfolio_img2 {
   grid-area: home_portfolio_img2;
-  border: 1px solid black;
+  border: none;
   overflow: hidden;
   box-shadow: 5px 5px 10px grey;
 }
 
 #home_portfolio #home_portfolio_images #home_portfolio_gall #home_portfolio_img3 {
   grid-area: home_portfolio_img3;
-  border: 1px solid black;
+  border: none;
   overflow: hidden;
   box-shadow: 5px 5px 10px grey;
 }
 
 #home_portfolio #home_portfolio_images #home_portfolio_gall #home_portfolio_img4 {
   grid-area: home_portfolio_img4;
-  border: 1px solid black;
+  border: none;
   overflow: hidden;
   box-shadow: 5px 5px 10px grey;
 }
 
 #the_team {
   grid-area: the_team;
-  border: 1px solid black;
-  height: 700px;
+  border: none;
+  height: 800px;
   margin-top: 150px;
   margin-left: 100px;
   margin-right: 100px;
@@ -655,7 +655,7 @@
 
 #the_team #the_team_head {
   grid-area: the_team_head;
-  border: 1px solid black;
+  border: none;
   height: 150px;
   font-family: 'Poppins';
 }
@@ -670,10 +670,17 @@
   border-bottom: 3px solid #e1918a;
 }
 
+#the_team #the_team_head h5 {
+  margin-top: 30px;
+  font-weight: lighter;
+  font-size: 1em;
+  margin-top: 15px;
+}
+
 #the_team #the_team_members {
   grid-area: the_team_members;
-  border: 1px solid black;
-  height: 500px;
+  border: none;
+  height: 600px;
   margin-top: 10px;
   display: grid;
   grid-template-areas: 'member_1 member_2' 'member_3 member_4';
@@ -711,7 +718,7 @@
 
 #the_team #the_team_members #member_1 {
   grid-area: member_1;
-  border: 1px solid black;
+  border: none;
   display: grid;
   grid-template-areas: 'member1_img member1_info';
   grid-template-columns: 1fr 1fr;
@@ -721,7 +728,7 @@
 
 #the_team #the_team_members #member_1 #member1_img {
   grid-area: member1_img;
-  border: 1px solid black;
+  border: none;
   background: url("../images/emma_img.png");
   background-size: contain;
   background-position: center;
@@ -730,22 +737,22 @@
 
 #the_team #the_team_members #member_1 #member1_info {
   grid-area: member1_info;
-  border: 1px solid black;
+  border: none;
 }
 
 #the_team #the_team_members #member_1 #member1_info #emma_name {
-  border: 1px solid black;
+  border: none;
   height: 60px;
 }
 
 #the_team #the_team_members #member_1 #member1_info #emma_info {
-  border: 1px solid black;
+  border: none;
   height: 179px;
 }
 
 #the_team #the_team_members #member_2 {
   grid-area: member_2;
-  border: 1px solid black;
+  border: none;
   display: grid;
   grid-template-areas: 'member2_img member2_info';
   grid-template-columns: 1fr 1fr;
@@ -755,7 +762,7 @@
 
 #the_team #the_team_members #member_2 #member2_img {
   grid-area: member2_img;
-  border: 1px solid black;
+  border: none;
   background: url("../images/andrea_img.png");
   background-size: contain;
   background-position: center;
@@ -764,22 +771,22 @@
 
 #the_team #the_team_members #member_2 #member2_info {
   grid-area: member2_info;
-  border: 1px solid black;
+  border: none;
 }
 
 #the_team #the_team_members #member_2 #member2_info #andrea_name {
-  border: 1px solid black;
+  border: none;
   height: 60px;
 }
 
 #the_team #the_team_members #member_2 #member2_info #andrea_info {
-  border: 1px solid black;
+  border: none;
   height: 179px;
 }
 
 #the_team #the_team_members #member_3 {
   grid-area: member_3;
-  border: 1px solid black;
+  border: none;
   display: grid;
   grid-template-areas: 'member3_img member3_info';
   grid-template-columns: 1fr 1fr;
@@ -790,7 +797,7 @@
 
 #the_team #the_team_members #member_3 #member3_img {
   grid-area: member3_img;
-  border: 1px solid black;
+  border: none;
   background: url("../images/tegan_img.png");
   background-size: contain;
   background-position: center;
@@ -799,22 +806,22 @@
 
 #the_team #the_team_members #member_3 #member3_info {
   grid-area: member3_info;
-  border: 1px solid black;
+  border: none;
 }
 
 #the_team #the_team_members #member_3 #member3_info #tegan_name {
-  border: 1px solid black;
+  border: none;
   height: 60px;
 }
 
 #the_team #the_team_members #member_3 #member3_info #tegan_info {
-  border: 1px solid black;
+  border: none;
   height: 179px;
 }
 
 #the_team #the_team_members #member_4 {
   grid-area: member_4;
-  border: 1px solid black;
+  border: none;
   display: grid;
   grid-template-areas: 'member4_img member4_info';
   grid-template-columns: 1fr 1fr;
@@ -825,7 +832,7 @@
 
 #the_team #the_team_members #member_4 #member4_img {
   grid-area: member4_img;
-  border: 1px solid black;
+  border: none;
   background: url("../images/tracy_img.png");
   background-size: contain;
   background-position: center;
@@ -834,23 +841,23 @@
 
 #the_team #the_team_members #member_4 #member4_info {
   grid-area: member4_info;
-  border: 1px solid black;
+  border: none;
 }
 
 #the_team #the_team_members #member_4 #member4_info #tracy_name {
-  border: 1px solid black;
+  border: none;
   height: 60px;
 }
 
 #the_team #the_team_members #member_4 #member4_info #tracy_info {
-  border: 1px solid black;
+  border: none;
   height: 179px;
 }
 
 #statistic_section {
   grid-area: statistic_section;
   margin-top: 100px;
-  border: 1px solid black;
+  border: none;
   height: 200px;
   display: grid;
   grid-template-areas: 'statistic_box';
@@ -861,7 +868,7 @@
 
 #statistic_section #statistic_box {
   grid-area: statistic_box;
-  border: 1px solid black;
+  border: none;
   display: grid;
   grid-template-areas: 'number_coffee number_girls number_projects number_hours';
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -874,11 +881,11 @@
 
 #statistic_section #statistic_box #number_coffee {
   grid-area: number_coffee;
-  border: 1px solid black;
+  border: none;
 }
 
 #statistic_section #statistic_box #number_coffee #coffee_value {
-  border: 1px solid black;
+  border: none;
   height: 50px;
   font-size: 1.1em;
   border-top: 5px solid #e1918a;
@@ -897,18 +904,18 @@
 }
 
 #statistic_section #statistic_box #number_coffee #coffee_header {
-  border: 1px solid black;
+  border: none;
   height: 50px;
   font-size: 1.1em;
 }
 
 #statistic_section #statistic_box #number_girls {
   grid-area: number_girls;
-  border: 1px solid black;
+  border: none;
 }
 
 #statistic_section #statistic_box #number_girls #girls_value {
-  border: 1px solid black;
+  border: none;
   height: 50px;
   font-size: 1.1em;
   border-top: 5px solid #e1918a;
@@ -927,18 +934,18 @@
 }
 
 #statistic_section #statistic_box #number_girls #girls_header {
-  border: 1px solid black;
+  border: none;
   height: 50px;
   font-size: 1.1em;
 }
 
 #statistic_section #statistic_box #number_projects {
   grid-area: number_projects;
-  border: 1px solid black;
+  border: none;
 }
 
 #statistic_section #statistic_box #number_projects #project_value {
-  border: 1px solid black;
+  border: none;
   height: 50px;
   font-size: 1.1em;
   border-top: 5px solid #e1918a;
@@ -957,18 +964,18 @@
 }
 
 #statistic_section #statistic_box #number_projects #project_header {
-  border: 1px solid black;
+  border: none;
   height: 50px;
   font-size: 1.1em;
 }
 
 #statistic_section #statistic_box #number_hours {
   grid-area: number_hours;
-  border: 1px solid black;
+  border: none;
 }
 
 #statistic_section #statistic_box #number_hours #hours_value {
-  border: 1px solid black;
+  border: none;
   height: 50px;
   font-size: 1.1em;
   border-top: 5px solid #e1918a;
@@ -987,7 +994,7 @@
 }
 
 #statistic_section #statistic_box #number_hours #hours_header {
-  border: 1px solid black;
+  border: none;
   height: 50px;
   font-size: 1.1em;
 }
@@ -995,7 +1002,7 @@
 #subscribe_box {
   grid-area: subscribe_box;
   height: 200px;
-  border: 1px solid black;
+  border: none;
   margin-top: 20px;
   font-family: 'OpenSans';
   font-size: 1.2em;
@@ -1007,7 +1014,7 @@
   height: 200px;
   margin-left: 300px;
   margin-right: 300px;
-  border: 1px solid black;
+  border: none;
 }
 
 #subscribe_box #subscribe_box_content h3 {
@@ -1021,7 +1028,7 @@
 }
 
 #subscribe_box #subscribe_box_content #the_subscribeform {
-  border: 1px solid black;
+  border: none;
   height: auto;
   margin-top: 20px;
   padding: 5px;
@@ -1052,7 +1059,7 @@
 #sponsor_carousel {
   grid-area: sponsor_carousel;
   height: 150px;
-  border: 1px solid black;
+  border: none;
   margin-top: 20px;
   overflow: hidden;
   padding: 10px;
@@ -1068,7 +1075,7 @@
 #sponsor_carousel .sponsor_logo {
   height: 150px;
   width: 200px;
-  border: 1px solid black;
+  border: none;
   position: absolute;
 }
 
@@ -1120,7 +1127,7 @@
   margin-top: 100px;
   margin-bottom: 100px;
   grid-gap: 10px;
-  border: 1px solid black;
+  border: none;
   display: grid;
   grid-template-areas: 'home_about_info home_about_links home_about_support';
   grid-template-columns: 1fr 1fr 1fr;
@@ -1142,13 +1149,13 @@
 
 #homepage_about_section #home_about_info #home_about_info_header {
   height: 50px;
-  border: 1px solid black;
+  border: none;
 }
 
 #homepage_about_section #home_about_info #home_about_info_contact1 {
   margin-top: 10px;
   height: 50px;
-  border: 1px solid black;
+  border: none;
 }
 
 #homepage_about_section #home_about_info #home_about_info_contact1 #home_phone_logo {
@@ -1163,7 +1170,7 @@
   float: right;
   height: 50px;
   width: 83%;
-  border: 1px solid black;
+  border: none;
 }
 
 #homepage_about_section #home_about_info #home_about_info_contact1 #home_phone_number h4 {
@@ -1173,7 +1180,7 @@
 #homepage_about_section #home_about_info #home_about_info_contact2 {
   margin-top: 10px;
   height: 50px;
-  border: 1px solid black;
+  border: none;
 }
 
 #homepage_about_section #home_about_info #home_about_info_contact2 #home_email_logo {
@@ -1188,7 +1195,7 @@
   float: right;
   height: 50px;
   width: 83%;
-  border: 1px solid black;
+  border: none;
 }
 
 #homepage_about_section #home_about_info #home_about_info_contact2 #home_email_address h4 {
@@ -1198,7 +1205,7 @@
 #homepage_about_section #home_about_info #home_about_info_contact3 {
   margin-top: 10px;
   height: 50px;
-  border: 1px solid black;
+  border: none;
   height: 70px;
 }
 
@@ -1214,7 +1221,7 @@
   float: right;
   height: 50px;
   width: 83%;
-  border: 1px solid black;
+  border: none;
   height: 70px;
 }
 
@@ -1228,7 +1235,7 @@
 
 #homepage_about_section #home_about_links {
   grid-area: home_about_links;
-  border: 1px solid black;
+  border: none;
   margin-left: 100px;
 }
 
@@ -1255,7 +1262,7 @@
 
 #homepage_about_section #home_about_support {
   grid-area: home_about_support;
-  border: 1px solid black;
+  border: none;
   margin-left: 100px;
 }
 
@@ -1307,6 +1314,10 @@
   height: 25px;
   margin-left: 30px;
   float: left;
+}
+
+#solid_border {
+  border-bottom: 3px solid #e1918a;
 }
 
 @media only screen and (min-device-width: 1px) and (max-device-width: 499px) and (-webkit-min-device-pixel-ratio: 2) {
@@ -1361,7 +1372,7 @@
   }
   #the_slider {
     grid-area: the_slider;
-    border: 1px solid black;
+    border: none;
     height: 90vh;
     overflow: hidden;
   }
@@ -1494,10 +1505,10 @@
   #main_content #intro_img img {
     height: 200px;
     width: 100%;
-    transition: all 0.5s;
+    transition: all 0.9s;
   }
   #main_content #intro_img img:hover {
-    transition: all 0.5s;
+    transition: all 0.9s;
     transform: scale(1.5);
   }
   #main_content #intro_img #intro_img1 {
@@ -1527,20 +1538,20 @@
   }
   #main_logo #logo_code {
     grid-area: logo_code;
-    border: 1px solid black;
+    border: none;
   }
   #main_logo #logo_code #logo_img1 {
     background: url("../images/laptop_logo.png");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    border: 1px solid black;
+    border: none;
     width: 100%;
     height: 100px;
   }
   #main_logo #logo_code #logo_header1 {
     margin-top: 10px;
-    border: 1px solid black;
+    border: none;
     width: 100%;
     height: 50px;
     height: 40px;
@@ -1550,7 +1561,7 @@
   }
   #main_logo #logo_communication {
     grid-area: logo_communication;
-    border: 1px solid black;
+    border: none;
     margin-top: 50px;
   }
   #main_logo #logo_communication #logo_img2 {
@@ -1558,13 +1569,13 @@
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    border: 1px solid black;
+    border: none;
     width: 100%;
     height: 100px;
   }
   #main_logo #logo_communication #logo_header2 {
     margin-top: 10px;
-    border: 1px solid black;
+    border: none;
     width: 100%;
     height: 50px;
     height: 40px;
@@ -1574,12 +1585,12 @@
   }
   #main_logo #logo_solve {
     grid-area: logo_solve;
-    border: 1px solid black;
+    border: none;
     margin-top: 50px;
   }
   #main_logo #logo_solve #logo_img3 {
     background: url("../images/wrench_logo.png");
-    border: 1px solid black;
+    border: none;
     width: 100%;
     height: 100px;
     background-size: contain;
@@ -1588,7 +1599,7 @@
   }
   #main_logo #logo_solve #logo_header3 {
     margin-top: 10px;
-    border: 1px solid black;
+    border: none;
     width: 100%;
     height: 50px;
     height: 40px;
@@ -1598,12 +1609,12 @@
   }
   #main_logo #logo_career {
     grid-area: logo_career;
-    border: 1px solid black;
+    border: none;
     margin-top: 50px;
   }
   #main_logo #logo_career #logo_img4 {
     background: url("../images/file_logo.png");
-    border: 1px solid black;
+    border: none;
     width: 100%;
     height: 100px;
     background-size: contain;
@@ -1612,7 +1623,7 @@
   }
   #main_logo #logo_career #logo_header4 {
     margin-top: 10px;
-    border: 1px solid black;
+    border: none;
     width: 100%;
     height: 50px;
     height: 40px;
@@ -1632,10 +1643,10 @@
   #home_portfolio img {
     height: 200px;
     width: 100%;
-    transition: all 0.5s;
+    transition: all 0.9s;
   }
   #home_portfolio img:hover {
-    transition: all 0.5s;
+    transition: all 0.9s;
     transform: scale(1.5);
   }
   #home_portfolio #home_portfolio_header {
@@ -1692,7 +1703,7 @@
   }
   #the_team #the_team_head {
     grid-area: the_team_head;
-    border: 1px solid black;
+    border: none;
     height: 150px;
     font-family: 'Poppins';
   }
@@ -1706,7 +1717,7 @@
   }
   #the_team #the_team_members {
     grid-area: the_team_members;
-    border: 1px solid black;
+    border: none;
     height: 950px;
     margin-top: 10px;
     display: grid;
@@ -1734,7 +1745,7 @@
   }
   #the_team #the_team_members #member_1 {
     grid-area: member_1;
-    border: 1px solid black;
+    border: none;
     display: grid;
     grid-template-areas: 'member1_img member1_info';
     grid-template-columns: 1fr 1fr;
@@ -1743,7 +1754,7 @@
   }
   #the_team #the_team_members #member_1 #member1_img {
     grid-area: member1_img;
-    border: 1px solid black;
+    border: none;
     background: url("../images/emma_img.png");
     background-size: contain;
     background-position: center;
@@ -1751,19 +1762,19 @@
   }
   #the_team #the_team_members #member_1 #member1_info {
     grid-area: member1_info;
-    border: 1px solid black;
+    border: none;
   }
   #the_team #the_team_members #member_1 #member1_info #emma_name {
-    border: 1px solid black;
+    border: none;
     height: 40px;
   }
   #the_team #the_team_members #member_1 #member1_info #emma_info {
-    border: 1px solid black;
+    border: none;
     height: 159px;
   }
   #the_team #the_team_members #member_2 {
     grid-area: member_2;
-    border: 1px solid black;
+    border: none;
     display: grid;
     grid-template-areas: 'member2_img member2_info';
     grid-template-columns: 1fr 1fr;
@@ -1772,7 +1783,7 @@
   }
   #the_team #the_team_members #member_2 #member2_img {
     grid-area: member2_img;
-    border: 1px solid black;
+    border: none;
     background: url("../images/andrea_img.png");
     background-size: contain;
     background-position: center;
@@ -1780,19 +1791,19 @@
   }
   #the_team #the_team_members #member_2 #member2_info {
     grid-area: member2_info;
-    border: 1px solid black;
+    border: none;
   }
   #the_team #the_team_members #member_2 #member2_info #andrea_name {
-    border: 1px solid black;
+    border: none;
     height: 40px;
   }
   #the_team #the_team_members #member_2 #member2_info #andrea_info {
-    border: 1px solid black;
+    border: none;
     height: 159px;
   }
   #the_team #the_team_members #member_3 {
     grid-area: member_3;
-    border: 1px solid black;
+    border: none;
     display: grid;
     grid-template-areas: 'member3_img member3_info';
     grid-template-columns: 1fr 1fr;
@@ -1801,7 +1812,7 @@
   }
   #the_team #the_team_members #member_3 #member3_img {
     grid-area: member3_img;
-    border: 1px solid black;
+    border: none;
     background: url("../images/tegan_img.png");
     background-size: contain;
     background-position: center;
@@ -1809,19 +1820,19 @@
   }
   #the_team #the_team_members #member_3 #member3_info {
     grid-area: member3_info;
-    border: 1px solid black;
+    border: none;
   }
   #the_team #the_team_members #member_3 #member3_info #tegan_name {
-    border: 1px solid black;
+    border: none;
     height: 40px;
   }
   #the_team #the_team_members #member_3 #member3_info #tegan_info {
-    border: 1px solid black;
+    border: none;
     height: 159px;
   }
   #the_team #the_team_members #member_4 {
     grid-area: member_4;
-    border: 1px solid black;
+    border: none;
     display: grid;
     grid-template-areas: 'member4_img member4_info';
     grid-template-columns: 1fr 1fr;
@@ -1830,7 +1841,7 @@
   }
   #the_team #the_team_members #member_4 #member4_img {
     grid-area: member4_img;
-    border: 1px solid black;
+    border: none;
     background: url("../images/tracy_img.png");
     background-size: contain;
     background-position: center;
@@ -1838,14 +1849,14 @@
   }
   #the_team #the_team_members #member_4 #member4_info {
     grid-area: member4_info;
-    border: 1px solid black;
+    border: none;
   }
   #the_team #the_team_members #member_4 #member4_info #tracy_name {
-    border: 1px solid black;
+    border: none;
     height: 60px;
   }
   #the_team #the_team_members #member_4 #member4_info #tracy_info {
-    border: 1px solid black;
+    border: none;
     height: 179px;
   }
   #statistic_section {
@@ -1969,7 +1980,7 @@
   }
   #the_slider {
     grid-area: the_slider;
-    border: 1px solid black;
+    border: none;
     height: 90vh;
     overflow: hidden;
   }
@@ -2082,10 +2093,10 @@
   #home_portfolio img {
     height: 200px;
     width: 100%;
-    transition: all 0.5s;
+    transition: all 0.9s;
   }
   #home_portfolio img:hover {
-    transition: all 0.5s;
+    transition: all 0.9s;
     transform: scale(1.5);
   }
   #home_portfolio #home_portfolio_header {
@@ -2475,7 +2486,7 @@
 
 #contact_form_box {
   grid-area: contact_form_box;
-  border: 1px solid black;
+  border: none;
   margin-left: 100px;
   margin-right: 100px;
   margin-top: 70px;
@@ -2488,7 +2499,7 @@
 }
 
 #contact_form_box h2 {
-  border: 1px solid black;
+  border: none;
   color: #636363;
   border-bottom: 1px solid #636363;
   width: 45%;
@@ -2500,12 +2511,12 @@
 
 #contact_form_box #contact_form {
   grid-area: contact_form;
-  border: 1px solid black;
+  border: none;
 }
 
 #contact_form_box #contact_form #contact_input {
   margin-top: 20px;
-  border: 1px solid black;
+  border: none;
   height: 300px;
 }
 
@@ -2555,7 +2566,7 @@
 
 #contact_form_box #contact_info {
   grid-area: contact_info;
-  border: 1px solid black;
+  border: none;
 }
 
 #contact_form_box #contact_info h4 {
@@ -2574,7 +2585,7 @@
 #contact_form_box #contact_info #contact_info_box #contact_info_contact1 {
   margin-top: 10px;
   height: 50px;
-  border: 1px solid black;
+  border: none;
 }
 
 #contact_form_box #contact_info #contact_info_box #contact_info_contact1 #contact_phone_logo {
@@ -2589,7 +2600,7 @@
   float: right;
   height: 50px;
   width: 83%;
-  border: 1px solid black;
+  border: none;
 }
 
 #contact_form_box #contact_info #contact_info_box #contact_info_contact1 #contact_phone_number h4 {
@@ -2599,7 +2610,7 @@
 #contact_form_box #contact_info #contact_info_box #contact_info_contact2 {
   margin-top: 10px;
   height: 50px;
-  border: 1px solid black;
+  border: none;
 }
 
 #contact_form_box #contact_info #contact_info_box #contact_info_contact2 #contact_email_logo {
@@ -2614,7 +2625,7 @@
   float: right;
   height: 50px;
   width: 83%;
-  border: 1px solid black;
+  border: none;
 }
 
 #contact_form_box #contact_info #contact_info_box #contact_info_contact2 #contact_email_address h4 {
@@ -2624,7 +2635,7 @@
 #contact_form_box #contact_info #contact_info_box #contact_info_contact3 {
   margin-top: 10px;
   height: 50px;
-  border: 1px solid black;
+  border: none;
 }
 
 #contact_form_box #contact_info #contact_info_box #contact_info_contact3 #contact_location_logo {
@@ -2639,7 +2650,7 @@
   float: right;
   height: 50px;
   width: 83%;
-  border: 1px solid black;
+  border: none;
 }
 
 #contact_form_box #contact_info #contact_info_box #contact_info_contact3 #contact_location h4 {
@@ -2653,7 +2664,7 @@
 #contact_form_box #contact_info #contact_info_box #contact_info_contact4 {
   margin-top: 10px;
   height: 50px;
-  border: 1px solid black;
+  border: none;
 }
 
 #contact_form_box #contact_info #contact_info_box #contact_info_contact4 #contact_time_logo {
@@ -2668,7 +2679,7 @@
   float: right;
   height: 50px;
   width: 83%;
-  border: 1px solid black;
+  border: none;
 }
 
 #contact_form_box #contact_info #contact_info_box #contact_info_contact4 #contact_time h4 {
@@ -2681,7 +2692,7 @@
 
 #contact_map_box {
   grid-area: contact_map_box;
-  border: 1px solid black;
+  border: none;
   margin-top: 70px;
   height: 400px;
   background: grey;
@@ -2842,7 +2853,7 @@
   #homepage_about_section #home_about_info #home_about_info_contact3 {
     margin-top: 10px;
     height: 50px;
-    border: 1px solid black;
+    border: none;
     height: 70px;
   }
   #homepage_about_section #home_about_info #home_about_info_contact3 #home_location_logo {
@@ -3016,7 +3027,7 @@
   #homepage_about_section #home_about_info #home_about_info_contact3 {
     margin-top: 10px;
     height: 50px;
-    border: 1px solid black;
+    border: none;
     height: 70px;
   }
   #homepage_about_section #home_about_info #home_about_info_contact3 #home_location_logo {
@@ -3189,7 +3200,7 @@
   #homepage_about_section #home_about_info #home_about_info_contact3 {
     margin-top: 10px;
     height: 50px;
-    border: 1px solid black;
+    border: none;
     height: 70px;
   }
   #homepage_about_section #home_about_info #home_about_info_contact3 #home_location_logo {
@@ -3350,7 +3361,7 @@
   #homepage_about_section #home_about_info #home_about_info_contact3 {
     margin-top: 10px;
     height: 50px;
-    border: 1px solid black;
+    border: none;
     height: 70px;
   }
   #homepage_about_section #home_about_info #home_about_info_contact3 #home_location_logo {
@@ -3366,7 +3377,7 @@
 
 #about_grid_container {
   display: grid;
-  grid-template-areas: 'navbar' 'the_section1' 'about_intro_info';
+  grid-template-areas: 'navbar' 'the_section1' 'about_intro_info' 'aboutUs_section' 'the_team' 'circle_percentages_bar' 'subscribe_box' 'sponsor_carousel' 'homepage_about_section' 'footer';
   grid-template-columns: 1fr;
 }
 
@@ -3395,7 +3406,7 @@
 
 #about_intro_info {
   grid-area: about_intro_info;
-  border: 1px solid black;
+  border: none;
   height: 350px;
   margin-top: 100px;
   margin-left: 100px;
@@ -3408,14 +3419,15 @@
 
 #about_intro_info #about_intro_text {
   grid-area: about_intro_text;
-  border: 1px solid black;
+  border: none;
   font-family: 'Poppins';
 }
 
 #about_intro_info #about_intro_text h3 {
   font-size: 1.5em;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #636363;
   width: 40%;
+  color: #636363;
 }
 
 #about_intro_info #about_intro_text h3 #solid_border {
@@ -3447,11 +3459,127 @@
 
 #about_intro_info #about_intro_img {
   grid-area: about_intro_img;
-  border: 1px solid black;
+  border: none;
+  overflow: hidden;
 }
 
 #about_intro_info #about_intro_img img {
   height: 100%;
   width: 100%;
+  transition: all 0.9s;
+}
+
+#about_intro_info #about_intro_img img:hover {
+  transition: all 0.9s;
+  transform: scale(1.5);
+}
+
+#aboutUs_section {
+  grid-area: aboutUs_section;
+  border: none;
+  margin-top: 100px;
+  height: 600px;
+  display: grid;
+  grid-template-areas: 'aboutUs_iframe aboutUs_info';
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  background: #f6f6f6;
+  font-family: 'Poppins';
+}
+
+#aboutUs_section #aboutUs_iframe {
+  grid-area: aboutUs_iframe;
+  height: 600px;
+}
+
+#aboutUs_section #aboutUs_iframe iframe {
+  margin-top: 50px;
+  height: 500px;
+  width: 100%;
+}
+
+#aboutUs_section #aboutUs_info {
+  grid-area: aboutUs_info;
+  border: none;
+  margin-left: 20px;
+  margin-right: 50px;
+}
+
+#aboutUs_section #aboutUs_info h2 {
+  color: #636363;
+  margin-top: 20px;
+  border-bottom: 1px solid #636363;
+  width: 35%;
+}
+
+#aboutUs_section #aboutUs_info h4 {
+  margin-top: 20px;
+  font-weight: lighter;
+}
+
+#aboutUs_section #aboutUs_info #about_info_section1 {
+  border: none;
+  height: 200px;
+  margin-top: 20px;
+}
+
+#aboutUs_section #aboutUs_info #about_info_section1 h3 {
+  color: #e1918a;
+}
+
+#aboutUs_section #aboutUs_info #about_info_section1 h4 {
+  margin-top: 10px;
+  font-weight: lighter;
+}
+
+#aboutUs_section #aboutUs_info #about_info_section1 #about_vision {
+  border: none;
+  height: 200px;
+  float: left;
+  width: 49%;
+}
+
+#aboutUs_section #aboutUs_info #about_info_section1 #about_mission {
+  border: none;
+  height: 200px;
+  float: right;
+  width: 49%;
+}
+
+#aboutUs_section #aboutUs_info #about_info_section2 {
+  border: none;
+  height: 200px;
+  margin-top: 20px;
+}
+
+#aboutUs_section #aboutUs_info #about_info_section2 h3 {
+  color: #e1918a;
+}
+
+#aboutUs_section #aboutUs_info #about_info_section2 h4 {
+  margin-top: 10px;
+  font-weight: lighter;
+}
+
+#aboutUs_section #aboutUs_info #about_info_section2 #about_help {
+  border: none;
+  height: 200px;
+  float: left;
+  width: 49%;
+}
+
+#aboutUs_section #aboutUs_info #about_info_section2 #about_supports {
+  border: none;
+  height: 200px;
+  float: right;
+  width: 49%;
+}
+
+#circle_percentages_bar {
+  grid-area: circle_percentages_bar;
+  margin-top: 100px;
+  height: 200px;
+  border: none;
+  background: black;
 }
 /*# sourceMappingURL=style.css.map */

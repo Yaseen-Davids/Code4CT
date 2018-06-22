@@ -589,7 +589,7 @@
 #the_team{
     grid-area: the_team;
     border: $borderSettings;
-    height: 700px;
+    height: 800px;
     margin-top: 150px;
     margin-left: 100px;
     margin-right: 100px;
@@ -615,13 +615,19 @@
                 border-bottom: 3px solid $themeColor;
             }
         }
+        h5{
+            margin-top: 30px;
+            font-weight: lighter;
+            font-size: 1em;
+            margin-top: 15px;
+        }
     }
 
     // This is the team members
     #the_team_members{
         grid-area: the_team_members;
         border: $borderSettings;
-        height: 500px;
+        height: 600px;
         margin-top: 10px;
         display: grid;
         grid-template-areas: 'member_1 member_2'
@@ -1091,6 +1097,10 @@
             float: left;
         }
     }
+}
+
+#solid_border{
+    border-bottom: 3px solid $themeColor;
 }
 
 @import 'homepage-responsive';

@@ -143,9 +143,18 @@ function changeToClose() {
         navbarLinks.style.height = "80vh";
         navbarLinks.style.transition = "all 0.7s";
     }
+
+    // if (window.matchMedia("(max-width: +500px)").matches){
+    //     navbarLinks.style.visibility = "visible";
+    //     navbarLinks.style.height = "75px";
+    // }
+    // else if (!window.matchMedia("(max-width: 500px)").matches){
+    //     navbarLinks.style.visibility = "collapse";
+    //     navbarLinks.style.height = "80vh";
+    // }
 }
 
-onload = function countUpStatistics() {
+window.onload = function countUpStatistics() {
     let coffeeNumber = document.getElementById("coffee_value");
     let girlsNumber = document.getElementById("girls_value");
     let projectNumber = document.getElementById("project_value");
