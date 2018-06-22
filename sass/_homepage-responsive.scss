@@ -470,7 +470,7 @@
         #the_team_members{
             grid-area: the_team_members;
             border: $borderSettings;
-            height: 1050px;
+            height: 950px;
             margin-top: 10px;
             display: grid;
             grid-template-areas: 'member_1'
@@ -480,6 +480,13 @@
             ;
             grid-template-columns: 1fr;
             grid-gap: 10px;
+            font-size: 0.6em;
+
+            button{
+                @include readMoreButton;
+                width: 70px;
+                height: 20px;
+            }
 
             // This is the image and text of member 1
             #member_1{
@@ -489,7 +496,7 @@
                 grid-template-areas: 'member1_img member1_info';
                 grid-template-columns: 1fr 1fr;
                 grid-gap: 10px;
-                height: 242.5px;
+                height: 200px;
 
                 // This is the image of member 1
                 #member1_img{
@@ -507,11 +514,11 @@
 
                     #emma_name{
                         border: $borderSettings;
-                        height: 60px;
+                        height: 40px;
                     }
                     #emma_info{
                         border: $borderSettings;
-                        height: 179px;
+                        height: 159px;
                     }
                 }
             }
@@ -524,7 +531,7 @@
                 grid-template-areas: 'member2_img member2_info';
                 grid-template-columns: 1fr 1fr;
                 grid-gap: 10px;
-                height: 242.5px;
+                height: 200px;
 
                 // This is the image of member 2
                 #member2_img{
@@ -541,12 +548,12 @@
 
                     #andrea_name{
                         border: $borderSettings;
-                        height: 60px;
+                        height: 40px;
                     }
 
                     #andrea_info{
                         border: $borderSettings;
-                        height: 179px;
+                        height: 159px;
                     }
                 }
             }
@@ -559,7 +566,7 @@
                 grid-template-areas: 'member3_img member3_info';
                 grid-template-columns: 1fr 1fr;
                 grid-gap: 10px;
-                height: 242.5px;
+                height: 200px;
 
                 // This is the image of member 3
                 #member3_img{
@@ -576,12 +583,12 @@
 
                     #tegan_name{
                         border: $borderSettings;
-                        height: 60px;
+                        height: 40px;
                     }
 
                     #tegan_info{
                         border: $borderSettings;
-                        height: 179px;
+                        height: 159px;
                     }
                 }
             }
@@ -594,7 +601,7 @@
                 grid-template-areas: 'member4_img member4_info';
                 grid-template-columns: 1fr 1fr;
                 grid-gap: 10px;
-                height: 242.5px;
+                height: 200px;
 
                 // This is the image of member 1
                 #member4_img{
@@ -1194,7 +1201,7 @@
   }
 
 @media only screen
-  and (min-device-width: 1200px)
+  and (min-device-width: 1000px)
   and (max-device-width: 1300px)
   and (-webkit-min-device-pixel-ratio: 2){
       #navbar{
@@ -1205,17 +1212,17 @@
         #nav_logo{
             margin-left: 20px;
             height: 90px;
-            width: 25%;
+            width: 20%;
         }
     
         #nav_links{
             margin-right: 10px;
             height: 75px;
-            width: 65%;
+            width: 75%;
             padding: 5px;
             
             #links_box{
-                width: 65%;
+                width: 66%;
                 height: 40px;
                 margin-top: 20px;
     
@@ -1223,6 +1230,122 @@
                     margin-top: 10px;           
                     a{
                         font-size: 1.07em;
+                        li{
+                            margin-right: 25px;
+                        }
+                    }
+                    
+                }
+            }
+    
+            #search_box{
+                width: 33%;
+                height: 40px;
+                margin-top: 20px;
+    
+                input{
+                    margin-top: 10px;
+                    height: 30px;
+                    width: 160px;
+    
+                    &:focus{
+                        width: 190px;
+                    }
+                }
+                #search_icon{
+                    margin-top: 10px;
+                    height: 28px;
+                    width: 50px;
+                }
+            }
+        }
+    }
+    #main_content{
+        height: 450px;
+        display: grid;
+        grid-gap: 50px;
+        margin-left: 100px;
+        margin-right: 100px;
+        margin-top: 150px;
+    
+        #intro_info{
+            height: 420px;
+    
+            h3{
+                font-size: 1.5em;
+                width: 40%;
+            }
+            h5{
+                margin-top: 30px;
+                font-size: 1.1em;
+            }
+        }
+    
+        #intro_img{
+            height: 420px;
+            grid-gap: 20px;
+    
+            img{
+                height: 100%;
+                width: 100%;
+            }
+    
+            #intro_img1{
+                height: 195px;
+                overflow: hidden;
+            }
+            #intro_img2{
+                height: 195px;           
+            }
+            #intro_img3{
+                height: 195px;          
+            }
+            #intro_img4{
+                height: 195px;           
+            }
+        }
+    }
+    #main_logo{
+        height: 300px;
+        grid-gap: 50px;
+        padding: 40px;
+        margin-top: 150px;
+        font-size: 0.9em;
+        font-weight: lighter;
+    }
+  }
+
+
+@media only screen
+  and (min-device-width: 1301px)
+  and (max-device-width: 1500px)
+  and (-webkit-min-device-pixel-ratio: 2){
+      #navbar{
+        height: 90px;
+        padding: 5px;
+        top: 0;
+    
+        #nav_logo{
+            margin-left: 20px;
+            height: 90px;
+            width: 20%;
+        }
+    
+        #nav_links{
+            margin-right: 10px;
+            height: 75px;
+            width: 75%;
+            padding: 5px;
+            
+            #links_box{
+                width: 66%;
+                height: 40px;
+                margin-top: 20px;
+    
+                ul{
+                    margin-top: 10px;           
+                    a{
+                        font-size: 1.4em;
                         li{
                             margin-right: 35px;
                         }
@@ -1239,10 +1362,10 @@
                 input{
                     margin-top: 10px;
                     height: 30px;
-                    width: 180px;
+                    width: 240px;
     
                     &:focus{
-                        width: 210px;
+                        width: 280px;
                     }
                 }
                 #search_icon{
