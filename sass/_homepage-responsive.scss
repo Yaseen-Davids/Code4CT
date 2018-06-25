@@ -66,8 +66,9 @@
     #the_slider{
         grid-area: the_slider;
         border: $borderSettings;
-        height: 90vh;
+        height: 500px;
         overflow: hidden; 
+        position: relative;
 
         // This is the slider box
         #slider_box{
@@ -76,56 +77,65 @@
             // This is image 1 of the slider
             #img_1{
                 margin-left: 0vw;
+                position: absolute;
             }
 
             // This is image 2 of the slider
             #img_2{
-                margin-left: -100vw;
+                margin-left: 0vw;
                 display: none;
+                position: absolute;
             }
 
             // This is image 3 of the slider
             #img_3{
-                margin-left: -100vw;
+                margin-left: 0vw;
                 display: none;
+                position: absolute;
             }
 
             // This is image 4 of the slider
             #img_4{
-                margin-left: -100vw;
+                margin-left: 0vw;
                 display: none;
-            }
-
-            // This is the back button slider
-            #back_slide{
                 position: absolute;
-                width: 0;
-                height: 0;
-                border-top: 15px solid transparent;
-                border-right: 25px solid white;
-                border-bottom: 15px solid transparent;
-                border-radius: 5px;            
-                top: 250px;
-                left: 20px;
             }
-
-            // This is the next button slider
-            #next_slide{
+             // Slide button 1 
+            #slideBtn_1{
+                @include sliderBtns; 
                 position: absolute;
-                width: 0;
-                height: 0;
-                border-top: 15px solid transparent;
-                border-left: 25px solid white;
-                border-bottom: 15px solid transparent;
-                border-radius: 5px;
-                top: 250px;
-                right: 20px;
+                top:90%;
+                left: 40%;
+                transform: translate(-50%,-50%);
+                height: 15px;
+                width: 20px;
+                
+            }
+            // Slide button 2
+            #slideBtn_2{
+                @include sliderBtns; 
+                position: absolute; 
+                top:90%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                height: 15px;
+                width: 20px;
+            }
+            // Slide button 3
+            #slideBtn_3{
+                @include sliderBtns;  
+                position: absolute;
+                top:90%;
+                left: 60%;
+                transform: translate(-50%,-50%);
+                height: 15px;
+                width: 20px;
             }
         }
 
         // This is the image properties of the slider
         img{
-            height: 80vh;
+            height: 100%;
             width: 100%;
         }
     }
@@ -159,8 +169,13 @@
             }
         }
 
+        h1{
+            font-size: 1.7em;
+        }
+
         h3{
             margin-top: 10px;
+            font-size: 1.4em;
         }
 
         // This is the button inside the header text
@@ -213,6 +228,7 @@
                 height: 40px;
                 font-family: 'Poppins';
                 transition: width 0.6s;
+                font-size: 0.7em;
 
                 &:hover{
                     transition: width 0.6s;
@@ -438,7 +454,7 @@
 
     // This is the team section
     #the_team{
-        height: 1200px;
+        height: 1400px;
         margin-top: 100px;
         margin-left: 10px;
         margin-right: 10px;
@@ -452,7 +468,7 @@
         #the_team_head{
             grid-area: the_team_head;
             border: $borderSettings;
-            height: 150px;
+            height: 250px;
             font-family: 'Poppins';
 
             h3{
@@ -464,13 +480,16 @@
                     border-bottom: 3px solid $themeColor;
                 }
             }
+            h5{
+                font-size: 0.8em;
+            }
         }
 
         // This is the team members
         #the_team_members{
             grid-area: the_team_members;
             border: $borderSettings;
-            height: 950px;
+            height: 1100px;
             margin-top: 10px;
             display: grid;
             grid-template-areas: 'member_1'
@@ -511,6 +530,7 @@
                 #member1_info{
                     grid-area: member1_info;
                     border: $borderSettings;
+                    margin-top: 30px;
 
                     #emma_name{
                         border: $borderSettings;
@@ -518,7 +538,7 @@
                     }
                     #emma_info{
                         border: $borderSettings;
-                        height: 159px;
+                        height: 139px;
                     }
                 }
             }
@@ -545,6 +565,7 @@
                 #member2_info{
                     grid-area: member2_info;
                     border: $borderSettings;
+                    margin-top: 30px;
 
                     #andrea_name{
                         border: $borderSettings;
@@ -553,7 +574,7 @@
 
                     #andrea_info{
                         border: $borderSettings;
-                        height: 159px;
+                        height: 139px;
                     }
                 }
             }
@@ -580,6 +601,7 @@
                 #member3_info{
                     grid-area: member3_info;
                     border: $borderSettings;
+                    margin-top: 20px;
 
                     #tegan_name{
                         border: $borderSettings;
@@ -588,7 +610,7 @@
 
                     #tegan_info{
                         border: $borderSettings;
-                        height: 159px;
+                        height: 139px;
                     }
                 }
             }
@@ -615,15 +637,16 @@
                 #member4_info{
                     grid-area: member4_info;
                     border: $borderSettings;
+                    margin-top: 20px;
 
                     #tracy_name{
                         border: $borderSettings;
-                        height: 60px;
+                        height: 40px;
                     }
 
                     #tracy_info{
                         border: $borderSettings;
-                        height: 179px;
+                        height: 139px;
                     }
                 }
             }
@@ -698,15 +721,16 @@
                     height: 30px;
                     font-size: 0.9em;
                     margin-left: 0px;
-                    width: 286px;
+                    width: 180px;
                     text-align: center;
+                    margin-left: -50px;
                 }
 
                 button{
                     font-size: 0.9em;
                     height: 35px;
                     width: 80px;
-                    margin-top: 10px;
+                    // margin-top: 10px;
 
                     &:hover{
                         width: 120px;
@@ -715,7 +739,6 @@
             }
         }
     }
-
 }
  
 @media only screen

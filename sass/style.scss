@@ -182,7 +182,7 @@
 #the_slider{
     grid-area: the_slider;
     border: $borderSettings;
-    height: 90vh;
+    height: 700px;
     overflow: hidden; 
     position: relative;
 
@@ -213,17 +213,29 @@
         // Slide button 1 
         #slideBtn_1{
             @include sliderBtns; 
-            margin-left: 42%; 
+            position: absolute;
+            top:90%;
+            left: 45%;
+            transform: translate(-50%,-50%);
+            cursor: pointer;
         }
         // Slide button 2
         #slideBtn_2{
-            @include sliderBtns;  
-            margin-left: 47%; 
+            @include sliderBtns; 
+            position: absolute; 
+            top:90%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            cursor: pointer;
         }
         // Slide button 3
         #slideBtn_3{
             @include sliderBtns;  
-            margin-left: 52%; 
+            position: absolute;
+            top:90%;
+            left: 55%;
+            transform: translate(-50%,-50%);
+            cursor: pointer;
         }
     }
 
@@ -234,6 +246,9 @@
     }
 }
 
+button{
+    cursor: pointer;
+}
 
 // This is the button inside the header
 #header_btn{
@@ -281,10 +296,13 @@
         width: 150px;
         height: 50px;
         font-size: 1em;
+        margin-left: 0px;
+        transition: all 0.6s;
 
         &:hover{
-            transition: width 0.6s;
-            width: 200px;
+            transition: all 0.6s;
+            width: 180px;
+            margin-left: 30px;
         }
     }
 }
@@ -312,8 +330,9 @@
         font-family: 'Poppins';
 
         h3{
+            color: $headingsThemeColor;
             font-size: 1.5em;
-            border-bottom: 1px solid black;
+            border-bottom: 1px solid $headingsThemeColor;
             width: 40%;
 
             #solid_border{
@@ -321,6 +340,7 @@
             }
         }
         h5{
+            color: grey;
             margin-top: 30px;
             font-weight: lighter;
             font-size: 1.1em;
@@ -500,8 +520,9 @@
         font-family: 'Poppins';
 
         h3{
+            color: $headingsThemeColor;
             font-size: 1.5em;
-            border-bottom: 1px solid black;
+            border-bottom: 1px solid $headingsThemeColor;
             width: 30%;
 
             #solid_border{
@@ -513,6 +534,7 @@
             font-weight: lighter;
             font-size: 1em;
             margin-top: 15px;
+            color: grey;
         }
     }
 
@@ -607,8 +629,9 @@
         font-family: 'Poppins';
 
         h3{
+            color: $headingsThemeColor;
             font-size: 1.5em;
-            border-bottom: 1px solid black;
+            border-bottom: 1px solid $headingsThemeColor;
             width: 20%;
 
             #solid_border{
@@ -620,6 +643,7 @@
             font-weight: lighter;
             font-size: 1em;
             margin-top: 15px;
+            color: grey;
         }
     }
 
@@ -637,6 +661,10 @@
         grid-gap: 10px;
         font-family: 'Poppins';
         font-weight: normal;
+
+        h3{
+            color: $headingsThemeColor;
+        }
 
         h4{
             @include theTeamTextInfo;
@@ -893,11 +921,13 @@
         h3{
             margin-top: 10px;
             text-align: center;
+            color: $headingsThemeColor;
         }
 
         h4{
             margin-top: 20px;
             text-align: center;
+            color: grey;
         }
 
         #the_subscribeform{
@@ -905,14 +935,26 @@
             height: auto;
             margin-top: 20px;
             padding: 5px;
+            position: relative;
 
             input{
+                margin-left: -60px;
                 height: 30px;
                 font-size: 0.9em;
                 color: grey;
+                outline: none;
+                border: none;
+                border: 1px solid grey;
+                border-radius: 3px;
+                padding: 2px;
+
+                &::placeholder{
+                    font-family: 'Poppins';
+                }
             }
 
             button{
+                position: absolute;
                 font-size: 0.9em;
                 height: 35px;
                 width: 90px;
@@ -920,11 +962,13 @@
                 border: none;
                 outline: none;
                 color: white;
+                // margin-left: 0px;
                 transition: all 0.5s;
 
                 &:hover{
                     transition: all 0.5s;
                     width: 120px;
+                    // margin-left: 30px;
                 }
             }
         }
@@ -999,8 +1043,13 @@
     grid-template-columns: 1fr 1fr 1fr;
     font-family: 'Poppins';
 
+    h2{
+        color: $headingsThemeColor;
+    }
+
     h4{
         font-weight: lighter;
+        color: grey;
     }
 
     img{
@@ -1108,3 +1157,5 @@
 @import 'contact-page';
 
 @import 'about-page';
+
+@import 'portfolio-page';

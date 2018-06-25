@@ -1,101 +1,41 @@
 // This is the slide counter
 let slideNow = 0;
 
-function slide_1() {
+$("#slideBtn_1").click(function(){
     slideNow = 1;
     $("#img_1").fadeIn("slow");
     $("#img_2").fadeOut("slow");
     $("#img_3").fadeOut("slow");
-}
-function slide_2() {
+});
+
+$("#slideBtn_2").click(function(){
     slideNow = 2;
     $("#img_2").fadeIn("slow");
     $("#img_1").fadeOut("slow");
     $("#img_3").fadeOut("slow");
-}
-function slide_3() {
+});
+
+$("#slideBtn_3").click(function(){
     slideNow = 3;
     $("#img_3").fadeIn("slow");
     $("#img_1").fadeOut("slow");
     $("#img_2").fadeOut("slow");
-}
+});
 
-// This is the onclick function for the next slide
-// function nextSlide(){
+// let row3_imgs = [row3_img1, row3_img2, row3_img3, row3_img4];
 
-//     // Go to next slide
-//     if (slideNow == 0 || slideNow == "0"){
-//         $("#img_1").animate({marginLeft: "-100vw"},700);
-//         $("#img_2").animate({marginLeft: "100vw"},700);        
-//         setTimeout(function(){
-//             $("#img_1").hide();
-//             $("#img_2").show();
-//             $("#img_2").animate({marginLeft: "0vw"},700);
-//             slideNow = 1;
-//         },700)
-//     }
-
-//     // Go to next slide
-//     if (slideNow == 1){
-//         $("#img_2").animate({marginLeft: "-100vw"},700);
-//         $("#img_3").animate({marginLeft: "100vw"},700);        
-//         setTimeout(function(){
-//             slideNow = 2;
-//             $("#img_2").hide();
-//             $("#img_3").show();
-//             $("#img_3").animate({marginLeft: "0vw"},700);
-//         },700)
-//     }
-
-//     // Go to next slide
-//     if (slideNow == 2){
-//         $("#img_3").animate({marginLeft: "-100vw"},700);
-//         $("#img_4").animate({marginLeft: "100vw"},700);        
-//         setTimeout(function(){
-//             slideNow = 3;
-//             $("#img_3").hide();
-//             $("#img_4").show();
-//             $("#img_4").animate({marginLeft: "0vw"},700);
-//         },700)
-//     }
-// }
-
-// // This is the onclick function to go to the previous slide
-// function backSlide(){
-
-//     // Go to previous slide
-//     if (slideNow == 1){
-//         $("#img_2").animate({marginLeft: "100vw"},700);
-//         setTimeout(function(){
-//             slideNow = 0;
-//             $("#img_2").hide();
-//             $("#img_1").show();
-//             $("#img_1").animate({marginLeft: "0vw"},700);
-//         },700)
-//     }
-
-//     // Go to previous slide
-//     if (slideNow == 2){
-//         $("#img_3").animate({marginLeft: "100vw"},700);
-//         setTimeout(function(){
-//             slideNow = 1;
-//             $("#img_3").hide();
-//             $("#img_2").show();
-//             $("#img_2").animate({marginLeft: "0vw"},700);
-//         },700)
-//     }
-
-//     // Go to previous slide
-//     if (slideNow == 3){
-//         $("#img_4").animate({marginLeft: "100vw"},700);
-//         setTimeout(function(){
-//             slideNow = 2;
-//             $("#img_4").hide();
-//             $("#img_3").show();
-//             $("#img_3").animate({marginLeft: "0vw"},700);
-//         },700)
-//     }
-// }
+// $("#portfolio_btn_1").click(function(){
+//     $(row3_imgs[0]).animate({marginTop: "0px"},1000);
+//     $(row3_imgs[1]).animate({marginTop: "0px"},1200);
+//     $(row3_imgs[2]).animate({marginTop: "0px"},1400);
+//     $(row3_imgs[3]).animate({marginTop: "0px"},1600);
+// })
+// $("#portfolio_btn_2").click(function(){
+//     $(row3_imgs[0]).animate({marginTop: "300px"},1000);
+//     $(row3_imgs[1]).animate({marginTop: "300px"},1200);
+//     $(row3_imgs[2]).animate({marginTop: "300px"},1400);
+//     $(row3_imgs[3]).animate({marginTop: "300px"},1600);
+// })
 
 // This is my simple Smooth scroller, this takes to you to the top of the page when clicked
 function backToTop() {
@@ -159,7 +99,6 @@ window.onload = function countUpStatistics() {
     let girlsNumber = document.getElementById("girls_value");
     let projectNumber = document.getElementById("project_value");
     let codingNumber = document.getElementById("hours_value");
-    let statisticsPos = document.getElementById("statistic_section").offsetTop -500;
     let statisticSection = document.getElementById("statistic_section");
 
     function countUpTimer() {
@@ -219,16 +158,16 @@ window.onload = function countUpStatistics() {
     countUpTimer();
 
     function startCarousel() {
-        let sponsor1 = document.getElementById("sponsor_logo1");
-        let sponsor2 = document.getElementById("sponsor_logo2");
-        let sponsor3 = document.getElementById("sponsor_logo3");
-        let sponsor4 = document.getElementById("sponsor_logo4");
-        let sponsor5 = document.getElementById("sponsor_logo5");
-        let sponsor6 = document.getElementById("sponsor_logo6");
-        let sponsor7 = document.getElementById("sponsor_logo7");
-        let sponsor8 = document.getElementById("sponsor_logo8");
-        let sponsor9 = document.getElementById("sponsor_logo9");
-        let sponsor10 = document.getElementById("sponsor_logo10");
+        let sponsor1 = $("#sponsor_logo1");
+        let sponsor2 = $("#sponsor_logo2");
+        let sponsor3 = $("#sponsor_logo3");
+        let sponsor4 = $("#sponsor_logo4");
+        let sponsor5 = $("#sponsor_logo5");
+        let sponsor6 = $("#sponsor_logo6");
+        let sponsor7 = $("#sponsor_logo7");
+        let sponsor8 = $("#sponsor_logo8");
+        let sponsor9 = $("#sponsor_logo9");
+        let sponsor10 = $("#sponsor_logo10");
     
         let theSponsors = [sponsor1, sponsor2, sponsor3, sponsor4, sponsor5, sponsor6,sponsor7, sponsor8, sponsor9, 
             sponsor10];
@@ -238,35 +177,11 @@ window.onload = function countUpStatistics() {
         }
 
         function checkSponsorPos() {
-            if (sponsor7.style.marginLeft == "1750px"){
-                sponsor7.style.marginLeft = "-750px";
-            }
-            if (sponsor1.style.marginLeft == "1750px"){
-                sponsor1.style.marginLeft = "-750px";
-            }
-            if (sponsor2.style.marginLeft == "1750px"){
-                sponsor2.style.marginLeft = "-750px";
-            }
-            if (sponsor3.style.marginLeft == "1750px"){
-                sponsor3.style.marginLeft = "-750px";
-            }
-            if (sponsor4.style.marginLeft == "1750px"){
-                sponsor4.style.marginLeft = "-750px";
-            }
-            if (sponsor5.style.marginLeft == "1750px"){
-                sponsor5.style.marginLeft = "-750px";
-            }
-            if (sponsor6.style.marginLeft == "1750px"){
-                sponsor6.style.marginLeft = "-750px";
-            }
-            if (sponsor8.style.marginLeft == "1750px"){
-                sponsor8.style.marginLeft = "-750px";
-            }
-            if (sponsor9.style.marginLeft == "1750px"){
-                sponsor9.style.marginLeft = "-750px";
-            }
-            if (sponsor10.style.marginLeft == "1750px"){
-                sponsor10.style.marginLeft = "-750px";
+
+            for (let i = 0; i < theSponsors.length; i++){
+                if (theSponsors[i].css("margin-left") == "1750px"){
+                    theSponsors[i].css("margin-left","-750px");
+                }
             }
         }
 
@@ -278,14 +193,16 @@ window.onload = function countUpStatistics() {
 }
 
 function initMap() {
-    // The location of Uluru
-    var uluru = {lat: -33.924692, lng: 18.448723};
-    // -33.924692, 18.448723
-    // The map, centered at Uluru
+    // The location of Code4CT
+    var Code4CT = {lat: -33.924692, lng: 18.448723};
+    // The map, centered at Code4CT
     var map = new google.maps.Map(
-        document.getElementById('contact_map_box'), {zoom: 18, center: uluru});
-    // The marker, positioned at Uluru
-    var marker = new google.maps.Marker({position: uluru, map: map});
-  }
+        document.getElementById('contact_map_box'), {zoom: 18, center: Code4CT});
+    // The marker, positioned at Code4CT
+    var marker = new google.maps.Marker({position: Code4CT, map: map});
+}
 
-  initMap();
+initMap();
+
+// This checks if the webpage is loaded completely
+//   window.onload = function () { alert("It's loaded!") }

@@ -166,7 +166,7 @@
 #the_slider {
   grid-area: the_slider;
   border: none;
-  height: 90vh;
+  height: 700px;
   overflow: hidden;
   position: relative;
 }
@@ -197,8 +197,12 @@
   top: 500px;
   height: 30px;
   width: 50px;
-  background: white;
-  margin-left: 42%;
+  background: #e1918a;
+  position: absolute;
+  top: 90%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
 }
 
 #the_slider #slider_box #slideBtn_2 {
@@ -206,8 +210,12 @@
   top: 500px;
   height: 30px;
   width: 50px;
-  background: white;
-  margin-left: 47%;
+  background: #e1918a;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
 }
 
 #the_slider #slider_box #slideBtn_3 {
@@ -215,13 +223,21 @@
   top: 500px;
   height: 30px;
   width: 50px;
-  background: white;
-  margin-left: 52%;
+  background: #e1918a;
+  position: absolute;
+  top: 90%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
 }
 
 #the_slider img {
   height: 100%;
   width: 100vw;
+}
+
+button {
+  cursor: pointer;
 }
 
 #header_btn {
@@ -275,16 +291,19 @@
   width: 150px;
   height: 50px;
   font-size: 1em;
+  margin-left: 0px;
+  transition: all 0.6s;
 }
 
 #header_text button:hover {
   transition: width 0.6s;
-  width: 110px;
+  width: 140px;
 }
 
 #header_text button:hover {
-  transition: width 0.6s;
-  width: 200px;
+  transition: all 0.6s;
+  width: 180px;
+  margin-left: 30px;
 }
 
 #main_content {
@@ -309,8 +328,9 @@
 }
 
 #main_content #intro_info h3 {
+  color: #3f3f3f;
   font-size: 1.5em;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #3f3f3f;
   width: 40%;
 }
 
@@ -319,6 +339,7 @@
 }
 
 #main_content #intro_info h5 {
+  color: grey;
   margin-top: 30px;
   font-weight: lighter;
   font-size: 1.1em;
@@ -338,7 +359,7 @@
 
 #main_content #intro_info button:hover {
   transition: width 0.6s;
-  width: 110px;
+  width: 140px;
 }
 
 #main_content #intro_img {
@@ -558,8 +579,9 @@
 }
 
 #home_portfolio #home_portfolio_header h3 {
+  color: #3f3f3f;
   font-size: 1.5em;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #3f3f3f;
   width: 30%;
 }
 
@@ -572,6 +594,7 @@
   font-weight: lighter;
   font-size: 1em;
   margin-top: 15px;
+  color: grey;
 }
 
 #home_portfolio #home_portfolio_images {
@@ -661,8 +684,9 @@
 }
 
 #the_team #the_team_head h3 {
+  color: #3f3f3f;
   font-size: 1.5em;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #3f3f3f;
   width: 20%;
 }
 
@@ -675,6 +699,7 @@
   font-weight: lighter;
   font-size: 1em;
   margin-top: 15px;
+  color: grey;
 }
 
 #the_team #the_team_members {
@@ -688,6 +713,10 @@
   grid-gap: 10px;
   font-family: 'Poppins';
   font-weight: normal;
+}
+
+#the_team #the_team_members h3 {
+  color: #3f3f3f;
 }
 
 #the_team #the_team_members h4 {
@@ -709,7 +738,7 @@
 
 #the_team #the_team_members button:hover {
   transition: width 0.6s;
-  width: 110px;
+  width: 140px;
 }
 
 #the_team #the_team_members hr {
@@ -1020,11 +1049,13 @@
 #subscribe_box #subscribe_box_content h3 {
   margin-top: 10px;
   text-align: center;
+  color: #3f3f3f;
 }
 
 #subscribe_box #subscribe_box_content h4 {
   margin-top: 20px;
   text-align: center;
+  color: grey;
 }
 
 #subscribe_box #subscribe_box_content #the_subscribeform {
@@ -1032,15 +1063,27 @@
   height: auto;
   margin-top: 20px;
   padding: 5px;
+  position: relative;
 }
 
 #subscribe_box #subscribe_box_content #the_subscribeform input {
+  margin-left: -60px;
   height: 30px;
   font-size: 0.9em;
   color: grey;
+  outline: none;
+  border: none;
+  border: 1px solid grey;
+  border-radius: 3px;
+  padding: 2px;
+}
+
+#subscribe_box #subscribe_box_content #the_subscribeform input::placeholder {
+  font-family: 'Poppins';
 }
 
 #subscribe_box #subscribe_box_content #the_subscribeform button {
+  position: absolute;
   font-size: 0.9em;
   height: 35px;
   width: 90px;
@@ -1134,8 +1177,13 @@
   font-family: 'Poppins';
 }
 
+#homepage_about_section h2 {
+  color: #3f3f3f;
+}
+
 #homepage_about_section h4 {
   font-weight: lighter;
+  color: grey;
 }
 
 #homepage_about_section img {
@@ -1249,7 +1297,7 @@
 }
 
 #homepage_about_section #home_about_links ul li a {
-  color: #333;
+  color: grey;
   text-decoration: none;
   border-bottom: 1px solid transparent;
   transition: all 0.4s;
@@ -1276,7 +1324,7 @@
 }
 
 #homepage_about_section #home_about_support ul li a {
-  color: #333;
+  color: grey;
   text-decoration: none;
   border-bottom: 1px solid transparent;
   transition: all 0.4s;
@@ -1373,51 +1421,73 @@
   #the_slider {
     grid-area: the_slider;
     border: none;
-    height: 90vh;
+    height: 500px;
     overflow: hidden;
+    position: relative;
   }
   #the_slider #slider_box {
     overflow: hidden;
   }
   #the_slider #slider_box #img_1 {
     margin-left: 0vw;
+    position: absolute;
   }
   #the_slider #slider_box #img_2 {
-    margin-left: -100vw;
+    margin-left: 0vw;
     display: none;
+    position: absolute;
   }
   #the_slider #slider_box #img_3 {
-    margin-left: -100vw;
+    margin-left: 0vw;
     display: none;
+    position: absolute;
   }
   #the_slider #slider_box #img_4 {
-    margin-left: -100vw;
+    margin-left: 0vw;
     display: none;
-  }
-  #the_slider #slider_box #back_slide {
     position: absolute;
-    width: 0;
-    height: 0;
-    border-top: 15px solid transparent;
-    border-right: 25px solid white;
-    border-bottom: 15px solid transparent;
-    border-radius: 5px;
-    top: 250px;
-    left: 20px;
   }
-  #the_slider #slider_box #next_slide {
+  #the_slider #slider_box #slideBtn_1 {
     position: absolute;
-    width: 0;
-    height: 0;
-    border-top: 15px solid transparent;
-    border-left: 25px solid white;
-    border-bottom: 15px solid transparent;
-    border-radius: 5px;
-    top: 250px;
-    right: 20px;
+    top: 500px;
+    height: 30px;
+    width: 50px;
+    background: #e1918a;
+    position: absolute;
+    top: 90%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    height: 15px;
+    width: 20px;
+  }
+  #the_slider #slider_box #slideBtn_2 {
+    position: absolute;
+    top: 500px;
+    height: 30px;
+    width: 50px;
+    background: #e1918a;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 15px;
+    width: 20px;
+  }
+  #the_slider #slider_box #slideBtn_3 {
+    position: absolute;
+    top: 500px;
+    height: 30px;
+    width: 50px;
+    background: #e1918a;
+    position: absolute;
+    top: 90%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    height: 15px;
+    width: 20px;
   }
   #the_slider img {
-    height: 80vh;
+    height: 100%;
     width: 100%;
   }
   #header_btn {
@@ -1446,8 +1516,12 @@
       opacity: 1;
     }
   }
+  #header_text h1 {
+    font-size: 1.7em;
+  }
   #header_text h3 {
     margin-top: 10px;
+    font-size: 1.4em;
   }
   #header_text button {
     width: 100px;
@@ -1490,6 +1564,7 @@
     height: 40px;
     font-family: 'Poppins';
     transition: width 0.6s;
+    font-size: 0.7em;
   }
   #main_content #intro_info button:hover {
     transition: width 0.6s;
@@ -1693,7 +1768,7 @@
     height: 200px;
   }
   #the_team {
-    height: 1200px;
+    height: 1400px;
     margin-top: 100px;
     margin-left: 10px;
     margin-right: 10px;
@@ -1704,7 +1779,7 @@
   #the_team #the_team_head {
     grid-area: the_team_head;
     border: none;
-    height: 150px;
+    height: 250px;
     font-family: 'Poppins';
   }
   #the_team #the_team_head h3 {
@@ -1715,10 +1790,13 @@
   #the_team #the_team_head h3 #solid_border {
     border-bottom: 3px solid #e1918a;
   }
+  #the_team #the_team_head h5 {
+    font-size: 0.8em;
+  }
   #the_team #the_team_members {
     grid-area: the_team_members;
     border: none;
-    height: 950px;
+    height: 1100px;
     margin-top: 10px;
     display: grid;
     grid-template-areas: 'member_1' 'member_2' 'member_3' 'member_4';
@@ -1741,7 +1819,7 @@
   }
   #the_team #the_team_members button:hover {
     transition: width 0.6s;
-    width: 110px;
+    width: 140px;
   }
   #the_team #the_team_members #member_1 {
     grid-area: member_1;
@@ -1763,6 +1841,7 @@
   #the_team #the_team_members #member_1 #member1_info {
     grid-area: member1_info;
     border: none;
+    margin-top: 30px;
   }
   #the_team #the_team_members #member_1 #member1_info #emma_name {
     border: none;
@@ -1770,7 +1849,7 @@
   }
   #the_team #the_team_members #member_1 #member1_info #emma_info {
     border: none;
-    height: 159px;
+    height: 139px;
   }
   #the_team #the_team_members #member_2 {
     grid-area: member_2;
@@ -1792,6 +1871,7 @@
   #the_team #the_team_members #member_2 #member2_info {
     grid-area: member2_info;
     border: none;
+    margin-top: 30px;
   }
   #the_team #the_team_members #member_2 #member2_info #andrea_name {
     border: none;
@@ -1799,7 +1879,7 @@
   }
   #the_team #the_team_members #member_2 #member2_info #andrea_info {
     border: none;
-    height: 159px;
+    height: 139px;
   }
   #the_team #the_team_members #member_3 {
     grid-area: member_3;
@@ -1821,6 +1901,7 @@
   #the_team #the_team_members #member_3 #member3_info {
     grid-area: member3_info;
     border: none;
+    margin-top: 20px;
   }
   #the_team #the_team_members #member_3 #member3_info #tegan_name {
     border: none;
@@ -1828,7 +1909,7 @@
   }
   #the_team #the_team_members #member_3 #member3_info #tegan_info {
     border: none;
-    height: 159px;
+    height: 139px;
   }
   #the_team #the_team_members #member_4 {
     grid-area: member_4;
@@ -1850,14 +1931,15 @@
   #the_team #the_team_members #member_4 #member4_info {
     grid-area: member4_info;
     border: none;
+    margin-top: 20px;
   }
   #the_team #the_team_members #member_4 #member4_info #tracy_name {
     border: none;
-    height: 60px;
+    height: 40px;
   }
   #the_team #the_team_members #member_4 #member4_info #tracy_info {
     border: none;
-    height: 179px;
+    height: 139px;
   }
   #statistic_section {
     margin-top: 100px;
@@ -1910,14 +1992,14 @@
     height: 30px;
     font-size: 0.9em;
     margin-left: 0px;
-    width: 286px;
+    width: 180px;
     text-align: center;
+    margin-left: -50px;
   }
   #subscribe_box #subscribe_box_content #the_subscribeform button {
     font-size: 0.9em;
     height: 35px;
     width: 80px;
-    margin-top: 10px;
   }
   #subscribe_box #subscribe_box_content #the_subscribeform button:hover {
     width: 120px;
@@ -2561,7 +2643,7 @@
 
 #contact_form_box #contact_form #contact_input #contact_form_submitBtn:hover {
   transition: width 0.6s;
-  width: 110px;
+  width: 140px;
 }
 
 #contact_form_box #contact_info {
@@ -3427,7 +3509,7 @@
   font-size: 1.5em;
   border-bottom: 1px solid #636363;
   width: 40%;
-  color: #636363;
+  color: #3f3f3f;
 }
 
 #about_intro_info #about_intro_text h3 #solid_border {
@@ -3438,6 +3520,7 @@
   margin-top: 30px;
   font-weight: lighter;
   font-size: 1em;
+  color: grey;
 }
 
 #about_intro_info #about_intro_text button {
@@ -3454,7 +3537,7 @@
 
 #about_intro_info #about_intro_text button:hover {
   transition: width 0.6s;
-  width: 110px;
+  width: 140px;
 }
 
 #about_intro_info #about_intro_img {
@@ -3506,15 +3589,16 @@
 }
 
 #aboutUs_section #aboutUs_info h2 {
-  color: #636363;
+  color: #3f3f3f;
   margin-top: 20px;
-  border-bottom: 1px solid #636363;
+  border-bottom: 1px solid #3f3f3f;
   width: 35%;
 }
 
 #aboutUs_section #aboutUs_info h4 {
   margin-top: 20px;
   font-weight: lighter;
+  color: grey;
 }
 
 #aboutUs_section #aboutUs_info #about_info_section1 {
@@ -3580,6 +3664,223 @@
   margin-top: 100px;
   height: 200px;
   border: none;
+  background: black;
+}
+
+#portfolio_grid_container {
+  display: grid;
+  grid-template-areas: 'navbar' 'the_section1' 'the_portfolio_main' 'sponsor_carousel' 'homepage_about_section' 'footer';
+  grid-template-columns: 1fr;
+}
+
+#the_section1 {
+  grid-area: the_section1;
+  height: 250px;
+  background: #ebebeb;
+  font-family: 'Poppins';
+  text-align: center;
+  color: #636363;
+}
+
+#the_section1 h2 {
+  margin-top: 70px;
+  font-size: 1.8em;
+}
+
+#the_section1 h4 {
+  margin-top: 10px;
+}
+
+#the_section1 a {
+  color: #e1918a;
+  text-decoration: none;
+}
+
+#the_portfolio_main {
+  grid-area: the_portfolio_main;
+  border: none;
+  margin-top: 100px;
+  height: 1250px;
+  display: grid;
+  grid-template-areas: 'portfolio_header' 'portfolio_img_section' 'portfolio_btn';
+  grid-template-columns: 1fr;
+  overflow: hidden;
+}
+
+#the_portfolio_main img {
+  width: 100%;
+  height: 300px;
+}
+
+#the_portfolio_main #portfolio_header {
+  grid-area: portfolio_header;
+  border: none;
+  height: 200px;
+  text-align: center;
+  font-family: 'Poppins';
+}
+
+#the_portfolio_main #portfolio_header h2 {
+  color: #3f3f3f;
+  font-size: 1.5em;
+  border-bottom: 1px solid #3f3f3f;
+  margin-left: 550px;
+  margin-right: 550px;
+}
+
+#the_portfolio_main #portfolio_header h2 #solid_border {
+  border-bottom: 3px solid #e1918a;
+}
+
+#the_portfolio_main #portfolio_img_section {
+  grid-area: portfolio_img_section;
+  border: none;
+  height: 900px;
+  display: grid;
+  grid-template-areas: 'portfolio_img_row1' 'portfolio_img_row2' 'portfolio_img_row3';
+  grid-template-columns: 1fr;
+}
+
+#the_portfolio_main #portfolio_img_section #portfolio_img_row1 {
+  grid-area: portfolio_img_row1;
+  border: none;
+  height: 300px;
+  display: grid;
+  grid-template-areas: 'row1_img1 row1_img2 row1_img3 row1_img4';
+  grid-template-columns: 1fr 20% 30% 1fr;
+  overflow: hidden;
+}
+
+#the_portfolio_main #portfolio_img_section #portfolio_img_row1 #row1_img1 {
+  grid-area: row1_img1;
+  border: none;
+  overflow: hidden;
+}
+
+#the_portfolio_main #portfolio_img_section #portfolio_img_row1 #row1_img2 {
+  grid-area: row1_img2;
+  border: none;
+  overflow: hidden;
+}
+
+#the_portfolio_main #portfolio_img_section #portfolio_img_row1 #row1_img3 {
+  grid-area: row1_img3;
+  border: none;
+  overflow: hidden;
+}
+
+#the_portfolio_main #portfolio_img_section #portfolio_img_row1 #row1_img4 {
+  grid-area: row1_img4;
+  border: none;
+  overflow: hidden;
+}
+
+#the_portfolio_main #portfolio_img_section #portfolio_img_row2 {
+  grid-area: portfolio_img_row2;
+  border: none;
+  height: 300px;
+  display: grid;
+  grid-template-areas: 'row2_img1 row2_img2 row2_img3 row2_img4';
+  grid-template-columns: 1fr 30% 20% 1fr;
+  overflow: hidden;
+}
+
+#the_portfolio_main #portfolio_img_section #portfolio_img_row2 #row2_img1 {
+  grid-area: row2_img1;
+  border: none;
+  overflow: hidden;
+}
+
+#the_portfolio_main #portfolio_img_section #portfolio_img_row2 #row2_img2 {
+  grid-area: row2_img2;
+  border: none;
+  overflow: hidden;
+}
+
+#the_portfolio_main #portfolio_img_section #portfolio_img_row2 #row2_img3 {
+  grid-area: row2_img3;
+  border: none;
+  overflow: hidden;
+}
+
+#the_portfolio_main #portfolio_img_section #portfolio_img_row2 #row2_img4 {
+  grid-area: row2_img4;
+  border: none;
+  overflow: hidden;
+}
+
+#the_portfolio_main #portfolio_img_section #portfolio_img_row3 {
+  grid-area: portfolio_img_row3;
+  border: none;
+  height: 300px;
+  display: grid;
+  grid-template-areas: 'row3_img1 row3_img2 row3_img3 row3_img4';
+  grid-template-columns: 1fr 20% 30% 1fr;
+  overflow: hidden;
+  position: relative;
+}
+
+#the_portfolio_main #portfolio_img_section #portfolio_img_row3 #row3_img1 {
+  grid-area: row3_img1;
+  border: none;
+  overflow: hidden;
+}
+
+#the_portfolio_main #portfolio_img_section #portfolio_img_row3 #row3_img2 {
+  grid-area: row3_img2;
+  border: none;
+  overflow: hidden;
+}
+
+#the_portfolio_main #portfolio_img_section #portfolio_img_row3 #row3_img3 {
+  grid-area: row3_img3;
+  border: none;
+  overflow: hidden;
+}
+
+#the_portfolio_main #portfolio_img_section #portfolio_img_row3 #row3_img4 {
+  grid-area: row3_img4;
+  border: none;
+  overflow: hidden;
+}
+
+#the_portfolio_main #portfolio_btn {
+  grid-area: portfolio_btn;
+  border: none;
+  height: 100px;
+  position: relative;
+}
+
+#the_portfolio_main #portfolio_btn #portfolio_btn_1 {
+  position: absolute;
+  border: none;
+  height: 30px;
+  width: 30px;
+  left: 45%;
+  top: 0%;
+  transform: translate(-50%, 50%);
+  background: red;
+}
+
+#the_portfolio_main #portfolio_btn #portfolio_btn_2 {
+  position: absolute;
+  border: none;
+  height: 30px;
+  width: 30px;
+  left: 50%;
+  top: 0%;
+  transform: translate(-50%, 50%);
+  background: blue;
+}
+
+#the_portfolio_main #portfolio_btn #portfolio_btn_3 {
+  position: absolute;
+  border: none;
+  height: 30px;
+  width: 30px;
+  left: 55%;
+  top: 0%;
+  transform: translate(-50%, 50%);
   background: black;
 }
 /*# sourceMappingURL=style.css.map */
