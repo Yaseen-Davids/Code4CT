@@ -173,3 +173,20 @@
         text-decoration: none;
     }
 }
+
+@mixin coursesBoxHover{
+    cursor: pointer;
+    transition: all 0.5s;
+
+    &:hover{
+        transition: all 0.5s;
+        box-shadow: 0px 0px 20px grey;
+    }
+}
+
+@mixin coursesHeaderSection{
+    text-align: center;
+    border: $borderSettings;
+    height: 50px;
+    
+}

@@ -94,7 +94,7 @@ function changeToClose() {
     // }
 }
 
-window.onload = function countUpStatistics() {
+onload = function countUpStatistics() {
     let coffeeNumber = document.getElementById("coffee_value");
     let girlsNumber = document.getElementById("girls_value");
     let projectNumber = document.getElementById("project_value");
