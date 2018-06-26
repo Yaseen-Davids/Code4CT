@@ -3895,6 +3895,31 @@ button {
   text-decoration: underline;
 }
 
+#shopping_cart {
+  position: fixed;
+  top: 200px;
+  right: -85px;
+  height: 80px;
+  width: 80px;
+  transition: all 0.4s;
+  background: url("../images/shopping-cart.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#shopping_list {
+  display: block;
+  position: fixed;
+  top: 200px;
+  right: -305px;
+  height: 400px;
+  width: 300px;
+  border: 1px solid black;
+  transition: all 0.4s;
+  background: white;
+}
+
 #courses_section1 {
   grid-area: courses_section1;
   border: none;
@@ -4468,8 +4493,7 @@ button {
   grid-area: courses_section4;
   border: none;
   margin-top: 150px;
-  margin-bottom: 100px;
-  height: 522px;
+  height: 722px;
   display: grid;
   grid-template-areas: 'courses_section4_header' 'courses_section4_logos' 'courses_section4_courses';
   grid-template-columns: 1fr;
@@ -4824,8 +4848,7 @@ button {
   grid-area: courses_section6;
   border: none;
   margin-top: 150px;
-  margin-bottom: 100px;
-  height: 922px;
+  height: 1022px;
   display: grid;
   grid-template-areas: 'courses_section6_header' 'courses_section6_logos' 'courses_section6_courses';
   grid-template-columns: 1fr;

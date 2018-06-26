@@ -1,3 +1,31 @@
+window.onscroll = function slideInCart() {
+    if (window.scrollY > 300){
+        $("#shopping_cart").css('right', '0px', 'transition', 'all 0.4s');
+    }
+    else{
+        $("#shopping_cart").css('right', '-85px', 'transition', 'all 0.4s');
+    }
+    if ($("#shopping_list").css('right') == "0px"){
+        $("#shopping_cart").css('right', '305px', 'transition', 'all 0.4s');
+    }
+}
+
+$("#shopping_cart").click(function(){
+    if ($("#shopping_list").css('right') == "0px"){
+        $("#shopping_cart").css('right', '0px', 'transition', 'all 0.4s');
+        $("#shopping_list").css('right', '-305px', 'transition', 'all 0.4s');
+    }
+    else {
+        $("#shopping_cart").css('right', '305px', 'transition', 'all 0.4s');
+        $("#shopping_list").css('right', '0px', 'transition', 'all 0.4s');
+    }
+})
+
+$("button").click(function(){
+    $("#shopping_cart").css('right', '305px', 'transition', 'all 0.4s');
+    $("#shopping_list").css('right', '0px', 'transition', 'all 0.4s');
+})
+
 // // jQuery functions for buttons to add and remove course values
 
 // $(function(){
