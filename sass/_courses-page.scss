@@ -28,6 +28,7 @@
     transition: all 0.4s;
     background: url("../images/shopping-cart.png");
     @include containBgImg;
+    cursor: pointer;
 }
 
 #shopping_list{
