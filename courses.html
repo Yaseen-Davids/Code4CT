@@ -11,10 +11,13 @@
 </head>
 <body>
 
+    <!-- This is the main container -->
     <div id="container">
 
+        <!-- This is the courses grid container -->
         <div id="courses_grid_container">
 
+            <!-- This is the navbar for the courses page -->
             <div id="navbar">
                 <a href="index.html"><div id="nav_logo"></div></a>
                 <div id="nav_menu_btn" onclick="changeToClose()">
@@ -25,7 +28,7 @@
                 <div id="nav_links">
                     <div id="links_box">
                         <ul>
-                            <a href="#home" class="selected" onclick="backToTop()" id="homeBtn"><li>Home</li></a>
+                            <a href="index.html" class="selected" onclick="backToTop()" id="homeBtn"><li>Home</li></a>
                             <a href="#"><li>Courses</li></a>
                             <a href="portfolio.html"><li>Portfolio</li></a>
                             <a href="contact.html"><li>Contact</li></a>
@@ -39,6 +42,7 @@
                 </div>
             </div>
 
+            <!-- This is the global section used for the courses page -->
             <div id="the_section1">
                 <h2>OUR COURSES</h2>
                 <h4><a href="index.html">HOME</a> <span>&rarr;</span> COURSES</h4>
@@ -53,16 +57,56 @@
                         <div id="section1_courses1_header">
                             <h3>Create with Code Series</h3>
                         </div>
-                        <div id="section1_courses1_info"></div>
+                        <div id="section1_course1_info">
+                            <h4>The Create with Code series is designed to give learners an introduction to the exciting world of coding, helping them to explore how creative coding can be. The package includes a testing day in which learners’ aptitude is assessed.</h4>
+                            <h4><b>Stream includes</b> : 2 x Create with Code courses <br> 1 x Programming Aptitude Test</h4>
+                            <h4><b>Prerequisites : </b> Computer literacy; English Proficiency</h4>
+                            <h4><b>Pricing : </b>Individual R1800 <br> Group booking (6+) R1500</h4>
+                            <button>Add to Cart</button>
+                        </div>
                     </div>
                     <div id="section1_courses2">
                         <div id="section1_courses2_header">
                             <h3>Tech Innovations Level 1</h3>
                         </div>
+                        <div id="section1_course2_info">
+                            <h4>Covering an introduction to web development as well as an introduction to design thinking, this course helps a learner explore how technology can be used for social innovation while developing fundamentals knowledge of programming. </h4>
+                            <h4><b>Stream includes</b> : Launch event and Parent Information Session
+                                <br>
+                                Login to the online learning portal
+                                <br>
+                                1 x Level 1 Coding course
+                                <br>
+                                1 x Level 1 Social Innovation Course
+                                <br>
+                                2 x Career and Life Skills workshops
+                                <br>
+                                Certificate of completion</h4>
+                            <h4><b>Prerequisites : </b> Meet application requirements</h4>
+                            <h4><b>Pricing : </b>Individual R4200 <br> Group booking (6+) R3500</h4>
+                            <button>Add to Cart</button>
+                        </div>
                     </div>
                     <div id="section1_courses3">
                         <div id="section1_courses3_header">
                             <h3>Tech Innovations Level 2</h3>
+                        </div>
+                        <div id="section1_course3_info">
+                            <h4>Going beyond the basics, this course enables a learner move from basic coding proficiency to the level where they are able to implement a basic coding project independently. The course has a strong focus on developing leadership skills and offers abundant opportunity for learners to interact with the tech industry.</h4>
+                            <h4><b>Stream includes</b> : Launch event and Parent Information Session
+                                <br>
+                                Login to the online learning portal
+                                <br>
+                                1 x Level 2 Coding course
+                                <br>
+                                1 x Level 2 Social Innovation Course
+                                <br>
+                                5 x Career and Life Skills workshops
+                                <br>
+                                Certificate of completion</h4>
+                            <h4><b>Prerequisites : </b> Tech Innovators Level 1 or equivalent</h4>
+                            <h4><b>Pricing : </b>Individual R5600 <br> Group booking (6+) R4800</h4>
+                            <button>Add to Cart</button>
                         </div>
                     </div>
                 </div>
@@ -72,42 +116,372 @@
                 <div id="courses_section2_header">
                         <h2>Introduc<span id="solid_border">tory Codin</span>g Courses</h2>
                 </div>
+                <div id="courses_section2_logos">
+                    <div id="courses_logo1"></div>
+                    <div id="courses_logo2"></div>
+                    <div id="courses_logo3"></div>
+                </div>
                 <div id="courses_section2_courses">
                     <div id="section2_courses1">
                         <div id="section2_courses1_header">
                             <h3>Intro to Coding : Web Pages</h3>
+                        </div>
+                        <div id="section2_courses1_info">
+                            <h4>Code a simple one-page website using HTML and JQuery.</h4>
+                            <h4><b>Duration</b> : 3 Hours</h4>
+                            <h4><b>Price</b> : <span id="course_price_text">R250</span></h4>
+                            <button>Add to Cart</button>
                         </div>
                     </div>
                     <div id="section2_courses2">
                         <div id="section2_courses2_header">
                             <h3>Intro to Coding : Music</h3>
                         </div>
+                        <div id="section2_courses2_info">
+                            <h4>Code a song using SonicPi software on a Raspberry Pi computer.</h4>
+                            <h4><b>Duration</b> : 3 Hours</h4>
+                            <h4><b>Price</b> : <span id="course_price_text">R250</span></h4>
+                            <button>Add to Cart</button>
+                        </div>
                     </div>
                     <div id="section2_courses3">
                         <div id="section2_courses3_header">
                             <h3>Intro to Coding : Animations</h3>
+                        </div>
+                        <div id="section2_courses3_info">
+                            <h4>Create a 2D animation using coding language JavaScript.</h4>
+                            <h4><b>Duration</b> : 3 Hours</h4>
+                            <h4><b>Price</b> : <span id="course_price_text">R250</span></h4>
+                            <button>Add to Cart</button>
                         </div>
                     </div>
                     <div id="section2_courses4">
                         <div id="section2_courses4_header">
                             <h3>Create with Code : Web Pages</h3>
                         </div>
+                        <div id="section2_courses4_info">
+                            <h4>Learn how the internet works and code a simple one-page website using HTML, CSS and JQuery.</h4>
+                            <h4><b>Duration</b> : 3 Days</h4>
+                            <h4><b>Price</b> : <span id="course_price_text">R960</span></h4>
+                            <button>Add to Cart</button>
+                        </div>
                     </div>
                     <div id="section2_courses5">
                         <div id="section2_courses5_header">
                             <h3>Create with Code : Music</h3>
+                        </div>
+                        <div id="section2_courses4_info">
+                            <h4>Learn computer science principles by coding music with a Raspberry Pi computer.</h4>
+                            <h4><b>Duration</b> : 3 Days</h4>
+                            <h4><b>Price</b> : <span id="course_price_text">R960</span></h4>
+                            <button>Add to Cart</button>
                         </div>
                     </div>
                     <div id="section2_courses6">
                         <div id="section2_courses6_header">
                             <h3>Create with Code : Animations</h3>
                         </div>
+                        <div id="section2_courses6_info">
+                            <h4>Learn computer science principles by coding animations using JavaScript.</h4>
+                            <h4><b>Duration</b> : 3 Days</h4>
+                            <h4><b>Price</b> : <span id="course_price_text">R960</span></h4>
+                            <button>Add to Cart</button>
+                        </div>
                     </div>
                     <div id="section2_courses7">
                         <div id="section2_courses7_header">
                             <h3>Getting Started as a Developer</h3>
                         </div>
+                        <div id="section2_courses7_info">
+                            <h4>Learn how to set up a development environment and practical skills to start coding.</h4>
+                            <h4><b>Duration</b> : 3 Hours</h4>
+                            <h4><b>Price</b> : <span id="course_price_text">R250</span></h4>
+                            <button>Add to Cart</button>
+                        </div>
                     </div>
+                </div>
+            </div>
+
+            <div id="courses_section3">
+                <div id="courses_section3_header">
+                    <h2>Begin<span id="solid_border">ner Coding Co</span>urses</h2>
+                </div>
+                <div id="courses_section3_logos">
+                    <div id="courses_logo4"></div>
+                    <div id="courses_logo5"></div>
+                    <div id="courses_logo6"></div>
+                </div>
+                <div id="courses_section3_courses">
+                    <div id="section3_courses1">
+                        <div id="section3_courses1_header">
+                            <h3>Beginner JavaScript</h3>
+                        </div>
+                        <div id="section3_courses1_info">
+                            <h4>Develop a basic proficiency in programming structures and methods in JavaScript so that you are able to create an interactive web application.</h4>
+                            <h4><b>Duration</b> : 6 Days</h4>
+                            <h4><b>Price</b> : <span id="course_price_text">R1800</span></h4>
+                            <button>Add to Cart</button>
+                        </div>
+                    </div>
+                    <div id="section3_courses2">
+                        <div id="section3_courses2_header">
+                            <h3>Beginner Front End Web Development</h3>
+                        </div>
+                        <div id="section3_courses2_info">
+                            <h4>Develop a good proficiency in CSS and an understanding of web design principles so that you are able to create visually pleasing web pages.</h4>
+                            <h4><b>Duration</b> : 6 Days</h4>
+                            <h4><b>Price</b> : <span id="course_price_text">R1800</span></h4>
+                            <button>Add to Cart</button>
+                        </div>
+                    </div>
+                    <div id="section3_courses3">
+                        <div id="section3_courses3_header">
+                            <h3>Beginner Python</h3>
+                        </div>
+                        <div id="section3_courses3_info">
+                            <h4>Develop a basic proficiency in programming principles and methods in Python.</h4>
+                            <h4><b>Duration</b> : 6 Days</h4>
+                            <h4><b>Price</b> : <span id="course_price_text">R1800</span></h4>
+                            <button>Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="courses_section4">
+                <div id="courses_section4_header">
+                    <h2>Interm<span id="solid_border">ediate Coding</span> Courses</h2>
+                </div>
+                <div id="courses_section4_logos">
+                    <div id="courses_logo7"></div>
+                    <div id="courses_logo8"></div>
+                </div>
+                <div id="courses_section4_courses">
+                    <div id="section4_courses1">
+                        <div id="section4_courses1_header">
+                            <h3>Full Stack JavaScript</h3>
+                        </div>
+                        <div id="section4_courses1_info">
+                            <h4>Develop an understanding of the front and backend development environment and basic proficiency in server side JavaScript and object-oriented programming. By the end of the course you will be able to architect an application, control flow in an application and persist and retrieve data in a database.</h4>
+                            <h4><b>Duration</b> : 6 Days</h4>
+                            <h4><b>Price</b> : <span id="course_price_text">R1800</span></h4>
+                            <button>Add to Cart</button>
+                        </div>
+                    </div>
+                    <div id="section4_courses2">
+                        <div id="section4_courses2_header">
+                            <h3>Website Deployment</h3>
+                        </div>
+                        <div id="section4_courses2_info">
+                            <h4>Learn how to manage and deploy code to a server environment so that you can host your own web pages.</h4>
+                            <h4><b>Duration</b> : 4 Days</h4>
+                            <h4><b>Price</b> : <span id="course_price_text">R1200</span></h4>
+                            <button>Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="courses_section5">
+                <div id="courses_section5_header">
+                    <h2>Social Innovation</h2>
+                </div>
+                <div id="courses_section5_logos">
+                    <div id="courses_logo9"></div>
+                    <div id="courses_logo10"></div>
+                    <div id="courses_logo11"></div>
+                    <div id="courses_logo12"></div>
+                </div>
+                <div id="courses_section5_courses">
+                    <div id="section5_courses1">
+                        <div id="section5_courses1_header">
+                            <h3>Innovation Challenge</h3>
+                        </div>
+                        <div id="section5_courses1_info">
+                            <h4>Work in groups to design an innovative solution to a social issue by using the design thinking process.</h4>
+                            <h4><b>Duration</b> : 3 Days</h4>
+                            <h4><b>Price</b> : <span id="course_price_text">R750</span></h4>
+                            <button>Add to Cart</button>
+                        </div>
+                    </div>
+                    <div id="section5_courses2">
+                        <div id="section5_courses2_header">
+                            <h3>CodeStorm</h3>
+                        </div>
+                        <div id="section5_courses2_info">
+                            <h4>Work in groups to create and present a code project that addresses a particular issue. </h4>
+                            <h4><b>Duration</b> : 5 Days</h4>
+                            <h4><b>Price</b> : <span id="course_price_text">R1500</span></h4>
+                            <button>Add to Cart</button>
+                        </div>
+                    </div>
+                    <div id="section5_courses3">
+                        <div id="section5_courses3_header">
+                            <h3>Hackathon</h3>
+                        </div>
+                        <div id="section5_courses3_info">
+                            <h4>Learn how to manage and deploy code to a server environment so that you can host your own web pages.</h4>
+                            <h4><b>Duration</b> : TBC</h4>
+                            <h4><b>Price</b> : <span id="course_price_text">TBC</span></h4>
+                            <button>Add to Cart</button>
+                        </div>
+                    </div>
+                    <div id="section5_courses4">
+                        <div id="section5_courses4_header">
+                            <h3>Industry Immersion</h3>
+                        </div>
+                        <div id="section5_courses4_info">
+                            <h4>Spend a week at a tech company and gain experience in industry.</h4>
+                            <h4><b>Duration</b> : 5 Days</h4>
+                            <h4><b>Price</b> : <span id="course_price_text">R1500</span></h4>
+                            <button>Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+             <div id="courses_section6">
+                <div id="courses_section6_header">
+                        <h2>Introduc<span id="solid_border">tory Codin</span>g Courses</h2>
+                </div>
+                <div id="courses_section6_logos">
+                    <div id="courses_logo13"></div>
+                    <div id="courses_logo14"></div>
+                    <div id="courses_logo15"></div>
+                </div>
+                <div id="courses_section6_courses">
+                    <div id="section6_courses1">
+                        <div id="section6_courses1_header">
+                            <h3>Code Conversation</h3>
+                        </div>
+                        <div id="section6_courses1_info">
+                            <h4>Learn about tech careers from a panel of working professionals who will share their experiences with you.</h4>
+                            <h4><b>Duration</b> : 1 Day</h4>
+                            <h4><b>Price</b> : <span id="course_price_text">R300</span></h4>
+                            <button>Add to Cart</button>
+                        </div>
+                    </div>
+                    <div id="section6_courses2">
+                        <div id="section6_courses2_header">
+                            <h3>Presentation Skills</h3>
+                        </div>
+                        <div id="section6_courses2_info">
+                            <h4>Learn how to present an idea or project in a compelling manner. </h4>
+                            <h4><b>Duration</b> : 1 Day</h4>
+                            <h4><b>Price</b> : <span id="course_price_text">R300</span></h4>
+                            <button>Add to Cart</button>
+                        </div>
+                    </div>
+                    <div id="section6_courses3">
+                        <div id="section6_courses3_header">
+                            <h3>CV & LinkedIns</h3>
+                        </div>
+                        <div id="section6_courses3_info">
+                            <h4>Learn how to present your skills effectively.</h4>
+                            <h4><b>Duration</b> : 1 Day</h4>
+                            <h4><b>Price</b> : <span id="course_price_text">R300</span></h4>
+                            <button>Add to Cart</button>
+                        </div>
+                    </div>
+                    <div id="section6_courses4">
+                        <div id="section6_courses4_header">
+                            <h3>Networking</h3>
+                        </div>
+                        <div id="section6_courses4_info">
+                            <h4>Learn how to present yourself professionally when networking and put your skills to the test by attending local tech events. You will attend a training session and attend one event of your choice.</h4>
+                            <h4><b>Duration</b> : 2 Days</h4>
+                            <h4><b>Price</b> : <span id="course_price_text">R300</span></h4>
+                            <button>Add to Cart</button>
+                        </div>
+                    </div>
+                    <div id="section6_courses5">
+                        <div id="section6_courses5_header">
+                            <h3>Digital Communication Skills</h3>
+                        </div>
+                        <div id="section6_courses4_info">
+                            <h4>Learn how to communicate and collaborate in a 21st century work environment using digital workplace tools.</h4>
+                            <h4><b>Duration</b> : 1 Day</h4>
+                            <h4><b>Price</b> : <span id="course_price_text">R300</span></h4>
+                            <button>Add to Cart</button>
+                        </div>
+                    </div>
+                    <div id="section6_courses6">
+                        <div id="section6_courses6_header">
+                            <h3>Applying to Tertiary Studies</h3>
+                        </div>
+                        <div id="section6_courses6_info">
+                            <h4>Make informed decisions about your future studies.</h4>
+                            <h4><b>Duration</b> : 1 Day</h4>
+                            <h4><b>Price</b> : <span id="course_price_text">R300</span></h4>
+                            <button>Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="homepage_about_section">
+                <div id="home_about_info">
+                    <div id="home_about_info_header">
+                        <h2>Contact :</h2>
+                    </div>
+                    <div id="home_about_info_contact1">
+                        <div id="home_phone_logo">
+                            <img src="./images/phone_logo.png">
+                        </div>
+                        <div id="home_phone_number">
+                            <h4>021 685 0991</h4>
+                        </div>
+                    </div>
+
+                    <div id="home_about_info_contact2">
+                        <div id="home_email_logo">
+                            <img src="./images/envelope_logo.png">
+                        </div>
+                        <div id="home_email_address">
+                            <h4>info@code4ct.com</h4>
+                        </div>
+                    </div>
+
+                    <div id="home_about_info_contact3">
+                        <div id="home_location_logo">
+                            <img src="./images/location_logo.png">
+                        </div>
+                        <div id="home_location">
+                            <h4>Innovate South Africa, 403 Old Castle Brewery, 6 Beach Rd, Woodstock, Cape Town, 7915 </h4>
+                        </div>
+                    </div>
+
+                </div>
+                <div id="home_about_links">
+                    <h2>Company :</h2>
+                    <ul>
+                        <li><a href="#about">About us</a></li>
+                        <li><a href="#contact">Contact us</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#program">Affiliate Program</a></li>
+                    </ul>
+                </div>
+                <div id="home_about_support">
+                    <h2>Help & Support :</h2>
+                    <ul>
+                        <li><a href="#help_center">Help Centre</a></li>
+                        <li><a href="#contact">Contact us</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="footer">
+                <h3>Copyright <span>&#9746;</span> 2017 PRIVACY POLICY</h3>
+                <div id="footer_icons">
+                    
+                    <h3>Follow Us :</h3>
+                    <a href="https://www.facebook.com/code4ct/" target="_blank" ><img src="./images/facebook_logo.png"></a>
+                    <a href="https://twitter.com/code4ct?lang=en" target="_blank" ><img src="./images/twitter_logo.png"></a>
+                    <a href="https://plus.google.com/100829065774930869640" target="_blank" ><img src="./images/google_logo.png"></a>
+
                 </div>
             </div>
 
@@ -116,7 +490,7 @@
     </div>
     
     <script src="./js/jquery-3.3.1.min.js"></script>
-    <script src="./js/script.js"></script>
+    <script src="./js/courses.js"></script>
 
 </body>
 </html>
