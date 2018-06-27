@@ -165,36 +165,47 @@
         border: $borderSettings;
         height: 100px;
         position: relative;
+        font-family: 'Poppins';
 
         #portfolio_btn_1{
             position: absolute;
-            border: $borderSettings;
-            height: 30px;
-            width: 30px;
+            border: 1px solid grey;
+            border-radius: 2px;
+            padding: 10px;
             left: 45%;
             top: 0%;
             transform: translate(-50%,50%);
-            background: red;
+            cursor: pointer;
         }
         #portfolio_btn_2{
             position: absolute;
-            border: $borderSettings;
-            height: 30px;
-            width: 30px;
+            border: 1px solid grey;
+            border-radius: 2px;
+            padding: 10px;
             left: 50%;
             top: 0%;
             transform: translate(-50%,50%);
-            background: blue;
+            cursor: pointer;
         }
         #portfolio_btn_3{
             position: absolute;
-            border: $borderSettings;
-            height: 30px;
-            width: 30px;
+            border: 1px solid grey;
+            border-radius: 2px;
+            padding: 10px;
             left: 55%;
             top: 0%;
             transform: translate(-50%,50%);
-            background: black;
+            cursor: pointer;
         }
     }
+}
+
+.portfolio_1{
+    display: none;
+}
+.portfolio_2{
+    display: none;
+}
+.portfolio_3{
+    display: none;
 }

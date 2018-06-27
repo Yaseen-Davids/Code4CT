@@ -40,7 +40,7 @@
 }
 
 #shopping_list{
-    overflow: scroll;
+    overflow: auto;
     display: block;
     position: fixed;
     top: 200px;
@@ -52,6 +52,13 @@
     background: white;
     text-align: center;
     font-family: 'Poppins';
+
+    button{
+        border: none;
+        outline: none;
+        background: $themeColor;
+        color: white;
+    }
     h3{
         text-align: center;
     }
@@ -837,4 +844,3 @@
         }
     }
 }
-
