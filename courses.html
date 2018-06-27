@@ -48,8 +48,17 @@
                 <h4><a href="index.html">HOME</a> <span>&rarr;</span> COURSES</h4>
             </div>
 
-            <div id="shopping_cart"></div>
-            <div id="shopping_list"></div>
+            <div id="shopping_cart">
+                <h4 id="amountInCart"></h4>
+            </div>
+            <div id="shopping_list">
+                <h3>Your Cart :</h3>
+                <div id="cartItemList"></div>
+                <div id="cartBottom">
+                    <h4 id="cartTotal">Total :</h4>
+                    <button id="emptyCartList">Empty Cart</button>
+                </div>
+            </div>
 
             <div id="courses_section1">
                 <div id="courses_section1_header">
@@ -64,8 +73,8 @@
                             <h4>The Create with Code series is designed to give learners an introduction to the exciting world of coding, helping them to explore how creative coding can be. The package includes a testing day in which learners’ aptitude is assessed.</h4>
                             <h4><b>Stream includes</b> : 2 x Create with Code courses <br> 1 x Programming Aptitude Test</h4>
                             <h4><b>Prerequisites : </b> Computer literacy; English Proficiency</h4>
-                            <h4><b>Pricing : </b>Individual R1800 <br> Group booking (6+) R1500</h4>
-                            <button>Add to Cart</button>
+                            <h4><b>Pricing : </b> R1800</h4>
+                            <button id="course_btn1">Add to Cart</button>
                         </div>
                     </div>
                     <div id="section1_courses2">
@@ -86,8 +95,8 @@
                                 <br>
                                 Certificate of completion</h4>
                             <h4><b>Prerequisites : </b> Meet application requirements</h4>
-                            <h4><b>Pricing : </b>Individual R4200 <br> Group booking (6+) R3500</h4>
-                            <button>Add to Cart</button>
+                            <h4><b>Pricing : </b> R4200</h4>
+                            <button id="course_btn2">Add to Cart</button>
                         </div>
                     </div>
                     <div id="section1_courses3">
@@ -108,8 +117,8 @@
                                 <br>
                                 Certificate of completion</h4>
                             <h4><b>Prerequisites : </b> Tech Innovators Level 1 or equivalent</h4>
-                            <h4><b>Pricing : </b>Individual R5600 <br> Group booking (6+) R4800</h4>
-                            <button>Add to Cart</button>
+                            <h4><b>Pricing : </b> R5600</h4>
+                            <button id="course_btn3">Add to Cart</button>
                         </div>
                     </div>
                 </div>
@@ -133,7 +142,7 @@
                             <h4>Code a simple one-page website using HTML and JQuery.</h4>
                             <h4><b>Duration</b> : 3 Hours</h4>
                             <h4><b>Price</b> : <span id="course_price_text">R250</span></h4>
-                            <button>Add to Cart</button>
+                            <button id="course_btn4">Add to Cart</button>
                         </div>
                     </div>
                     <div id="section2_courses2">
@@ -144,7 +153,7 @@
                             <h4>Code a song using SonicPi software on a Raspberry Pi computer.</h4>
                             <h4><b>Duration</b> : 3 Hours</h4>
                             <h4><b>Price</b> : <span id="course_price_text">R250</span></h4>
-                            <button>Add to Cart</button>
+                            <button id="course_btn5">Add to Cart</button>
                         </div>
                     </div>
                     <div id="section2_courses3">
@@ -155,7 +164,7 @@
                             <h4>Create a 2D animation using coding language JavaScript.</h4>
                             <h4><b>Duration</b> : 3 Hours</h4>
                             <h4><b>Price</b> : <span id="course_price_text">R250</span></h4>
-                            <button>Add to Cart</button>
+                            <button id="course_btn6">Add to Cart</button>
                         </div>
                     </div>
                     <div id="section2_courses4">
@@ -166,7 +175,7 @@
                             <h4>Learn how the internet works and code a simple one-page website using HTML, CSS and JQuery.</h4>
                             <h4><b>Duration</b> : 3 Days</h4>
                             <h4><b>Price</b> : <span id="course_price_text">R960</span></h4>
-                            <button>Add to Cart</button>
+                            <button id="course_btn7">Add to Cart</button>
                         </div>
                     </div>
                     <div id="section2_courses5">
@@ -177,7 +186,7 @@
                             <h4>Learn computer science principles by coding music with a Raspberry Pi computer.</h4>
                             <h4><b>Duration</b> : 3 Days</h4>
                             <h4><b>Price</b> : <span id="course_price_text">R960</span></h4>
-                            <button>Add to Cart</button>
+                            <button id="course_btn8">Add to Cart</button>
                         </div>
                     </div>
                     <div id="section2_courses6">
@@ -188,7 +197,7 @@
                             <h4>Learn computer science principles by coding animations using JavaScript.</h4>
                             <h4><b>Duration</b> : 3 Days</h4>
                             <h4><b>Price</b> : <span id="course_price_text">R960</span></h4>
-                            <button>Add to Cart</button>
+                            <button id="course_btn9">Add to Cart</button>
                         </div>
                     </div>
                     <div id="section2_courses7">
@@ -199,7 +208,7 @@
                             <h4>Learn how to set up a development environment and practical skills to start coding.</h4>
                             <h4><b>Duration</b> : 3 Hours</h4>
                             <h4><b>Price</b> : <span id="course_price_text">R250</span></h4>
-                            <button>Add to Cart</button>
+                            <button id="course_btn10">Add to Cart</button>
                         </div>
                     </div>
                 </div>
@@ -223,7 +232,7 @@
                             <h4>Develop a basic proficiency in programming structures and methods in JavaScript so that you are able to create an interactive web application.</h4>
                             <h4><b>Duration</b> : 6 Days</h4>
                             <h4><b>Price</b> : <span id="course_price_text">R1800</span></h4>
-                            <button>Add to Cart</button>
+                            <button id="course_btn11">Add to Cart</button>
                         </div>
                     </div>
                     <div id="section3_courses2">
@@ -234,7 +243,7 @@
                             <h4>Develop a good proficiency in CSS and an understanding of web design principles so that you are able to create visually pleasing web pages.</h4>
                             <h4><b>Duration</b> : 6 Days</h4>
                             <h4><b>Price</b> : <span id="course_price_text">R1800</span></h4>
-                            <button>Add to Cart</button>
+                            <button id="course_btn12">Add to Cart</button>
                         </div>
                     </div>
                     <div id="section3_courses3">
@@ -245,7 +254,7 @@
                             <h4>Develop a basic proficiency in programming principles and methods in Python.</h4>
                             <h4><b>Duration</b> : 6 Days</h4>
                             <h4><b>Price</b> : <span id="course_price_text">R1800</span></h4>
-                            <button>Add to Cart</button>
+                            <button id="course_btn13">Add to Cart</button>
                         </div>
                     </div>
                 </div>
@@ -268,7 +277,7 @@
                             <h4>Develop an understanding of the front and backend development environment and basic proficiency in server side JavaScript and object-oriented programming. By the end of the course you will be able to architect an application, control flow in an application and persist and retrieve data in a database.</h4>
                             <h4><b>Duration</b> : 6 Days</h4>
                             <h4><b>Price</b> : <span id="course_price_text">R1800</span></h4>
-                            <button>Add to Cart</button>
+                            <button id="course_btn14">Add to Cart</button>
                         </div>
                     </div>
                     <div id="section4_courses2">
@@ -279,7 +288,7 @@
                             <h4>Learn how to manage and deploy code to a server environment so that you can host your own web pages.</h4>
                             <h4><b>Duration</b> : 4 Days</h4>
                             <h4><b>Price</b> : <span id="course_price_text">R1200</span></h4>
-                            <button>Add to Cart</button>
+                            <button id="course_btn15">Add to Cart</button>
                         </div>
                     </div>
                 </div>
@@ -304,7 +313,7 @@
                             <h4>Work in groups to design an innovative solution to a social issue by using the design thinking process.</h4>
                             <h4><b>Duration</b> : 3 Days</h4>
                             <h4><b>Price</b> : <span id="course_price_text">R750</span></h4>
-                            <button>Add to Cart</button>
+                            <button id="course_btn16">Add to Cart</button>
                         </div>
                     </div>
                     <div id="section5_courses2">
@@ -315,7 +324,7 @@
                             <h4>Work in groups to create and present a code project that addresses a particular issue. </h4>
                             <h4><b>Duration</b> : 5 Days</h4>
                             <h4><b>Price</b> : <span id="course_price_text">R1500</span></h4>
-                            <button>Add to Cart</button>
+                            <button id="course_btn17">Add to Cart</button>
                         </div>
                     </div>
                     <div id="section5_courses3">
@@ -337,7 +346,7 @@
                             <h4>Spend a week at a tech company and gain experience in industry.</h4>
                             <h4><b>Duration</b> : 5 Days</h4>
                             <h4><b>Price</b> : <span id="course_price_text">R1500</span></h4>
-                            <button>Add to Cart</button>
+                            <button id="course_btn18">Add to Cart</button>
                         </div>
                     </div>
                 </div>
@@ -361,7 +370,7 @@
                             <h4>Learn about tech careers from a panel of working professionals who will share their experiences with you.</h4>
                             <h4><b>Duration</b> : 1 Day</h4>
                             <h4><b>Price</b> : <span id="course_price_text">R300</span></h4>
-                            <button>Add to Cart</button>
+                            <button id="course_btn19">Add to Cart</button>
                         </div>
                     </div>
                     <div id="section6_courses2">
@@ -372,7 +381,7 @@
                             <h4>Learn how to present an idea or project in a compelling manner. </h4>
                             <h4><b>Duration</b> : 1 Day</h4>
                             <h4><b>Price</b> : <span id="course_price_text">R300</span></h4>
-                            <button>Add to Cart</button>
+                            <button id="course_btn20">Add to Cart</button>
                         </div>
                     </div>
                     <div id="section6_courses3">
@@ -383,7 +392,7 @@
                             <h4>Learn how to present your skills effectively.</h4>
                             <h4><b>Duration</b> : 1 Day</h4>
                             <h4><b>Price</b> : <span id="course_price_text">R300</span></h4>
-                            <button>Add to Cart</button>
+                            <button id="course_btn21">Add to Cart</button>
                         </div>
                     </div>
                     <div id="section6_courses4">
@@ -394,7 +403,7 @@
                             <h4>Learn how to present yourself professionally when networking and put your skills to the test by attending local tech events. You will attend a training session and attend one event of your choice.</h4>
                             <h4><b>Duration</b> : 2 Days</h4>
                             <h4><b>Price</b> : <span id="course_price_text">R300</span></h4>
-                            <button>Add to Cart</button>
+                            <button id="course_btn22">Add to Cart</button>
                         </div>
                     </div>
                     <div id="section6_courses5">
@@ -405,7 +414,7 @@
                             <h4>Learn how to communicate and collaborate in a 21st century work environment using digital workplace tools.</h4>
                             <h4><b>Duration</b> : 1 Day</h4>
                             <h4><b>Price</b> : <span id="course_price_text">R300</span></h4>
-                            <button>Add to Cart</button>
+                            <button id="course_btn23">Add to Cart</button>
                         </div>
                     </div>
                     <div id="section6_courses6">
@@ -416,7 +425,7 @@
                             <h4>Make informed decisions about your future studies.</h4>
                             <h4><b>Duration</b> : 1 Day</h4>
                             <h4><b>Price</b> : <span id="course_price_text">R300</span></h4>
-                            <button>Add to Cart</button>
+                            <button id="course_btn24">Add to Cart</button>
                         </div>
                     </div>
                 </div>

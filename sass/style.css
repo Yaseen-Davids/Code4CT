@@ -3909,16 +3909,61 @@ button {
   cursor: pointer;
 }
 
+#shopping_cart #amountInCart {
+  color: white;
+  position: absolute;
+  left: 55%;
+  top: 30%;
+  transform: translate(-50%, -50%);
+}
+
 #shopping_list {
+  overflow: scroll;
   display: block;
   position: fixed;
   top: 200px;
   right: -305px;
   height: 400px;
   width: 300px;
-  border: 1px solid black;
+  border: 1px solid grey;
   transition: all 0.4s;
   background: white;
+  text-align: center;
+  font-family: 'Poppins';
+}
+
+#shopping_list h3 {
+  text-align: center;
+}
+
+#shopping_list #cartBottom {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+}
+
+#shopping_list #cartBottom h4 {
+  float: left;
+  left: 0;
+  margin-left: 10px;
+}
+
+#shopping_list #cartBottom button {
+  margin-right: 20px;
+  float: right;
+  border: none;
+  outline: none;
+  background: #e1918a;
+  color: white;
+  font-family: 'Poppins';
+  padding: 5px;
+  width: 90px;
+  transition: all 0.4s;
+}
+
+#shopping_list #cartBottom button:hover {
+  transition: all 0.4s;
+  width: 100px;
 }
 
 #courses_section1 {
