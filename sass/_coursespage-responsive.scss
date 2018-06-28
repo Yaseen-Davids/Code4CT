@@ -1,0 +1,1751 @@
+// This is the media query for mobile devices
+@media (min-width: 1px)
+  and (max-width: 500px){
+    #shopping_cart{
+        top: 150px;
+        right: -55px;
+        height: 50px;
+        width: 50px;
+        transition: all 0.4s;
+    
+        #amountInCart{
+            color: white;
+            position: absolute;
+            left: 55%;
+            top: 30%;
+            transform: translate(-50%,-50%);
+        }
+    }
+
+    #shopping_list{
+        font-size: 0.8em;
+        top: 100px;
+        right: -305px;
+        height: 400px;
+        width: 200px;
+        transition: all 0.4s;
+        h3{
+            text-align: center;
+        }
+        #cartBottom{
+            bottom: 10px;
+            width: 100%;
+    
+            h4{
+                font-size: 0.7em;
+                float: left;
+                left: 0;
+                margin-left: 10px;
+            }
+            button{
+                margin-right: 5px;
+                font-size: 0.7em;
+                padding: 1px;
+                width: 90px;
+                transition: all 0.4s;
+                &:hover{
+                    transition: all 0.4s;
+                    width: 100px;
+                }
+            }
+        }
+    }
+
+    // ************ COURSES SECTION 1 ************ //
+    #courses_section1{
+        margin-top: 100px;
+        margin-left: 10px;
+        margin-right: 10px;
+        height: 1300px;
+        display: grid;
+        grid-template-areas: 'courses_section1_header'
+        'courses_section1_courses'
+        ;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+        @include coursesTextSettings;
+        h2{
+            font-size: 0.9em;
+        }
+        
+        h3{
+            font-size: 0.8em;
+        }
+    
+        h4{
+            font-size: 0.7em;
+        }
+
+        button{
+            @include addToCartButton;
+            @include mobileCartBtn;
+        }
+        // ************ COURSES SECTION 1 HEADER ************ //
+        #courses_section1_header{
+            height: 50px;
+            h2{
+                border-bottom: 1px solid grey;
+                font-size: 1em;
+                margin-top: 10px;
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+        }
+
+        // ************ COURSES SECTION 1 COURSES ************ //
+        #courses_section1_courses{
+            height: 1200px;
+            display: grid;
+            grid-template-areas: 'section1_courses1'
+            'section1_courses2'
+            'section1_courses3'
+            ;
+            grid-template-columns: 1fr;
+            grid-gap: 20px;
+
+            // ************ SECTION 1 COURSES 1 ************ //
+            #section1_courses1{
+                @include coursesBoxHover;
+                height: 300px;
+
+                #section1_courses1_header{
+                    @include coursesHeaderSection;
+                }
+            }
+
+            // ************ SECTION 1 COURSES 2 ************ //
+            #section1_courses2{
+                @include coursesBoxHover;
+                height: 400px;
+
+                #section1_courses2_header{
+                    @include coursesHeaderSection;
+                }
+            }
+            // ************ SECTION 1 COURSES 3 ************ //
+            #section1_courses3{
+                @include coursesBoxHover;
+                height: 450px;
+
+                #section1_courses3_header{
+                    @include coursesHeaderSection;
+                }
+            }
+        }
+    }
+    // ************ COURSES SECTION 2 ************ //
+    #courses_section2{
+        margin-top: 100px;
+        height: 1050px;
+        display: grid;
+        grid-template-areas: 'courses_section2_header'
+        'courses_section2_courses'
+        ;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+        font-family: 'Poppins';
+        @include coursesTextSettings;
+
+        h2{
+            font-size: 0.9em;
+        }
+        
+        h3{
+            font-size: 0.7em;
+        }
+    
+        h4{
+            font-size: 0.6em;
+        }
+
+        // ************ COURSES SECTION 2 HEADER ************ //
+        #courses_section2_header{
+            height: 50px;
+            h2{
+                font-size: 1em;
+                margin-top: 10px;
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+        }
+
+        #courses_section2_logos{
+            display: none;    
+        }
+
+        // ************ COURSES SECTION 2 ************ //
+        #courses_section2_courses{
+            grid-area: courses_section2_courses;
+            border: $borderSettings;
+            height: 950px;
+            display: grid;
+            grid-template-areas: 'section2_courses1 section2_courses2'
+            'section2_courses3 section2_courses4'
+            'section2_courses5 section2_courses6'
+            'section2_courses7 .'
+            ;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 10px;
+            margin-left: 10px;
+            margin-right: 10px;
+            button{
+                @include addToCartButton;
+                @include mobileCartBtn;
+                margin-left: 21%;
+            }
+
+            // ************ SECTION 2 COURSES 1 ************ //
+            #section2_courses1{
+                height: 200px;
+            }
+
+            // ************ SECTION 2 COURSES 2 ************ //
+            #section2_courses2{
+                height: 200px;
+            }
+            // ************ SECTION 2 COURSES 3 ************ //
+            #section2_courses3{
+                height: 200px;
+            }
+
+            // ************ SECTION 2 COURSES 4 ************ //
+            #section2_courses4{
+                height: 230px;
+            }
+
+            // ************ SECTION 2 COURSES 5 ************ //
+            #section2_courses5{
+                height: 230px;
+            }
+
+            // ************ SECTION 2 COURSES 6 ************ //
+            #section2_courses6{
+                height: 200px;
+            }
+
+            // ************ SECTION 2 COURSES 7 ************ //
+            #section2_courses7{
+                height: 230px;
+            }
+        }
+    }
+
+    #courses_section3{
+        grid-area: courses_section3;
+        border: $borderSettings;
+        margin-top: 100px;
+        margin-left: 10px;
+        margin-right: 10px;
+        height: 722px;
+        display: grid;
+        grid-template-areas: 'courses_section3_header'
+        'courses_section3_courses'
+        ;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+        font-family: 'Poppins';
+        @include coursesTextSettings;
+        h2{
+            font-size: 0.9em;
+        }
+        
+        h3{
+            font-size: 0.7em;
+        }
+    
+        h4{
+            font-size: 0.7em;
+        }
+
+        button{
+            @include addToCartButton;
+            @include mobileCartBtn;
+            margin-left: 21%;
+        }
+
+        // ************ COURSES SECTION 1 HEADER ************ //
+        #courses_section3_header{
+            grid-area: courses_section3_header;
+            border: $borderSettings;
+            height: 100px;
+            text-align: center;
+            h2{
+                border-bottom: 1px solid grey;
+                font-size: 1em;
+                margin-top: 30px;
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+        }
+
+        #courses_section3_logos{
+            display: none;
+        }
+
+        // ************ COURSES SECTION 1 COURSES ************ //
+        #courses_section3_courses{
+            height: 600px;
+            display: grid;
+            grid-template-areas: 'section3_courses1 section3_courses2'
+            'section3_courses3 .'
+            ;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 20px;
+        }
+    }
+
+    #courses_section4{
+        margin-top: 150px;
+        height: 522px;
+        display: grid;
+        grid-template-areas: 'courses_section4_header'
+        'courses_section4_courses'
+        ;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+        @include coursesTextSettings;
+        h2{
+            font-size: 0.9em;
+        }
+        
+        h3{
+            font-size: 0.7em;
+        }
+    
+        h4{
+            font-size: 0.7em;
+        }
+
+        button{
+            @include addToCartButton;
+            @include mobileCartBtn;
+            margin-left: 21%;
+        }
+
+        // ************ COURSES SECTION 1 HEADER ************ //
+        #courses_section4_header{
+            height: 50px;
+            text-align: center;
+            h2{
+                font-size: 1em;
+                margin-top: 10px;
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+        }
+
+        #courses_section4_logos{
+            display: none;
+        }
+
+        // ************ COURSES SECTION 1 COURSES ************ //
+        #courses_section4_courses{
+            grid-area: courses_section4_courses;
+            border: $borderSettings;
+            height: 430px;
+            display: grid;
+            grid-template-areas: 'section4_courses1 section4_courses2'
+            ;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 10px;
+            margin-left: 10px;
+            margin-right: 10px;
+
+            // ************ SECTION 1 COURSES 1 ************ //
+            #section4_courses1{
+                height: 420px;
+            }
+
+            // ************ SECTION 1 COURSES 2 ************ //
+            #section4_courses2{
+                height: 300px;
+            }
+        }
+    }
+
+    // ************ SECTION 5 COURSES ************ //
+    #courses_section5{
+        margin-top: 150px;
+        margin-bottom: 0px;
+        height: 650px;
+        display: grid;
+        grid-template-areas: 'courses_section5_header'
+        'courses_section5_courses'
+        ;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+        font-family: 'Poppins';
+        @include coursesTextSettings;
+        h2{
+            font-size: 0.9em;
+        }
+        
+        h3{
+            font-size: 0.7em;
+        }
+    
+        h4{
+            font-size: 0.7em;
+        }
+
+        button{
+            @include addToCartButton;
+            @include mobileCartBtn;
+            margin-left: 21%;
+        }
+
+        // ************ COURSES SECTION 1 HEADER ************ //
+        #courses_section5_header{
+            height: 50px;
+            h2{
+                font-size: 1em;
+                margin-top: 0px;
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+        }
+
+        #courses_section5_logos{
+            display: none;
+        }
+
+        // ************ COURSES SECTION 1 COURSES ************ //
+        #courses_section5_courses{
+            height: 550px;
+            display: grid;
+            grid-template-areas: 'section5_courses1 section5_courses2'
+            'section5_courses3 section5_courses4'
+            ;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 10px;
+            margin-left: 10px;
+            margin-right: 10px;
+
+            // ************ SECTION 1 COURSES 1 ************ //
+            #section5_courses1{
+                height: 250px;
+            }
+
+            // ************ SECTION 1 COURSES 2 ************ //
+            #section5_courses2{
+                height: 250px;
+            }
+            // ************ SECTION 1 COURSES 2 ************ //
+            #section5_courses3{
+                height: 250px;
+            }
+            // ************ SECTION 1 COURSES 2 ************ //
+            #section5_courses4{
+                height: 250px;
+            }
+        }
+    }
+
+    // ************ COURSES SECTION 2 ************ //
+    #courses_section6{
+        grid-area: courses_section6;
+        border: $borderSettings;
+        margin-top: 150px;
+        height: 1122px;
+        display: grid;
+        grid-template-areas: 'courses_section6_header'
+        'courses_section6_courses'
+        ;
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+        font-family: 'Poppins';
+        background: #fcfcfc;
+        @include coursesTextSettings;
+        h2{
+            font-size: 0.9em;
+        }
+        
+        h3{
+            font-size: 0.7em;
+        }
+    
+        h4{
+            font-size: 0.7em;
+        }
+
+        // ************ COURSES SECTION 2 HEADER ************ //
+        #courses_section6_header{
+            height: 50px;
+            h2{
+                font-size: 1em;
+                margin-top: 10px;
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+        }
+
+        #courses_section6_logos{
+            display: none;
+        }
+
+        // ************ COURSES SECTION 2 ************ //
+        #courses_section6_courses{
+            height: 1000px;
+            display: grid;
+            grid-template-areas: 'section6_courses1 section6_courses2'
+            'section6_courses3 section6_courses4'
+            'section6_courses5 section6_courses6'
+            ;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 10px;
+            margin-left: 10px;
+            margin-right: 10px;
+            button{
+                @include addToCartButton;
+                @include mobileCartBtn;
+                margin-left: 21%;
+            }
+
+            // ************ SECTION 2 COURSES 1 ************ //
+            #section6_courses1{
+                height: 300px;
+            }
+
+            // ************ SECTION 2 COURSES 2 ************ //
+            #section6_courses2{
+                height: 250px;
+            }
+            // ************ SECTION 2 COURSES 3 ************ //
+            #section6_courses3{
+                height: 250px;
+            }
+
+            // ************ SECTION 2 COURSES 4 ************ //
+            #section6_courses4{
+                height: 350px;
+            }
+
+            // ************ SECTION 2 COURSES 5 ************ //
+            #section6_courses5{
+                height: 300px;
+            }
+
+            // ************ SECTION 2 COURSES 6 ************ //
+            #section6_courses6{
+                height: 250px;
+            }
+        }
+    }
+  }
+
+
+
+// This is the media query for mobile devices
+@media (min-width: 600px)
+  and (max-width: 900px){
+
+    // ************ COURSES SECTION 1 ************ //
+    #courses_section1{
+        margin-top: 100px;
+        margin-left: 50px;
+        margin-right: 50px;
+        height: 1000px;
+        display: grid;
+        grid-template-areas: 'courses_section1_header'
+        'courses_section1_courses'
+        ;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+        @include coursesTextSettings;
+        h2{
+            font-size: 1.1em;
+        }
+        
+        h3{
+            font-size: 0.9em;
+        }
+    
+        h4{
+            font-size: 0.8em;
+        }
+
+        button{
+            @include addToCartButton;
+            @include mobileCartBtn;
+            margin-left: 36%;
+            height: 25px;
+            width: 100px;
+            font-size: 0.9em;
+        }
+        // ************ COURSES SECTION 1 HEADER ************ //
+        #courses_section1_header{
+            height: 50px;
+            h2{
+                border-bottom: 1px solid grey;
+                font-size: 1em;
+                margin-top: 10px;
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+        }
+
+        // ************ COURSES SECTION 1 COURSES ************ //
+        #courses_section1_courses{
+            height: 900px;
+            display: grid;
+            grid-template-areas: 'section1_courses1 section1_courses2'
+            'section1_courses3 .'
+            ;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 20px;
+
+            // ************ SECTION 1 COURSES 1 ************ //
+            #section1_courses1{
+                height: 330px;
+            }
+
+            // ************ SECTION 1 COURSES 2 ************ //
+            #section1_courses2{
+                height: 420px;
+            }
+            // ************ SECTION 1 COURSES 3 ************ //
+            #section1_courses3{
+                height: 450px;
+            }
+        }
+    }
+    // ************ COURSES SECTION 2 ************ //
+    #courses_section2{
+        margin-top: 100px;
+        height: 850px;
+        display: grid;
+        grid-template-areas: 'courses_section2_header'
+        'courses_section2_courses'
+        ;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+        font-family: 'Poppins';
+        @include coursesTextSettings;
+
+        h2{
+            font-size: 1em;
+        }
+        
+        h3{
+            font-size: 0.9em;
+        }
+    
+        h4{
+            font-size: 0.8em;
+        }
+
+        // ************ COURSES SECTION 2 HEADER ************ //
+        #courses_section2_header{
+            height: 50px;
+            h2{
+                font-size: 1em;
+                margin-top: 10px;
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+        }
+
+        #courses_section2_logos{
+            display: none;    
+        }
+
+        // ************ COURSES SECTION 2 ************ //
+        #courses_section2_courses{
+            grid-area: courses_section2_courses;
+            border: $borderSettings;
+            height: 750px;
+            display: grid;
+            grid-template-areas: 'section2_courses1 section2_courses2 section2_courses3'
+            'section2_courses4 section2_courses5 section2_courses6'
+            'section2_courses7 . .'
+            ;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 10px;
+            margin-left: 50px;
+            margin-right: 50px;
+            button{
+                @include addToCartButton;
+                @include mobileCartBtn;
+                margin-left: 30%;
+                height: 25px;
+                width: 100px;
+                font-size: 0.8em;
+            }
+
+            // ************ SECTION 2 COURSES 1 ************ //
+            #section2_courses1{
+                height: 220px;
+            }
+
+            // ************ SECTION 2 COURSES 2 ************ //
+            #section2_courses2{
+                height: 240px;
+            }
+            // ************ SECTION 2 COURSES 3 ************ //
+            #section2_courses3{
+                height: 220px;
+            }
+
+            // ************ SECTION 2 COURSES 4 ************ //
+            #section2_courses4{
+                height: 230px;
+            }
+
+            // ************ SECTION 2 COURSES 5 ************ //
+            #section2_courses5{
+                height: 230px;
+            }
+
+            // ************ SECTION 2 COURSES 6 ************ //
+            #section2_courses6{
+                height: 230px;
+            }
+
+            // ************ SECTION 2 COURSES 7 ************ //
+            #section2_courses7{
+                height: 230px;
+            }
+        }
+    }
+
+    #courses_section3{
+        grid-area: courses_section3;
+        border: $borderSettings;
+        margin-top: 100px;
+        margin-left: 50px;
+        margin-right: 50px;
+        height: 650px;
+        display: grid;
+        grid-template-areas: 'courses_section3_header'
+        'courses_section3_courses'
+        ;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+        font-family: 'Poppins';
+        @include coursesTextSettings;
+        h2{
+            font-size: 1em;
+        }
+        
+        h3{
+            font-size: 0.9em;
+        }
+    
+        h4{
+            font-size: 0.9em;
+        }
+
+        button{
+            @include addToCartButton;
+            @include mobileCartBtn;
+            margin-left: 36%;
+            height: 25px;
+            width: 100px;
+            font-size: 0.8em;
+        }
+
+        // ************ COURSES SECTION 1 HEADER ************ //
+        #courses_section3_header{
+            grid-area: courses_section3_header;
+            border: $borderSettings;
+            height: 50px;
+            text-align: center;
+            h2{
+                border-bottom: 1px solid grey;
+                font-size: 1em;
+                margin-top: 10px;
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+        }
+
+        #courses_section3_logos{
+            display: none;
+        }
+
+        // ************ COURSES SECTION 1 COURSES ************ //
+        #courses_section3_courses{
+            height: 600px;
+            display: grid;
+            grid-template-areas: 'section3_courses1 section3_courses2'
+            'section3_courses3 .'
+            ;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 20px;
+        }
+    }
+
+    #courses_section4{
+        margin-top: 150px;
+        height: 450px;
+        display: grid;
+        grid-template-areas: 'courses_section4_header'
+        'courses_section4_courses'
+        ;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+        @include coursesTextSettings;
+        h2{
+            font-size: 1em;
+        }
+        
+        h3{
+            font-size: 0.9em;
+        }
+    
+        h4{
+            font-size: 0.9em;
+        }
+
+        button{
+            @include addToCartButton;
+            @include mobileCartBtn;
+            margin-left: 36%;
+            height: 25px;
+            width: 100px;
+            font-size: 0.9em;
+        }
+
+        // ************ COURSES SECTION 1 HEADER ************ //
+        #courses_section4_header{
+            height: 50px;
+            text-align: center;
+            h2{
+                font-size: 1em;
+                margin-top: 10px;
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+        }
+
+        #courses_section4_logos{
+            display: none;
+        }
+
+        // ************ COURSES SECTION 1 COURSES ************ //
+        #courses_section4_courses{
+            grid-area: courses_section4_courses;
+            border: $borderSettings;
+            height: 360px;
+            display: grid;
+            grid-template-areas: 'section4_courses1 section4_courses2'
+            ;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 10px;
+            margin-left: 50px;
+            margin-right: 50px;
+
+            // ************ SECTION 1 COURSES 1 ************ //
+            #section4_courses1{
+                height: 350px;
+            }
+
+            // ************ SECTION 1 COURSES 2 ************ //
+            #section4_courses2{
+                height: 300px;
+            }
+        }
+    }
+
+    // ************ SECTION 5 COURSES ************ //
+    #courses_section5{
+        margin-top: 150px;
+        margin-bottom: 0px;
+        height: 650px;
+        display: grid;
+        grid-template-areas: 'courses_section5_header'
+        'courses_section5_courses'
+        ;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+        font-family: 'Poppins';
+        @include coursesTextSettings;
+        h2{
+            font-size: 1em;
+        }
+        
+        h3{
+            font-size: 1em;
+        }
+    
+        h4{
+            font-size: 0.9em;
+        }
+
+        button{
+            @include addToCartButton;
+            @include mobileCartBtn;
+            margin-left: 36%;
+            width: 100px;
+            height: 25px;
+            font-size: 0.9em;
+        }
+
+        // ************ COURSES SECTION 1 HEADER ************ //
+        #courses_section5_header{
+            height: 50px;
+            h2{
+                font-size: 1em;
+                margin-top: 0px;
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+        }
+
+        #courses_section5_logos{
+            display: none;
+        }
+
+        // ************ COURSES SECTION 1 COURSES ************ //
+        #courses_section5_courses{
+            height: 550px;
+            display: grid;
+            grid-template-areas: 'section5_courses1 section5_courses2'
+            'section5_courses3 section5_courses4'
+            ;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 10px;
+            margin-left: 50px;
+            margin-right: 50px;
+
+            // ************ SECTION 1 COURSES 1 ************ //
+            #section5_courses1{
+                height: 250px;
+            }
+
+            // ************ SECTION 1 COURSES 2 ************ //
+            #section5_courses2{
+                height: 250px;
+            }
+            // ************ SECTION 1 COURSES 2 ************ //
+            #section5_courses3{
+                height: 250px;
+            }
+            // ************ SECTION 1 COURSES 2 ************ //
+            #section5_courses4{
+                height: 250px;
+            }
+        }
+    }
+
+    // ************ COURSES SECTION 2 ************ //
+    #courses_section6{
+        grid-area: courses_section6;
+        border: $borderSettings;
+        margin-top: 150px;
+        height: 1122px;
+        display: grid;
+        grid-template-areas: 'courses_section6_header'
+        'courses_section6_courses'
+        ;
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+        font-family: 'Poppins';
+        background: #fcfcfc;
+        @include coursesTextSettings;
+        h2{
+            font-size: 1em;
+        }
+        
+        h3{
+            font-size: 1em;
+        }
+    
+        h4{
+            font-size: 1em;
+        }
+
+        // ************ COURSES SECTION 2 HEADER ************ //
+        #courses_section6_header{
+            height: 50px;
+            h2{
+                font-size: 1em;
+                margin-top: 10px;
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+        }
+
+        #courses_section6_logos{
+            display: none;
+        }
+
+        // ************ COURSES SECTION 2 ************ //
+        #courses_section6_courses{
+            height: 1000px;
+            display: grid;
+            grid-template-areas: 'section6_courses1 section6_courses2'
+            'section6_courses3 section6_courses4'
+            'section6_courses5 section6_courses6'
+            ;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 10px;
+            margin-left: 50px;
+            margin-right: 50px;
+            button{
+                @include addToCartButton;
+                @include mobileCartBtn;
+                margin-left: 36%;
+                width: 100px;
+                height: 25px;
+                font-size: 0.9em;
+            }
+
+            // ************ SECTION 2 COURSES 1 ************ //
+            #section6_courses1{
+                height: 300px;
+            }
+
+            // ************ SECTION 2 COURSES 2 ************ //
+            #section6_courses2{
+                height: 250px;
+            }
+            // ************ SECTION 2 COURSES 3 ************ //
+            #section6_courses3{
+                height: 250px;
+            }
+
+            // ************ SECTION 2 COURSES 4 ************ //
+            #section6_courses4{
+                height: 350px;
+            }
+
+            // ************ SECTION 2 COURSES 5 ************ //
+            #section6_courses5{
+                height: 300px;
+            }
+
+            // ************ SECTION 2 COURSES 6 ************ //
+            #section6_courses6{
+                height: 250px;
+            }
+        }
+    }
+
+    #homepage_about_section{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+  }
+
+@media (min-width:900px)
+and (max-width:1200px){
+    #courses_section1{
+        margin-top: 100px;
+        margin-left: 70px;
+        margin-right: 70px;
+        height: 850px;
+        grid-gap: 20px;
+    
+        button{
+            @include addToCartButton;
+            margin-left: 32%;
+        }
+        // ************ COURSES SECTION 1 HEADER ************ //
+        #courses_section1_header{
+            height: 100px;
+            h2{
+                font-size: 1.5em;
+                margin-top: 30px;
+                margin-left: 100px;
+                margin-right: 100px;
+            }
+        }
+        // ************ COURSES SECTION 1 COURSES ************ //
+        #courses_section1_courses{
+            grid-area: courses_section1_courses;
+            border: $borderSettings;
+            height: 750px;
+            display: grid;
+            grid-template-areas: 'section1_courses1 section1_courses2 section1_courses3'
+            ;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 20px;
+            // ************ SECTION 1 COURSES 1 ************ //
+            #section1_courses1{
+                height: 550px;
+            }
+
+            // ************ SECTION 1 COURSES 2 ************ //
+            #section1_courses2{
+                height: 650px;
+            }
+            // ************ SECTION 1 COURSES 3 ************ //
+            #section1_courses3{
+                height: 700px;
+            }
+        }
+    }
+
+    // ************ COURSES SECTION 2 ************ //
+    #courses_section2{
+        margin-top: 100px;
+        height: 1280px;
+        grid-gap: 20px;
+
+        // ************ COURSES SECTION 2 HEADER ************ //
+        #courses_section2_header{
+            height: 100px;
+            h2{
+                font-size: 1.5em;
+                margin-top: 30px;
+                margin-left: 100px;
+                margin-right: 100px;
+            }
+        }
+
+        #courses_section2_logos{
+            height: 100px;
+            grid-gap: 50px;
+            padding: 20px;
+            margin-left: 70px;
+            margin-right: 70px;
+        }
+
+        // ************ COURSES SECTION 2 ************ //
+        #courses_section2_courses{
+            height: 980px;
+            grid-gap: 20px;
+            margin-left: 70px;
+            margin-right: 70px;
+            button{
+                @include addToCartButton;
+                margin-left: 30%;
+            }
+
+            // ************ SECTION 2 COURSES 4 ************ //
+            #section2_courses1{
+                height: 280px;
+            }
+            #section2_courses2{
+                height: 300px;
+            }
+            #section2_courses3{
+                height: 280px;
+            }
+            #section2_courses4{
+                height: 300px;
+            }
+
+            // ************ SECTION 2 COURSES 5 ************ //
+            #section2_courses5{
+                height: 300px;
+            }
+            #section2_courses6{
+                height: 300px;
+            }
+
+            // ************ SECTION 2 COURSES 7 ************ //
+            #section2_courses7{
+                height: 300px;
+            }
+        }
+    }
+
+    #courses_section3{
+        grid-area: courses_section3;
+        border: $borderSettings;
+        margin-top: 100px;
+        margin-left: 70px;
+        margin-right: 70px;
+        height: 650px;
+        display: grid;
+        grid-template-areas: 'courses_section3_header'
+        'courses_section3_logos'
+        'courses_section3_courses'
+        ;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+        font-family: 'Poppins';
+        @include coursesTextSettings;
+    
+        button{
+            @include addToCartButton;
+            margin-left: 30%;
+        }
+        h3{
+            font-size: 0.95em;
+        }
+    
+        // ************ COURSES SECTION 1 HEADER ************ //
+        #courses_section3_header{
+            height: 100px;
+            h2{
+                font-size: 1.5em;
+                margin-top: 30px;
+                margin-left: 100px;
+                margin-right: 100px;
+            }
+        }
+    
+        #courses_section3_logos{
+            grid-area: courses_section3_logos;
+            border: $borderSettings;
+            height: 100px;
+            display: grid;
+            grid-template-areas: 'courses_logo4 courses_logo5 courses_logo6';
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 50px;
+            padding: 20px;
+        }
+    
+        // ************ COURSES SECTION 1 COURSES ************ //
+        #courses_section3_courses{
+            height: 370px;
+            grid-gap: 20px;
+    
+            // ************ SECTION 1 COURSES 1 ************ //
+            #section3_courses1{
+                height: 350px;
+            }
+    
+            // ************ SECTION 1 COURSES 2 ************ //
+            #section3_courses2{
+                height: 350px;
+            }
+            // ************ SECTION 1 COURSES 3 ************ //
+            #section3_courses3{
+                height: 350px;
+            }
+        }
+    }
+
+    #courses_section4{
+        margin-top: 150px;
+        height: 750px;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    
+        button{
+            @include addToCartButton;
+            margin-left: 30%;
+        }
+    
+        // ************ COURSES SECTION 1 HEADER ************ //
+        #courses_section4_header{
+            grid-area: courses_section4_header;
+            border: $borderSettings;
+            height: 100px;
+            text-align: center;
+            h2{
+                border-bottom: 1px solid grey;
+                font-size: 1.5em;
+                margin-top: 30px;
+                margin-left: 100px;
+                margin-right: 100px;
+            }
+        }
+    
+        #courses_section4_logos{
+            height: 100px;
+            grid-gap: 50px;
+            padding: 20px;
+            margin-left: 70px;
+            margin-right: 70px;
+        }
+    
+        // ************ COURSES SECTION 1 COURSES ************ //
+        #courses_section4_courses{
+            height: 470px;
+            grid-gap: 20px;
+            margin-left: 70px;
+            margin-right: 70px;
+    
+            // ************ SECTION 1 COURSES 1 ************ //
+            #section4_courses1{
+                height: 470px;
+            }
+    
+            // ************ SECTION 1 COURSES 2 ************ //
+            #section4_courses2{
+                height: 330px;
+            }
+        }
+    }
+
+    // ************ SECTION 5 COURSES ************ //
+    #courses_section5{
+        margin-top: 150px;
+        margin-bottom: 0px;
+        height: 650px;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+
+        button{
+            @include addToCartButton;
+            margin-left: 24%;
+        }
+
+        // ************ COURSES SECTION 1 HEADER ************ //
+        #courses_section5_header{
+            height: 100px;
+            h2{
+                font-size: 1.5em;
+                margin-top: 30px;
+                margin-left: 100px;
+                margin-right: 100px;
+            }
+        }
+
+        #courses_section5_logos{
+            height: 100px;
+            grid-gap: 50px;
+            padding: 20px;
+            margin-left: 70px;
+            margin-right: 70px;
+        }
+
+        // ************ COURSES SECTION 1 COURSES ************ //
+        #courses_section5_courses{
+            height: 360px;
+            grid-gap: 20px;
+            margin-left: 70px;
+            margin-right: 70px;
+
+            // ************ SECTION 1 COURSES 1 ************ //
+            #section5_courses1{
+                height: 350px;
+            }
+
+            // ************ SECTION 1 COURSES 2 ************ //
+            #section5_courses2{
+                height: 340px;
+            }
+            // ************ SECTION 1 COURSES 2 ************ //
+            #section5_courses3{
+                height: 350px;
+            }
+            // ************ SECTION 1 COURSES 2 ************ //
+            #section5_courses4{
+                height: 300px;
+            }
+        }
+    }
+
+    // ************ COURSES SECTION 2 ************ //
+    #courses_section6{
+        margin-top: 150px;
+        height: 1050px;
+        grid-gap: 20px;
+
+        // ************ COURSES SECTION 2 HEADER ************ //
+        #courses_section6_header{
+            height: 100px;
+            h2{
+                font-size: 1.5em;
+                margin-top: 30px;
+                margin-left: 100px;
+                margin-right: 100px;
+            }
+        }
+
+        #courses_section6_logos{
+            height: 100px;
+            grid-gap: 50px;
+            padding: 20px;
+            margin-left: 70px;
+            margin-right: 70px;
+        }
+
+        // ************ COURSES SECTION 2 ************ //
+        #courses_section6_courses{
+            grid-area: courses_section6_courses;
+            border: $borderSettings;
+            height: 750px;
+            grid-gap: 40px;
+            margin-left: 70px;
+            margin-right: 70px;
+            button{
+                @include addToCartButton;
+                margin-left: 28%;
+            }
+
+            // ************ SECTION 2 COURSES 1 ************ //
+            #section6_courses1{
+                height: 320px;
+            }
+
+            // ************ SECTION 2 COURSES 2 ************ //
+            #section6_courses2{
+                height: 280px;
+            }
+            // ************ SECTION 2 COURSES 3 ************ //
+            #section6_courses3{
+                height: 270px;
+            }
+
+            // ************ SECTION 2 COURSES 4 ************ //
+            #section6_courses4{
+                height: 360px;
+            }
+
+            // ************ SECTION 2 COURSES 5 ************ //
+            #section6_courses5{
+                height: 310px;
+            }
+
+            // ************ SECTION 2 COURSES 6 ************ //
+            #section6_courses6{
+                height: 260px;
+            }
+        }
+    }
+}
+
+@media (min-width:1200px)
+and (max-width:1400px){
+    #courses_section1{
+        margin-top: 100px;
+        margin-left: 100px;
+        margin-right: 100px;
+        height: 780px;
+        grid-gap: 20px;
+    
+        button{
+            @include addToCartButton;
+            margin-left: 32%;
+        }
+        // ************ COURSES SECTION 1 HEADER ************ //
+        #courses_section1_header{
+            height: 100px;
+            h2{
+                font-size: 1.5em;
+                margin-top: 30px;
+                margin-left: 100px;
+                margin-right: 100px;
+            }
+        }
+        // ************ COURSES SECTION 1 COURSES ************ //
+        #courses_section1_courses{
+            height: 650px;
+            grid-gap: 20px;
+            // ************ SECTION 1 COURSES 1 ************ //
+            #section1_courses1{
+                height: 480px;
+            }
+
+            // ************ SECTION 1 COURSES 2 ************ //
+            #section1_courses2{
+                height: 600px;
+            }
+            // ************ SECTION 1 COURSES 3 ************ //
+            #section1_courses3{
+                height: 630px;
+            }
+        }
+    }
+
+    // ************ COURSES SECTION 2 ************ //
+    #courses_section2{
+        margin-top: 100px;
+        height: 1280px;
+        grid-gap: 20px;
+
+        // ************ COURSES SECTION 2 HEADER ************ //
+        #courses_section2_header{
+            height: 100px;
+            h2{
+                font-size: 1.5em;
+                margin-top: 30px;
+                margin-left: 100px;
+                margin-right: 100px;
+            }
+        }
+
+        #courses_section2_logos{
+            height: 100px;
+            grid-gap: 50px;
+            padding: 20px;
+            margin-left: 100px;
+            margin-right: 100px;
+        }
+
+        // ************ COURSES SECTION 2 ************ //
+        #courses_section2_courses{
+            height: 980px;
+            grid-gap: 20px;
+            margin-left: 100px;
+            margin-right: 100px;
+            button{
+                @include addToCartButton;
+                margin-left: 33%;
+            }
+
+            // ************ SECTION 2 COURSES 4 ************ //
+            #section2_courses1{
+                height: 280px;
+            }
+            #section2_courses2{
+                height: 270px;
+            }
+            #section2_courses3{
+                height: 280px;
+            }
+            #section2_courses4{
+                height: 300px;
+            }
+
+            // ************ SECTION 2 COURSES 5 ************ //
+            #section2_courses5{
+                height: 300px;
+            }
+            #section2_courses6{
+                height: 300px;
+            }
+
+            // ************ SECTION 2 COURSES 7 ************ //
+            #section2_courses7{
+                height: 300px;
+            }
+        }
+    }
+
+    #courses_section3{
+        grid-area: courses_section3;
+        border: $borderSettings;
+        margin-top: 100px;
+        margin-left: 100px;
+        margin-right: 100px;
+        height: 650px;
+        display: grid;
+        grid-template-areas: 'courses_section3_header'
+        'courses_section3_logos'
+        'courses_section3_courses'
+        ;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+        font-family: 'Poppins';
+        @include coursesTextSettings;
+    
+        button{
+            @include addToCartButton;
+            margin-left: 32%;
+        }
+        h3{
+            font-size: 1.2em;
+        }
+    
+        // ************ COURSES SECTION 1 HEADER ************ //
+        #courses_section3_header{
+            height: 100px;
+            h2{
+                font-size: 1.5em;
+                margin-top: 30px;
+                margin-left: 100px;
+                margin-right: 100px;
+            }
+        }
+    
+        #courses_section3_logos{
+            grid-area: courses_section3_logos;
+            border: $borderSettings;
+            height: 100px;
+            display: grid;
+            grid-template-areas: 'courses_logo4 courses_logo5 courses_logo6';
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 50px;
+            padding: 20px;
+        }
+    
+        // ************ COURSES SECTION 1 COURSES ************ //
+        #courses_section3_courses{
+            height: 340px;
+            grid-gap: 20px;
+    
+            // ************ SECTION 1 COURSES 1 ************ //
+            #section3_courses1{
+                height: 320px;
+            }
+    
+            // ************ SECTION 1 COURSES 2 ************ //
+            #section3_courses2{
+                height: 320px;
+            }
+            // ************ SECTION 1 COURSES 3 ************ //
+            #section3_courses3{
+                height: 300px;
+            }
+        }
+    }
+
+    #courses_section4{
+        margin-top: 150px;
+        height: 750px;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    
+        button{
+            @include addToCartButton;
+            margin-left: 33%;
+        }
+    
+        // ************ COURSES SECTION 1 HEADER ************ //
+        #courses_section4_header{
+            grid-area: courses_section4_header;
+            border: $borderSettings;
+            height: 100px;
+            text-align: center;
+            h2{
+                border-bottom: 1px solid grey;
+                font-size: 1.5em;
+                margin-top: 30px;
+                margin-left: 100px;
+                margin-right: 100px;
+            }
+        }
+    
+        #courses_section4_logos{
+            height: 100px;
+            grid-gap: 50px;
+            padding: 20px;
+            margin-left: 100px;
+            margin-right: 100px;
+        }
+    
+        // ************ COURSES SECTION 1 COURSES ************ //
+        #courses_section4_courses{
+            height: 460px;
+            grid-gap: 20px;
+            margin-left: 100px;
+            margin-right: 100px;
+    
+            // ************ SECTION 1 COURSES 1 ************ //
+            #section4_courses1{
+                height: 440px;
+            }
+    
+            // ************ SECTION 1 COURSES 2 ************ //
+            #section4_courses2{
+                height: 300px;
+            }
+        }
+    }
+
+    // ************ SECTION 5 COURSES ************ //
+    #courses_section5{
+        margin-top: 150px;
+        margin-bottom: 0px;
+        height: 650px;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+
+        button{
+            @include addToCartButton;
+            margin-left: 26%;
+        }
+
+        // ************ COURSES SECTION 1 HEADER ************ //
+        #courses_section5_header{
+            height: 100px;
+            h2{
+                font-size: 1.5em;
+                margin-top: 30px;
+                margin-left: 100px;
+                margin-right: 100px;
+            }
+        }
+
+        #courses_section5_logos{
+            height: 100px;
+            grid-gap: 50px;
+            padding: 20px;
+            margin-left: 100px;
+            margin-right: 100px;
+        }
+
+        // ************ COURSES SECTION 1 COURSES ************ //
+        #courses_section5_courses{
+            height: 340px;
+            grid-gap: 20px;
+            margin-left: 100px;
+            margin-right: 100px;
+
+            // ************ SECTION 1 COURSES 1 ************ //
+            #section5_courses1{
+                height: 310px;
+            }
+
+            // ************ SECTION 1 COURSES 2 ************ //
+            #section5_courses2{
+                height: 300px;
+            }
+            // ************ SECTION 1 COURSES 2 ************ //
+            #section5_courses3{
+                height: 320px;
+            }
+            // ************ SECTION 1 COURSES 2 ************ //
+            #section5_courses4{
+                height: 300px;
+            }
+        }
+    }
+
+    // ************ COURSES SECTION 2 ************ //
+    #courses_section6{
+        margin-top: 150px;
+        height: 1050px;
+        grid-gap: 20px;
+
+        // ************ COURSES SECTION 2 HEADER ************ //
+        #courses_section6_header{
+            height: 100px;
+            h2{
+                font-size: 1.5em;
+                margin-top: 30px;
+                margin-left: 100px;
+                margin-right: 100px;
+            }
+        }
+
+        #courses_section6_logos{
+            height: 100px;
+            grid-gap: 50px;
+            padding: 20px;
+            margin-left: 100px;
+            margin-right: 100px;
+        }
+
+        // ************ COURSES SECTION 2 ************ //
+        #courses_section6_courses{
+            grid-area: courses_section6_courses;
+            border: $borderSettings;
+            height: 740px;
+            grid-gap: 40px;
+            margin-left: 100px;
+            margin-right: 100px;
+            button{
+                @include addToCartButton;
+                margin-left: 31%;
+            }
+
+            // ************ SECTION 2 COURSES 1 ************ //
+            #section6_courses1{
+                height: 300px;
+            }
+
+            // ************ SECTION 2 COURSES 2 ************ //
+            #section6_courses2{
+                height: 280px;
+            }
+            // ************ SECTION 2 COURSES 3 ************ //
+            #section6_courses3{
+                height: 270px;
+            }
+
+            // ************ SECTION 2 COURSES 4 ************ //
+            #section6_courses4{
+                height: 370px;
+            }
+
+            // ************ SECTION 2 COURSES 5 ************ //
+            #section6_courses5{
+                height: 320px;
+            }
+
+            // ************ SECTION 2 COURSES 6 ************ //
+            #section6_courses6{
+                height: 270px;
+            }
+        }
+    }
+}

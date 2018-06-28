@@ -74,7 +74,7 @@
     grid-area: aboutUs_section;
     border: $borderSettings;
     margin-top: 100px;
-    height: 600px;
+    height: 650px;
     display: grid;
     grid-template-areas: 'aboutUs_iframe aboutUs_info'
     ;
@@ -82,15 +82,14 @@
     grid-gap: 20px;
     background: rgb(246, 246, 246);
     font-family: 'Poppins';
-    // overflow: hidden;
 
     #aboutUs_iframe{
         grid-area: aboutUs_iframe;
-        height: 600px;
+        height: 650px;
 
         iframe{
             margin-top: 50px;
-            height: 500px;
+            height: 550px;
             width: 100%;
         }
     }
@@ -99,7 +98,7 @@
         grid-area: aboutUs_info;
         border: $borderSettings;
         margin-left: 20px;
-        margin-right: 50px;
+        margin-right: 100px;
 
         h2{
             color: $headingsThemeColor;
@@ -116,7 +115,7 @@
 
         #about_info_section1{
             border: $borderSettings;
-            height: 200px;
+            height: 225px;
             margin-top: 20px;
 
             h3{
@@ -130,21 +129,21 @@
 
             #about_vision{
                 border: $borderSettings;
-                height: 200px;  
+                height: 220px;  
                 float: left;
-                width: 49%;
+                width: 48%;
             }
             #about_mission{
                 border: $borderSettings;
-                height: 200px;  
+                height: 220px;  
                 float: right;
-                width: 49%;
+                width: 48%;
             }
         }
 
         #about_info_section2{
             border: $borderSettings;
-            height: 200px;
+            height: 225px;
             margin-top: 20px;
 
             h3{
@@ -158,15 +157,15 @@
 
             #about_help{
                 border: $borderSettings;
-                height: 200px;  
+                height: 220px;  
                 float: left;
-                width: 49%;
+                width: 48%;
             }
             #about_supports{
                 border: $borderSettings;
-                height: 200px;  
+                height: 220px;  
                 float: right;
-                width: 49%;
+                width: 48%;
             }
         }
     }
@@ -175,7 +174,41 @@
 #circle_percentages_bar{
     grid-area: circle_percentages_bar;
     margin-top: 100px;
-    height: 200px;
+    height: 210px;
     border: $borderSettings;
-    background: black;
+
+    .margin-wrapper{
+        margin-left: 100px;
+        margin-right: 100px;
+        height: 210px;
+        border: $borderSettings;
+
+        #percentages_bars{
+            display: grid;
+            grid-template-areas: 'percentage_bar1 percentage_bar2 percentage_bar3 percentage_bar4'
+            ;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-gap: 40px;
+            height: 210px;
+
+            #percentage_bar1{
+                grid-area: percentage_bar1;
+                border: $borderSettings;
+            }
+            #percentage_bar2{
+                grid-area: percentage_bar2;
+                border: $borderSettings;
+            }
+            #percentage_bar3{
+                grid-area: percentage_bar3;
+                border: $borderSettings;
+            }
+            #percentage_bar4{
+                grid-area: percentage_bar4;
+                border: $borderSettings;
+            }
+        }
+    }
 }
+
+@import 'aboutpage-responsive';

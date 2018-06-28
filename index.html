@@ -5,27 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Code4CT</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- This is the favicon link -->
     <link rel="icon" type="favicon" href="./images/title_image.png">
+    <!-- This is my css stylesheet link -->
     <link rel="stylesheet" type="text/css" media="screen" href="./sass/style.css" />
-    <!-- <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet"> -->
-    
 </head>
 <body>
-    
+
+    <!-- This is the main container -->
     <div id="container">
 
+        <!-- This is the index grid container -->
         <div id="grid_container">
 
+            <!-- This is the navbar -->
             <div id="navbar">
+                <!-- This is the navbar logo -->
                 <a href="index.html"><div id="nav_logo"></div></a>
                 <div id="nav_menu_btn" onclick="changeToClose()">
                     <div id="menu_line1"></div>
                     <div id="menu_line2"></div>
                     <div id="menu_line3"></div>
                 </div>
+                <!-- This is the navbar links -->
                 <div id="nav_links">
                     <div id="links_box">
                         <ul>
+                            <!-- These are the links -->
                             <a href="#home" class="selected" onclick="backToTop()" id="homeBtn"><li>Home</li></a>
                             <a href="courses.html"><li>Courses</li></a>
                             <a href="portfolio.html"><li>Portfolio</li></a>
@@ -33,6 +39,7 @@
                             <a href="about.html"><li>About</li></a>
                         </ul>
                     </div>
+                    <!-- This is the search box inside the navbar -->
                     <div id="search_box">
                         <input type="search" placeholder="search..">
                         <div id="search_icon"></div>
@@ -40,20 +47,25 @@
                 </div>
             </div>
 
+            <!-- This is the image slider -->
             <div id="the_slider">
                 <div id="slider_box">
+                    <!-- These are the images -->
                     <img src="./images/code4ct_homepage.jpg" id="img_1">
                     <img src="./images/homepage_2.jpg" id="img_2">
                     <img src="./images/homepage_3.png" id="img_3">
+                    <!-- This is the slide buttons -->
                     <div id="slideBtn_1"></div>
                     <div id="slideBtn_2"></div>
                     <div id="slideBtn_3"></div>
                 </div>
             </div>
 
+            <!-- This is the header text inside the image slider -->
             <div id="header_text">
                 <h1>Code For Cape Town</h1>
                 <h3>We want to see young women empowered to leverage technology for social innovation, so that there is greater diversity in the African tech industry. We want high school girls to have an enabling environment to imagine and create new technology that is relevant to a South African context.</h3>
+                <!-- This is the button inside the header text -->
                 <div id="header_btn">
                     <button id="start_coding_btn">Start Coding</button>
                 </div>
@@ -61,87 +73,111 @@
             </div>
             
 
+            <!-- This is the main container -->
             <div id="main_content">
+                <!-- This is the introduction info -->
                 <div id="intro_info">
                     <h3><span id="solid_border">Who</span> we are : </h3>
                     <h5>Code for Cape Town (Code4CT) is a programme that introduces young girls to basic web building skills and exposes them to opportunities in the Information and Communication Technologies (ICT) sector. Participants are trained in web development, design principles, as well as courses in professional development. Code4CT aims to inspire a generation of young girls who are well-prepared with a toolkit of technical and soft skills in order to achieve high impact in the workplace.</h5>
+                    <!-- This is the read more button -->
                     <button>Read More..</button>
                 </div>
+                <!-- This is the intro mini image gallery -->
                 <div id="intro_img">
+                    <!-- Intro image 1 -->
                     <div id="intro_img1">
                         <img src="./images/info_img1.jpg">
                     </div>
+                    <!-- Intro image 2 -->                    
                     <div id="intro_img2">
                         <img src="./images/info_img2.jpg">                        
                     </div>
+                    <!-- Intro image 3 -->                    
                     <div id="intro_img3">
                         <img src="./images/info_img3.jpg">  
                     </div>
+                    <!-- Intro image 4 -->                    
                     <div id="intro_img4">
                         <img src="./images/info_img4.jpg">  
                     </div>
                 </div>
             </div>
 
+            <!-- This is the logo section -->
             <div id="main_logo">
-                <div id="logo_code">
-                    <div id="logo_img1"></div>
-                    <div id="logo_header1">
-                        <h2>Coding</h2>
+                <div id="logo_wrapper">
+                    <!-- This is the coding logo -->
+                    <div id="logo_code">
+                        <div id="logo_img1"></div>
+                        <div id="logo_header1">
+                            <h2>Coding</h2>
+                        </div>
+                        <div id="logo_text1">
+                            <h4>Learn how to build your own websites using HTML, CSS, JavaScript & JQuery. Go on to explore exciting modules from game development to user experience design.</h4>
+                        </div>
                     </div>
-                    <div id="logo_text1">
-                        <h4>Learn how to build your own websites using HTML, CSS, JavaScript & JQuery. Go on to explore exciting modules from game development to user experience design.</h4>
+                    <!-- This is the Communication logo -->
+                    <div id="logo_communication">
+                        <div id="logo_img2"></div>
+                        <div id="logo_header2">
+                            <h2>Communication</h2>
+                        </div>
+                        <div id="logo_text2">
+                           <h4>Learn how to pitch ideas, represent yourself online, communicate professionally and work with online collaboration tools.
+                           </h4>
+                        </div>
                     </div>
-                </div>
-                <div id="logo_communication">
-                    <div id="logo_img2"></div>
-                    <div id="logo_header2">
-                        <h2>Communication</h2>
+                    <!-- This is the problem solving logo -->
+                    <div id="logo_solve">
+                        <div id="logo_img3"></div>
+                        <div id="logo_header3">
+                            <h2>Problem Solving</h2>
+                        </div>
+                        <div id="logo_text3">
+                            <h4>Apply your coding skills to issues you are interested in. You will learn how to tackle complex problems using the design thinking process.</h4>
+                        </div>
                     </div>
-                    <div id="logo_text2">
-                       <h4>Learn how to pitch ideas, represent yourself online, communicate professionally and work with online collaboration tools.
-                       </h4>
-                    </div>
-                </div>
-                <div id="logo_solve">
-                    <div id="logo_img3"></div>
-                    <div id="logo_header3">
-                        <h2>Problem Solving</h2>
-                    </div>
-                    <div id="logo_text3">
-                        <h4>Apply your coding skills to issues you are interested in. You will learn how to tackle complex problems using the design thinking process.</h4>
-                    </div>
-                </div>
-                <div id="logo_career">
-                    <div id="logo_img4"></div>
-                    <div id="logo_header4">
-                        <h2>Career Guidance</h2>
-                    </div>
-                    <div id="logo_text4">
-                        <h4>Explore future options by meeting different companies doing exciting things with technology. We offer career testing and connect you to our network of study institutions and bursary programs.</h4>
+                    <!-- This is the career Guidance logo -->
+                    <div id="logo_career">
+                        <div id="logo_img4"></div>
+                        <div id="logo_header4">
+                            <h2>Career Guidance</h2>
+                        </div>
+                        <div id="logo_text4">
+                            <h4>Explore future options by meeting different companies doing exciting things with technology. We offer career testing and connect you to our network of study institutions and bursary programs.</h4>
+                        </div>
                     </div>
                 </div>
             </div>
 
+            <!-- This is the portfolio section on the homepage -->
             <div id="home_portfolio">
+                <!-- This is the header for the homepage portfolio -->
                 <div id="home_portfolio_header">
                     <h3><span id="solid_border">Our</span> Awesome Portfolio : </h3>
                     <h5>Code4CT is broadening perspectives about career opportunities for many girls and is showing them that the ICT sector offers exciting career paths with the opportunity for social impact. Through using coding and web building skills, participants are exposed to how IT skills can be applied to solve problems, and they are encouraged to use their knowledge to tackle a real local challenge.</h5>
                 </div>
+                <!-- This is the homepage portfolio image gallery -->
                 <div id="home_portfolio_images">
+                    <!-- This is the biggest image hence 5 -->
                     <div id="home_portfolio_img5">
                         <img src="./images/portfolio_img5.jpg">
                     </div>
+                    <!-- This is the smaller images -->
                     <div id="home_portfolio_gall">
+                        <!-- Portfolio image 1 -->
                         <div id="home_portfolio_img1">
                             <img src="./images/portfolio_img1.jpg">
                         </div>
+                        <!-- Portfolio image 2 -->                        
                         <div id="home_portfolio_img2">
                             <img src="./images/portfolio_img2.jpg">
                         </div>
+                        <!-- Portfolio image 3 -->                        
                         <div id="home_portfolio_img3">
                             <img src="./images/portfolio_img3.jpg">
                         </div>
+                        <!-- Portfolio image 4 -->                        
                         <div id="home_portfolio_img4">
                             <img src="./images/portfolio_img4.jpg">
                         </div>
@@ -149,16 +185,22 @@
                 </div>
             </div>
 
+            <!-- This is The Team section -->
             <div id="the_team">
+                <!-- This is the team section header -->
                 <div id="the_team_head">
                     <h3><span id="solid_border">Meet</span> Our Team : </h3>
                     <h5>
                         Code for Cape Town’s teaching team is made up of trained facilitators who are either working in the industry as developers or studying Computer Science or Information Systems at tertiary institutions such as UCT, UWC and CPUT. Our facilitators are passionate about teaching and seeing Code for Cape Town participants grow in their professional and personal development. Facilitators create a light-hearted atmosphere, with fun icebreakers and energisers, and zany examples during lessons.
                     </h5>
                 </div>
+                <!-- This is the team section members -->
                 <div id="the_team_members">
+                    <!-- This is member 1 of the team -->
                     <div id="member_1">
+                        <!-- This is the image of member 1 -->
                         <div id="member1_img"></div>
+                        <!-- This is the info about member 1 -->
                         <div id="member1_info">
                             <div id="emma_name">
                                 <h3>Emma Dicks</h3>
@@ -171,8 +213,11 @@
                             </div>
                         </div>
                     </div>
+                    <!-- This is member 2 of the team -->                    
                     <div id="member_2">
+                        <!-- This is the image of member 2 -->
                         <div id="member2_img"></div>
+                        <!-- This is the info of member 2 -->
                         <div id="member2_info">
                             <div id="andrea_name">
                                 <h3>Andrea Petersen</h3>
@@ -185,8 +230,11 @@
                             </div>
                         </div>
                     </div>
+                    <!-- This is member 3 of the team -->                    
                     <div id="member_3">
+                        <!-- This is the image of member 3 -->
                         <div id="member3_img"></div>
+                        <!-- This is the info of member 3 -->
                         <div id="member3_info">
                             <div id="tegan_name">
                                 <h3>Tegan Crous</h3>
@@ -199,8 +247,11 @@
                             </div>
                         </div>
                     </div>
+                    <!-- This is member 4 of the team -->                    
                     <div id="member_4">
+                        <!-- This is the image of member 4 -->
                         <div id="member4_img"></div>
+                        <!-- This is the info of member 4 -->
                         <div id="member4_info">
                             <div id="tracy_name">
                                 <h3>Tracy-Anne Sikenjana</h3>
@@ -216,26 +267,32 @@
                 </div>
             </div>
 
+            <!-- This is the countup statistic section -->
             <div id="statistic_section">
+                <!-- This is the statistic box -->
                 <div id="statistic_box">
+                    <!-- This is the numbers of coffee statistic -->
                     <div id="number_coffee">
                         <div id="coffee_value"></div>
                         <div id="coffee_header">
                             <h3>Cups of coffee</h3>
                         </div>
                     </div>
+                    <!-- This is the number of girls statistic -->                    
                     <div id="number_girls">
                         <div id="girls_value"></div>
                         <div id="girls_header">
                             <h3>Number of girls</h3>
                         </div>
                     </div>
+                    <!-- This is the number of projects statistic -->                    
                     <div id="number_projects">
                         <div id="project_value"></div>
                         <div id="project_header">
                             <h3>Projects completed</h3>
                         </div>
                     </div>
+                    <!-- This is the number of hours statistic -->                                        
                     <div id="number_hours">
                         <div id="hours_value"></div>
                         <div id="hours_header">
@@ -245,10 +302,13 @@
                 </div>
             </div>
 
+            <!-- This is the subscribe section -->
             <div id="subscribe_box">
+                <!-- This is the content for the subscribe section -->
                 <div id="subscribe_box_content">
                     <h3>SUBSCRIBE TO US :</h3>
                     <h4>Enter your email address to subscribe to us :</h4>
+                    <!-- This is the subscribe section form -->
                     <div id="the_subscribeform">
                         <form id="myForm">
                             <input type="email" name="userEmail" id="userEmail" placeholder="enter your email">
@@ -258,45 +318,63 @@
                 </div>
             </div>
 
+            <!-- This is the carousel for the sponsors -->
             <div id="sponsor_carousel">
-                <div id="sponsor_logo1" class="sponsor_logo">
-                    <img src="./images/code4ct_partners1.png">
-                </div>
-                <div id="sponsor_logo2" class="sponsor_logo">
-                    <img src="./images/code4ct_partners2.png">
-                </div>
-                <div id="sponsor_logo3" class="sponsor_logo">
-                    <img src="./images/code4ct_partners3.png">
-                </div>
-                <div id="sponsor_logo4" class="sponsor_logo">
-                    <img src="./images/code4ct_partners4.png">
-                </div>
-                <div id="sponsor_logo5" class="sponsor_logo">
-                    <img src="./images/code4ct_partners5.png">
-                </div>
-                <div id="sponsor_logo6" class="sponsor_logo">
-                    <img src="./images/code4ct_partners6.png">
-                </div>
-                <div id="sponsor_logo7" class="sponsor_logo">
-                    <img src="./images/code4ct_partners7.png">
-                </div>
-                <div id="sponsor_logo8" class="sponsor_logo">
-                    <img src="./images/code4ct_partners8.png">
-                </div>
-                <div id="sponsor_logo9" class="sponsor_logo">
-                    <img src="./images/code4ct_partners9.png">
-                </div>
-                <div id="sponsor_logo10" class="sponsor_logo">
-                    <img src="./images/code4ct_partners10.png">
+                <div id="sponsor_wrapper">
+                    <!-- This is logo 1 of the sponsors section -->
+                    <div id="sponsor_logo1" class="sponsor_logo">
+                        <img src="./images/code4ct_partners1.png">
+                    </div>
+                    <!-- This is logo 2 of the sponsors section -->                
+                    <div id="sponsor_logo2" class="sponsor_logo">
+                        <img src="./images/code4ct_partners2.png">
+                    </div>
+                    <!-- This is logo 3 of the sponsors section -->                
+                    <div id="sponsor_logo3" class="sponsor_logo">
+                        <img src="./images/code4ct_partners3.png">
+                    </div>
+                    <!-- This is logo 4 of the sponsors section -->                
+                    <div id="sponsor_logo4" class="sponsor_logo">
+                        <img src="./images/code4ct_partners4.png">
+                    </div>
+                    <!-- This is logo 5 of the sponsors section -->                
+                    <div id="sponsor_logo5" class="sponsor_logo">
+                        <img src="./images/code4ct_partners5.png">
+                    </div>
+                    <!-- This is logo 6 of the sponsors section -->                
+                    <div id="sponsor_logo6" class="sponsor_logo">
+                        <img src="./images/code4ct_partners6.png">
+                    </div>
+                    <!-- This is logo 7 of the sponsors section -->                
+                    <div id="sponsor_logo7" class="sponsor_logo">
+                        <img src="./images/code4ct_partners7.png">
+                    </div>
+                    <!-- This is logo 8 of the sponsors section -->                
+                    <div id="sponsor_logo8" class="sponsor_logo">
+                        <img src="./images/code4ct_partners8.png">
+                    </div>
+                    <!-- This is logo 9 of the sponsors section -->                
+                    <div id="sponsor_logo9" class="sponsor_logo">
+                        <img src="./images/code4ct_partners9.png">
+                    </div>
+                    <!-- This is logo 10 of the sponsors section -->                
+                    <div id="sponsor_logo10" class="sponsor_logo">
+                        <img src="./images/code4ct_partners10.png">
+                    </div>
                 </div>
             </div>
 
+            <!-- This is the about section used on all pages required -->
             <div id="homepage_about_section">
+                <!-- This is the about section info -->
                 <div id="home_about_info">
+                    <!-- This is the about section header -->
                     <div id="home_about_info_header">
                         <h2>Contact :</h2>
                     </div>
+                    <!-- This is the about section contact details -->
                     <div id="home_about_info_contact1">
+                        <!-- This is the phone number section -->
                         <div id="home_phone_logo">
                             <img src="./images/phone_logo.png">
                         </div>
@@ -305,6 +383,7 @@
                         </div>
                     </div>
 
+                        <!-- This is the email section -->                    
                     <div id="home_about_info_contact2">
                         <div id="home_email_logo">
                             <img src="./images/envelope_logo.png">
@@ -314,6 +393,7 @@
                         </div>
                     </div>
 
+                        <!-- This is the location section -->                    
                     <div id="home_about_info_contact3">
                         <div id="home_location_logo">
                             <img src="./images/location_logo.png">
@@ -322,9 +402,11 @@
                             <h4>Innovate South Africa, 403 Old Castle Brewery, 6 Beach Rd, Woodstock, Cape Town, 7915 </h4>
                         </div>
                     </div>
-
                 </div>
+
+                <!-- This is the about section links -->
                 <div id="home_about_links">
+                    <!-- This is the company links -->
                     <h2>Company :</h2>
                     <ul>
                         <li><a href="#about">About us</a></li>
@@ -334,6 +416,7 @@
                         <li><a href="#program">Affiliate Program</a></li>
                     </ul>
                 </div>
+                <!-- This is the about and support links -->
                 <div id="home_about_support">
                     <h2>Help & Support :</h2>
                     <ul>
@@ -345,10 +428,11 @@
                 </div>
             </div>
 
+            <!-- This is the universal footer used on every page -->
             <div id="footer">
                 <h3>Copyright <span>&#9746;</span> 2017 PRIVACY POLICY</h3>
                 <div id="footer_icons">
-                    
+                    <!-- This is the follow us section with links -->
                     <h3>Follow Us :</h3>
                     <a href="https://www.facebook.com/code4ct/" target="_blank" ><img src="./images/facebook_logo.png"></a>
                     <a href="https://twitter.com/code4ct?lang=en" target="_blank" ><img src="./images/twitter_logo.png"></a>
@@ -360,7 +444,11 @@
         </div>
 
     </div>
+    <!-- This is the links to my javascript used -->
+
+    <!-- Latest jquery library -->
     <script src="./js/jquery-3.3.1.min.js"></script>
+    <!-- My javascript script -->
     <script src="./js/script.js"></script>    
     
 </body>

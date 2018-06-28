@@ -63,6 +63,9 @@
         'portfolio_img_row3'
         ;
         grid-template-columns: 1fr;
+        img{
+            @include imageZoomHover;
+        }
 
         #portfolio_img_row1{
             grid-area: portfolio_img_row1;
@@ -209,3 +212,5 @@
 .portfolio_3{
     display: none;
 }
+
+@import 'portfoliopage-responsive';

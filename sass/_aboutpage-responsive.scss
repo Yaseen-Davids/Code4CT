@@ -1,0 +1,545 @@
+@media only screen
+and (min-device-width: 1px)
+and (max-device-width: 499px)
+and (-webkit-min-device-pixel-ratio: 2){
+    #about_intro_info{
+        height: 700px;
+        margin-top: 100px;
+        margin-left: 10px;
+        margin-right: 10px;
+        display: grid;
+        grid-template-areas: 'about_intro_text'
+        'about_intro_img';
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+    
+        #about_intro_text{
+            h3{
+                font-size: 1em;
+                width: 90%;
+    
+                #solid_border{
+                    border-bottom: 3px solid $themeColor;
+                }
+            }
+            h5{
+                margin-top: 30px;
+                font-size: 0.8em;
+            }
+            button{
+                @include readMoreButton;
+                margin-top: 20px;
+                width: 100px;
+                height: 40px;
+                transition: width 0.6s;
+                font-size: 0.7em;
+
+                &:hover{
+                    transition: width 0.6s;
+                    width: 135px;
+                }
+            }
+        }
+    }
+    
+    #aboutUs_section{
+        margin-top: 100px;
+        height: 1200px;
+        display: grid;
+        grid-template-areas: 'aboutUs_iframe'
+        'aboutUs_info'
+        ;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+        background: rgb(246, 246, 246);
+        font-family: 'Poppins';
+    
+        #aboutUs_iframe{
+            height: 400px;
+    
+            iframe{
+                margin-top: 50px;
+                height: 400px;
+                width: 100%;
+            }
+        }
+    
+        #aboutUs_info{
+            margin-left: 10px;
+            margin-right: 10px;
+    
+            h2{
+                margin-top: 20px;
+                width: 35%;
+                
+            }
+    
+            h4{
+                margin-top: 20px;
+                font-size: 0.8em;
+            }
+    
+            #about_info_section1{
+                border: $borderSettings;
+                height: 225px;
+                margin-top: 20px;
+    
+                h3{
+                    color: $themeColor;
+                }
+    
+                h4{
+                    margin-top: 10px;
+                    font-size: 0.8em;
+                }
+    
+                #about_vision{
+                    border: $borderSettings;
+                    height: 220px;  
+                    float: left;
+                    width: 48%;
+                }
+                #about_mission{
+                    border: $borderSettings;
+                    height: 220px;  
+                    float: right;
+                    width: 48%;
+                }
+            }
+    
+            #about_info_section2{
+                border: $borderSettings;
+                height: 225px;
+                margin-top: 20px;
+    
+                h3{
+                    color: $themeColor;
+                }
+    
+                h4{
+                    margin-top: 10px;
+                    font-weight: lighter;
+                }
+    
+                #about_help{
+                    border: $borderSettings;
+                    height: 220px;  
+                    float: left;
+                    width: 48%;
+                }
+                #about_supports{
+                    border: $borderSettings;
+                    height: 220px;  
+                    float: right;
+                    width: 48%;
+                }
+            }
+        }
+    }
+    #circle_percentages_bar{
+        margin-top: 100px;
+        height: 850px;
+    
+        .margin-wrapper{
+            margin-left: 10px;
+            margin-right: 10px;
+            height: 850px;
+    
+            #percentages_bars{
+                display: grid;
+                grid-template-areas: 'percentage_bar1'
+                'percentage_bar2'
+                'percentage_bar3'
+                'percentage_bar4'
+                ;
+                grid-template-columns: 1fr;
+                grid-gap: 40px;
+                height: 850px;
+    
+                #percentage_bar1{
+                    grid-area: percentage_bar1;
+                    border: $borderSettings;
+                }
+                #percentage_bar2{
+                    grid-area: percentage_bar2;
+                    border: $borderSettings;
+                }
+                #percentage_bar3{
+                    grid-area: percentage_bar3;
+                    border: $borderSettings;
+                }
+                #percentage_bar4{
+                    grid-area: percentage_bar4;
+                    border: $borderSettings;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 700px)
+and (max-width: 900px){
+    #about_intro_info{
+        height: 450px;
+        margin-top: 100px;
+        margin-left: 50px;
+        margin-right: 50px;
+        display: grid;
+        grid-template-areas: 'about_intro_text about_intro_img';
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+    
+        #about_intro_text{
+            h3{
+                font-size: 1em;
+                width: 90%;
+    
+                #solid_border{
+                    border-bottom: 3px solid $themeColor;
+                }
+            }
+            h5{
+                margin-top: 30px;
+                font-size: 0.9em;
+            }
+            button{
+                @include readMoreButton;
+                margin-top: 20px;
+                width: 100px;
+                height: 40px;
+                transition: width 0.6s;
+                font-size: 0.7em;
+
+                &:hover{
+                    transition: width 0.6s;
+                    width: 135px;
+                }
+            }
+        }
+        #about_intro_img{
+            height: 350px;
+    
+            img{
+                height: 350px;
+                width: 100%;
+                @include imageZoomHover;
+            }
+        }
+    }
+    
+    #aboutUs_section{
+        margin-top: 100px;
+        height: 1000px;
+        display: grid;
+        grid-template-areas: 'aboutUs_iframe'
+        'aboutUs_info'
+        ;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+        background: rgb(246, 246, 246);
+        font-family: 'Poppins';
+    
+        #aboutUs_iframe{
+            height: 400px;
+    
+            iframe{
+                margin-top: 50px;
+                height: 400px;
+                width: 100%;
+            }
+        }
+    
+        #aboutUs_info{
+            margin-left: 50px;
+            margin-right: 50px;
+    
+            h2{
+                margin-top: 20px;
+                width: 35%;
+                font-size: 1.2em;
+            }
+    
+            h4{
+                margin-top: 20px;
+                font-size: 1em;
+            }
+    
+            #about_info_section1{
+                border: $borderSettings;
+                height: 180px;
+                margin-top: 30px;
+    
+                h3{
+                    color: $themeColor;
+                    font-size: 1.1em;
+                }
+    
+                h4{
+                    margin-top: 10px;
+                    font-size: 1em;
+                }
+    
+                #about_vision{
+                    border: $borderSettings;
+                    height: 180px;  
+                    float: left;
+                    width: 48%;
+                }
+                #about_mission{
+                    border: $borderSettings;
+                    height: 180px;  
+                    float: right;
+                    width: 48%;
+                }
+            }
+    
+            #about_info_section2{
+                height: 180px;
+                margin-top: 20px;
+    
+                h3{
+                    color: $themeColor;
+                }
+    
+                h4{
+                    margin-top: 10px;
+                    font-weight: lighter;
+                }
+    
+                #about_help{
+                    border: $borderSettings;
+                    height: 180px;  
+                    float: left;
+                    width: 48%;
+                }
+                #about_supports{
+                    border: $borderSettings;
+                    height: 180px;  
+                    float: right;
+                    width: 48%;
+                }
+            }
+        }
+    }
+    #circle_percentages_bar{
+        margin-top: 100px;
+        height: 450px;
+    
+        .margin-wrapper{
+            margin-left: 10px;
+            margin-right: 10px;
+            height: 400px;
+    
+            #percentages_bars{
+                display: grid;
+                grid-template-areas: 'percentage_bar1 percentage_bar2'
+                'percentage_bar3 percentage_bar4'
+                ;
+                grid-template-columns: 1fr 1fr;
+                grid-gap: 40px;
+                height: 400px;
+    
+                #percentage_bar1{
+                    grid-area: percentage_bar1;
+                    border: $borderSettings;
+                }
+                #percentage_bar2{
+                    grid-area: percentage_bar2;
+                    border: $borderSettings;
+                }
+                #percentage_bar3{
+                    grid-area: percentage_bar3;
+                    border: $borderSettings;
+                }
+                #percentage_bar4{
+                    grid-area: percentage_bar4;
+                    border: $borderSettings;
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width: 900px)
+and (max-width: 1200px){
+    #about_intro_info{
+        height: 450px;
+        margin-top: 100px;
+        margin-left: 70px;
+        margin-right: 70px;
+        display: grid;
+        grid-template-areas: 'about_intro_text about_intro_img';
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+    
+        #about_intro_text{
+            h3{
+                font-size: 1.2em;
+                width: 90%;
+    
+                #solid_border{
+                    border-bottom: 3px solid $themeColor;
+                }
+            }
+            h5{
+                margin-top: 30px;
+                font-size: 1em;
+            }
+            button{
+                @include readMoreButton;
+                margin-top: 20px;
+                width: 120px;
+                height: 40px;
+                transition: width 0.6s;
+                font-size: 1em;
+
+                &:hover{
+                    transition: width 0.6s;
+                    width: 140px;
+                }
+            }
+        }
+        #about_intro_img{
+            height: 350px;
+    
+            img{
+                height: 350px;
+                width: 100%;
+                @include imageZoomHover;
+            }
+        }
+    }
+    
+    #aboutUs_section{
+        margin-top: 100px;
+        height: 1000px;
+        display: grid;
+        grid-template-areas: 'aboutUs_iframe'
+        'aboutUs_info'
+        ;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+        background: rgb(246, 246, 246);
+        font-family: 'Poppins';
+    
+        #aboutUs_iframe{
+            height: 400px;
+    
+            iframe{
+                margin-top: 50px;
+                height: 400px;
+                width: 100%;
+            }
+        }
+    
+        #aboutUs_info{
+            margin-left: 70px;
+            margin-right: 70px;
+    
+            h2{
+                margin-top: 20px;
+                width: 35%;
+                font-size: 1.2em;
+            }
+    
+            h4{
+                margin-top: 20px;
+                font-size: 1em;
+            }
+    
+            #about_info_section1{
+                border: $borderSettings;
+                height: 180px;
+                margin-top: 30px;
+    
+                h3{
+                    color: $themeColor;
+                    font-size: 1.1em;
+                }
+    
+                h4{
+                    margin-top: 10px;
+                    font-size: 1em;
+                }
+    
+                #about_vision{
+                    border: $borderSettings;
+                    height: 180px;  
+                    float: left;
+                    width: 48%;
+                }
+                #about_mission{
+                    border: $borderSettings;
+                    height: 180px;  
+                    float: right;
+                    width: 48%;
+                }
+            }
+    
+            #about_info_section2{
+                height: 180px;
+                margin-top: 20px;
+    
+                h3{
+                    color: $themeColor;
+                }
+    
+                h4{
+                    margin-top: 10px;
+                    font-weight: lighter;
+                }
+    
+                #about_help{
+                    border: $borderSettings;
+                    height: 180px;  
+                    float: left;
+                    width: 48%;
+                }
+                #about_supports{
+                    border: $borderSettings;
+                    height: 180px;  
+                    float: right;
+                    width: 48%;
+                }
+            }
+        }
+    }
+    #circle_percentages_bar{
+        margin-top: 100px;
+        height: 450px;
+    
+        .margin-wrapper{
+            margin-left: 10px;
+            margin-right: 10px;
+            height: 400px;
+    
+            #percentages_bars{
+                display: grid;
+                grid-template-areas: 'percentage_bar1 percentage_bar2'
+                'percentage_bar3 percentage_bar4'
+                ;
+                grid-template-columns: 1fr 1fr;
+                grid-gap: 40px;
+                height: 400px;
+    
+                #percentage_bar1{
+                    grid-area: percentage_bar1;
+                    border: $borderSettings;
+                }
+                #percentage_bar2{
+                    grid-area: percentage_bar2;
+                    border: $borderSettings;
+                }
+                #percentage_bar3{
+                    grid-area: percentage_bar3;
+                    border: $borderSettings;
+                }
+                #percentage_bar4{
+                    grid-area: percentage_bar4;
+                    border: $borderSettings;
+                }
+            }
+        }
+    }
+}

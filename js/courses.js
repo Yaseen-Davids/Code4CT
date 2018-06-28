@@ -20,21 +20,40 @@ window.onscroll = function slideInCart() {
     }
 }
 
-$("#shopping_cart").click(function(){
-    if ($("#shopping_list").css('right') == "0px"){
-        $("#shopping_cart").css('right', '0px', 'transition', 'all 0.4s');
-        $("#shopping_list").css('right', '-305px', 'transition', 'all 0.4s');
-    }
-    else {
+if (window.matchMedia("(max-width: 500px)").matches){
+    $("#shopping_cart").click(function(){
+        if ($("#shopping_list").css('right') == "0px"){
+            $("#shopping_cart").css('right', '0px', 'transition', 'all 0.4s');
+            $("#shopping_list").css('right', '-205', 'transition', 'all 0.4s');
+        }
+        else {
+            $("#shopping_cart").css('right', '205px', 'transition', 'all 0.4s');
+            $("#shopping_list").css('right', '0px', 'transition', 'all 0.4s');
+        }
+    })
+    $("button").click(function(){
+        $("#shopping_cart").css('right', '205px', 'transition', 'all 0.4s');
+        $("#shopping_list").css('right', '0px', 'transition', 'all 0.4s');
+    })
+}
+
+else if (!window.matchMedia("(max-width: 500px)").matches){
+    $("#shopping_cart").click(function(){
+        if ($("#shopping_list").css('right') == "0px"){
+            $("#shopping_cart").css('right', '0px', 'transition', 'all 0.4s');
+            $("#shopping_list").css('right', '-305px', 'transition', 'all 0.4s');
+        }
+        else {
+            $("#shopping_cart").css('right', '305px', 'transition', 'all 0.4s');
+            $("#shopping_list").css('right', '0px', 'transition', 'all 0.4s');
+        }
+    })
+    
+    $("button").click(function(){
         $("#shopping_cart").css('right', '305px', 'transition', 'all 0.4s');
         $("#shopping_list").css('right', '0px', 'transition', 'all 0.4s');
-    }
-})
-
-$("button").click(function(){
-    $("#shopping_cart").css('right', '305px', 'transition', 'all 0.4s');
-    $("#shopping_list").css('right', '0px', 'transition', 'all 0.4s');
-})
+    })
+}
 
 // ******************************************************************** //
 
@@ -148,7 +167,7 @@ let course23Text = remove_btn23 + course23.name + "<br>";
 let course24Text = remove_btn24 + course24.name + "<br>";
 
 
-// This function checks if there is a value in the array
+// This function checks if there is a value in the array `theList`
 function checkArray() {
     cartListText.innerHTML = "";
     for (let i in theList){
@@ -157,11 +176,10 @@ function checkArray() {
     }
 }
 
+// This function adds up the values in the array `totalAmount`
 function getTotal() {
     document.getElementById("cartTotal").innerHTML = "Total : " + totalAmount.reduce(getSum);
 }
-
-// $("#cartItemList").append(remove_btn1 + course1.name + "<br>");
 
 $("#course_btn1").click(function(){
     let iCourse1 = theList.indexOf(course1Text);

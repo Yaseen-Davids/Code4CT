@@ -1,0 +1,328 @@
+// This is the media query for mobile devices
+@media only screen
+  and (min-device-width: 1px)
+  and (max-device-width: 499px)
+  and (-webkit-min-device-pixel-ratio: 2){
+    #the_portfolio_main{
+        grid-area: the_portfolio_main;
+        border: $borderSettings;
+        margin-top: 100px;
+        height: 1250px;
+        display: grid;
+        grid-template-areas: 'portfolio_header'
+        'portfolio_img_section'
+        'portfolio_btn'
+        ;
+        grid-template-columns: 1fr;
+
+        img{
+            width: 100%;
+            height: 150px;
+        }
+
+        #portfolio_header{
+            grid-area: portfolio_header;
+            border: $borderSettings;
+            height: 200px;
+            text-align: center;
+            font-family: 'Poppins';
+
+            h2{
+                color: $headingsThemeColor;
+                font-size: 1.5em;
+                border-bottom: 1px solid $headingsThemeColor;
+                margin-left: 0px;
+                margin-right: 0px;
+
+                #solid_border{
+                    border-bottom: 3px solid $themeColor;
+                }
+            }
+        }
+        #portfolio_img_section{
+            #portfolio_img_row1{
+                grid-area: portfolio_img_row1;
+                border: $borderSettings;
+                height: 300px;
+                display: grid;
+                grid-template-areas: 'row1_img1 row1_img2'
+                'row1_img3 row1_img4';
+                grid-template-columns: 1fr 1fr;
+            }
+            #portfolio_img_row2{
+                grid-area: portfolio_img_row2;
+                border: $borderSettings;
+                height: 300px;
+                display: grid;
+                grid-template-areas: 'row2_img1 row2_img2'
+                'row2_img3 row2_img4'
+                ;
+                grid-template-columns: 1fr 1fr;
+                ;
+
+            }
+            #portfolio_img_row3{
+                grid-area: portfolio_img_row3;
+                border: $borderSettings;
+                height: 300px;
+                display: grid;
+                grid-template-areas: 'row3_img1 row3_img2'
+                'row3_img3 row3_img4'
+                ;
+                grid-template-columns: 1fr 1fr;
+                ;
+            }
+        }
+        #portfolio_btn{
+            height: 100px;
+
+            #portfolio_btn_1{
+                left: 35%;
+            }
+            #portfolio_btn_2{
+                left: 50%;
+            }
+            #portfolio_btn_3{
+                left: 65%;
+            }
+        }
+    }
+  }
+
+  // This is the media query for mobile devices
+@media (min-width: 500px)
+and (max-width: 700px){
+    #the_portfolio_main{
+        grid-area: the_portfolio_main;
+        border: $borderSettings;
+        margin-top: 100px;
+        height: 1550px;
+        display: grid;
+        grid-template-areas: 'portfolio_header'
+        'portfolio_img_section'
+        'portfolio_btn'
+        ;
+        grid-template-columns: 1fr;
+
+        img{
+            width: 100%;
+            height: 200px;
+        }
+
+        #portfolio_header{
+            grid-area: portfolio_header;
+            border: $borderSettings;
+            height: 200px;
+            text-align: center;
+            font-family: 'Poppins';
+
+            h2{
+                color: $headingsThemeColor;
+                font-size: 1.5em;
+                border-bottom: 1px solid $headingsThemeColor;
+                margin-left: 0px;
+                margin-right: 0px;
+
+                #solid_border{
+                    border-bottom: 3px solid $themeColor;
+                }
+            }
+        }
+        #portfolio_img_section{
+            height: 1200px;
+            #portfolio_img_row1{
+                grid-area: portfolio_img_row1;
+                border: $borderSettings;
+                height: 400px;
+                display: grid;
+                grid-template-areas: 'row1_img1 row1_img2'
+                'row1_img3 row1_img4';
+                grid-template-columns: 1fr 1fr;
+            }
+            #portfolio_img_row2{
+                grid-area: portfolio_img_row2;
+                border: $borderSettings;
+                height: 400px;
+                display: grid;
+                grid-template-areas: 'row2_img1 row2_img2'
+                'row2_img3 row2_img4'
+                ;
+                grid-template-columns: 1fr 1fr;
+                ;
+
+            }
+            #portfolio_img_row3{
+                grid-area: portfolio_img_row3;
+                border: $borderSettings;
+                height: 400px;
+                display: grid;
+                grid-template-areas: 'row3_img1 row3_img2'
+                'row3_img3 row3_img4'
+                ;
+                grid-template-columns: 1fr 1fr;
+                ;
+            }
+        }
+        #portfolio_btn{
+            height: 100px;
+
+            #portfolio_btn_1{
+                left: 35%;
+            }
+            #portfolio_btn_2{
+                left: 50%;
+            }
+            #portfolio_btn_3{
+                left: 65%;
+            }
+        }
+    }
+}
+
+
+  // This is the media query for mobile devices
+@media (min-width: 700px)
+and (max-width: 900px){
+    #the_portfolio_main{
+        margin-top: 100px;
+        height: 1850px;
+
+        img{
+            width: 100%;
+            height: 250px;
+        }
+
+        #portfolio_header{
+            height: 200px;
+
+            h2{
+                color: $headingsThemeColor;
+                font-size: 1.5em;
+                border-bottom: 1px solid $headingsThemeColor;
+                margin-left: 200px;
+                margin-right: 200px;
+
+                #solid_border{
+                    border-bottom: 3px solid $themeColor;
+                }
+            }
+        }
+        #portfolio_img_section{
+            height: 1500px;
+            #portfolio_img_row1{
+                height: 500px;
+                grid-template-areas: 'row1_img1 row1_img1 row1_img2'
+                'row1_img3 row1_img4 row1_img4';
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+            #portfolio_img_row2{
+                height: 500px;
+                grid-template-areas: 'row2_img2 row2_img2 row2_img1'
+                'row2_img3 row2_img4 row2_img4'
+                ;
+                grid-template-columns: 1fr 1fr 1fr;
+                ;
+
+            }
+            #portfolio_img_row3{
+                height: 500px;
+                grid-template-areas: 'row3_img2 row3_img2 row3_img1'
+                'row3_img3 row3_img4 row3_img4'
+                ;
+                grid-template-columns: 1fr 1fr 1fr;
+                ;
+            }
+        }
+        #portfolio_btn{
+            height: 100px;
+
+            #portfolio_btn_1{
+                left: 42%;
+            }
+            #portfolio_btn_2{
+                left: 50%;
+            }
+            #portfolio_btn_3{
+                left: 58%;
+            }
+        }
+    }
+}
+
+  // This is the media query for mobile devices
+@media (min-width: 900px)
+and (max-width: 1200px){
+    #the_portfolio_main{
+        margin-top: 100px;
+        height: 1050px;
+
+        img{
+            width: 100%;
+            height: 250px;
+        }
+
+        #portfolio_header{
+            height: 200px;
+
+            h2{
+                color: $headingsThemeColor;
+                font-size: 1.5em;
+                border-bottom: 1px solid $headingsThemeColor;
+                margin-left: 300px;
+                margin-right: 300px;
+
+                #solid_border{
+                    border-bottom: 3px solid $themeColor;
+                }
+            }
+        }
+        #portfolio_img_section{
+            height: 750px;
+            #portfolio_img_row1{
+                height: 250px;
+                grid-template-areas: 'row1_img1 row1_img2 row1_img3 row1_img4';
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+            }
+            #portfolio_img_row2{
+                height: 250px;
+                grid-template-areas: 'row2_img1 row2_img2 row2_img3 row2_img4'
+                ;
+                grid-template-columns: 1fr 35% 1fr 1fr;
+                ;
+
+            }
+            #portfolio_img_row3{
+                height: 250px;
+                grid-template-areas: 'row3_img1 row3_img2 row3_img3 row3_img4'
+                ;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                ;
+            }
+        }
+        #portfolio_btn{
+            height: 100px;
+
+            #portfolio_btn_1{
+                left: 42%;
+            }
+            #portfolio_btn_2{
+                left: 50%;
+            }
+            #portfolio_btn_3{
+                left: 58%;
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px)
+and (max-width: 1300px){
+    #the_portfolio_main{
+        #portfolio_header{
+            h2{
+                margin-left: 400px;
+                margin-right: 400px;
+            }
+        }
+    }
+}

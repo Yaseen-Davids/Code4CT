@@ -48,7 +48,7 @@
     padding: 5px;
     position: sticky;
     top: 0;
-    z-index: 10;
+    z-index: 1000000;
     background: white;
     border-bottom: 1px solid rgb(207, 207, 207);
 
@@ -215,9 +215,11 @@
             @include sliderBtns; 
             position: absolute;
             top:90%;
-            left: 45%;
+            left: 47%;
             transform: translate(-50%,-50%);
             cursor: pointer;
+            background: $themeColor;
+            transition: all 0.5s;
         }
         // Slide button 2
         #slideBtn_2{
@@ -227,15 +229,21 @@
             left: 50%;
             transform: translate(-50%,-50%);
             cursor: pointer;
+            background: white;   
+            height: 10px;
+            transition: all 0.5s;
         }
         // Slide button 3
         #slideBtn_3{
             @include sliderBtns;  
             position: absolute;
             top:90%;
-            left: 55%;
+            left: 53%;
             transform: translate(-50%,-50%);
             cursor: pointer;
+            background: white;
+            height: 10px;
+            transition: all 0.5s;
         }
     }
 
@@ -401,13 +409,8 @@ button{
 // This is the logo section
 #main_logo{
     grid-area: main_logo;
-    height: 300px;
+    height: 390px;
     border: $borderSettings;
-    display: grid;
-    grid-template-areas: 'logo_code logo_communication logo_solve logo_career';
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 50px;
-    padding: 40px;
     margin-top: 100px;
     font-family: 'OpenSans', sans-serif;
     text-align: center;
@@ -415,79 +418,89 @@ button{
     background: black;
     font-size: 1em;
 
-    // This is the logo code image and text
-    #logo_code{
-        grid-area: logo_code;
-        border: $borderSettings;
+    #logo_wrapper{
+        display: grid;
+        grid-template-areas: 'logo_code logo_communication logo_solve logo_career';
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 30px;
+        padding: 40px;
+        margin-left: 60px;
+        margin-right: 60px;
 
-        // This is the logo code image
-        #logo_img1{
-            background: url('../images/laptop_logo.png');
-            @include containBgImg;
-            @include logoImgSettings;
-        }
-        #logo_header1{
-            @include logoHeadSettings;
-        }
-        #logo_text1{
-            @include logoTextSettings;
-        }
-    }
+        // This is the logo code image and text
+        #logo_code{
+            grid-area: logo_code;
+            border: $borderSettings;
 
-    // This is the logo communication image and text
-    #logo_communication{
-        grid-area: logo_communication;
-        border: $borderSettings;
+            // This is the logo code image
+            #logo_img1{
+                background: url('../images/laptop_logo.png');
+                @include containBgImg;
+                @include logoImgSettings;
+            }
+            #logo_header1{
+                @include logoHeadSettings;
+            }
+            #logo_text1{
+                @include logoTextSettings;
+            }
+        }
 
-        // This is the logo communication image
-        #logo_img2{
-            background: url('../images/speaker_logo.png');
-            @include logoImgSettings;            
-            @include containBgImg;
-        }
-        #logo_header2{
-            @include logoHeadSettings;
-        }
-        #logo_text2{
-            @include logoTextSettings;
-        }
-    }
+        // This is the logo communication image and text
+        #logo_communication{
+            grid-area: logo_communication;
+            border: $borderSettings;
 
-    // This is the solve section image and text
-    #logo_solve{
-        grid-area: logo_solve;
-        border: $borderSettings;
+            // This is the logo communication image
+            #logo_img2{
+                background: url('../images/speaker_logo.png');
+                @include logoImgSettings;            
+                @include containBgImg;
+            }
+            #logo_header2{
+                @include logoHeadSettings;
+            }
+            #logo_text2{
+                @include logoTextSettings;
+            }
+        }
 
-        // This is the solve image
-        #logo_img3{
-            background: url('../images/wrench_logo.png');
-            @include logoImgSettings;
-            @include containBgImg;
-        }
-        #logo_header3{
-            @include logoHeadSettings;
-        }
-        #logo_text3{
-            @include logoTextSettings;
-        }
-    }
+        // This is the solve section image and text
+        #logo_solve{
+            grid-area: logo_solve;
+            border: $borderSettings;
 
-    // This is the career section image and text
-    #logo_career{
-        grid-area: logo_career;
-        border: $borderSettings;
+            // This is the solve image
+            #logo_img3{
+                background: url('../images/wrench_logo.png');
+                @include logoImgSettings;
+                @include containBgImg;
+            }
+            #logo_header3{
+                @include logoHeadSettings;
+            }
+            #logo_text3{
+                @include logoTextSettings;
+            }
+        }
 
-        // This is the career section image
-        #logo_img4{
-            background: url('../images/file_logo.png');
-            @include logoImgSettings;
-            @include containBgImg;
-        }
-        #logo_header4{
-            @include logoHeadSettings;
-        }
-        #logo_text4{
-            @include logoTextSettings;
+        // This is the career section image and text
+        #logo_career{
+            grid-area: logo_career;
+            border: $borderSettings;
+
+            // This is the career section image
+            #logo_img4{
+                background: url('../images/file_logo.png');
+                @include logoImgSettings;
+                @include containBgImg;
+            }
+            #logo_header4{
+                @include logoHeadSettings;
+            }
+            #logo_text4{
+                @include logoTextSettings;
+            }
         }
     }
 }
@@ -839,8 +852,8 @@ button{
         display: grid;
         grid-template-areas: 'number_coffee number_girls number_projects number_hours';
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-gap: 50px;
-        margin-left: 100px;
+        grid-gap: 60px;
+        margin-left: 150px;
         margin-right: 100px;
         padding: 10px;
         font-family: 'OpenSans';
@@ -982,9 +995,9 @@ button{
     margin-top: 20px;
     overflow: hidden;
     padding: 10px;
-    position: relative;
+    // position: relative;
     background: black;
-
+    z-index: 10000;
     img{
         height: 150px;
         width: 200px;
@@ -995,6 +1008,16 @@ button{
         width: 200px;
         border: $borderSettings;
         position: absolute;
+        z-index: -10;
+    }
+    #sponsor_wrapper{
+        margin-left: 100px;
+        margin-right: 100px;
+        overflow: hidden;
+        height: 150px;
+        background: black;
+        position: relative;
+        z-index: -10;
     }
 
     #sponsor_logo1{
@@ -1032,8 +1055,8 @@ button{
 #homepage_about_section{
     grid-area: homepage_about_section;
     height: 260px;
-    margin-left: 150px;
-    margin-right: 150px;
+    margin-left: 100px;
+    margin-right: 100px;
     margin-top: 100px;
     margin-bottom: 100px;
     grid-gap: 10px;
@@ -1152,12 +1175,12 @@ button{
     border-bottom: 3px solid $themeColor;
 }
 
-@import 'homepage-responsive';
+@import 'courses-page';
 
-@import 'contact-page';
+@import 'homepage-responsive';
 
 @import 'about-page';
 
-@import 'portfolio-page';
+@import 'contact-page';
 
-@import 'courses-page';
+@import 'portfolio-page';

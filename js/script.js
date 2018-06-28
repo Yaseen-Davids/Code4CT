@@ -6,6 +6,12 @@ $("#slideBtn_1").click(function(){
     $("#img_1").fadeIn("slow");
     $("#img_2").fadeOut("slow");
     $("#img_3").fadeOut("slow");
+    $("#slideBtn_1").css('height', '20px');
+    $("#slideBtn_1").css('background', '#e1918a');
+    $("#slideBtn_2").css('height', '10px');
+    $("#slideBtn_2").css('background', 'white');
+    $("#slideBtn_3").css('height', '10px');
+    $("#slideBtn_3").css('background', 'white');
 });
 
 $("#slideBtn_2").click(function(){
@@ -13,6 +19,12 @@ $("#slideBtn_2").click(function(){
     $("#img_2").fadeIn("slow");
     $("#img_1").fadeOut("slow");
     $("#img_3").fadeOut("slow");
+    $("#slideBtn_1").css('height', '10px');
+    $("#slideBtn_1").css('background', 'white');
+    $("#slideBtn_2").css('height', '20px');
+    $("#slideBtn_2").css('background', '#e1918a');
+    $("#slideBtn_3").css('height', '10px');
+    $("#slideBtn_3").css('background', 'white');
 });
 
 $("#slideBtn_3").click(function(){
@@ -20,58 +32,48 @@ $("#slideBtn_3").click(function(){
     $("#img_3").fadeIn("slow");
     $("#img_1").fadeOut("slow");
     $("#img_2").fadeOut("slow");
+    $("#slideBtn_1").css('height', '10px');
+    $("#slideBtn_1").css('background', 'white');
+    $("#slideBtn_2").css('height', '10px');
+    $("#slideBtn_2").css('background', 'white');
+    $("#slideBtn_3").css('height', '20px');
+    $("#slideBtn_3").css('background', '#e1918a');
 });
 
-// let row3_imgs = [row3_img1, row3_img2, row3_img3, row3_img4];
-
-// $("#portfolio_btn_1").click(function(){
-//     $(row3_imgs[0]).animate({marginTop: "0px"},1000);
-//     $(row3_imgs[1]).animate({marginTop: "0px"},1200);
-//     $(row3_imgs[2]).animate({marginTop: "0px"},1400);
-//     $(row3_imgs[3]).animate({marginTop: "0px"},1600);
-// })
-// $("#portfolio_btn_2").click(function(){
-//     $(row3_imgs[0]).animate({marginTop: "300px"},1000);
-//     $(row3_imgs[1]).animate({marginTop: "300px"},1200);
-//     $(row3_imgs[2]).animate({marginTop: "300px"},1400);
-//     $(row3_imgs[3]).animate({marginTop: "300px"},1600);
-// })
 
 // This is my simple Smooth scroller, this takes to you to the top of the page when clicked
-function backToTop() {
-    window.scrollTo({
-        top: 0,
-        left: 0,
-        behavior: 'smooth'
-    })
-}
+// $("#nav_menu_btn").click(function(){
+//     window.scrollTo({
+//         top: 0,
+//         left: 0,
+//         behavior: 'smooth',
+//     })
+// })
+
+$("#nav_menu_btn").click(function(){
+    let line1 = $("#menu_line1");
+    let line2 = $("#menu_line2");
+    let line3 = $("#menu_line3");
+
+    if (line1.css("margin-top") == "30px"){
+        line1.css("margin-top","20px");
+        line1.css("transform","rotate(0deg)");
+        line2.css("margin-top","10px");
+        line2.css("transform","rotate(0deg)");
+        line3.css("opacity","1");
+    }
+
+    else{
+        line1.css('margin-top','30px');
+        line1.css('transform','rotate(45deg)');
+        line2.css("margin-top","0px");
+        line2.css("transform","rotate(-45deg)");
+        line3.css("opacity","0");
+    }
+})
 
 function changeToClose() {
-    let line1 = document.getElementById("menu_line1");
-    let line2 = document.getElementById("menu_line2");
-    let line3 = document.getElementById("menu_line3");
     let navbarLinks = document.getElementById("nav_links");
-
-    if (line1.style.marginTop == "30px"){
-        line1.style.marginTop = "20px";
-        line1.style.transform = "rotate(0deg)";
-        line2.style.transform = "rotate(0deg)";
-        line2.style.marginTop = "10px";
-        line2.style.transition = "all 0.3s";
-        line1.style.transition = "all 0.3s";
-        line3.style.opacity = "1";
-        line3.style.transition = "all 0.3s";
-    }
-    else{
-        line1.style.marginTop = "30px";
-        line1.style.transform = "rotate(45deg)";
-        line1.style.transition = "all 0.3s";
-        line2.style.marginTop = "0px";
-        line2.style.transform = "rotate(-45deg)";
-        line2.style.transition = "all 0.3s";
-        line3.style.opacity = "0";
-        line3.style.transition = "all 0.3s";
-    }
 
     if (navbarLinks.style.visibility == "visible"){
         navbarLinks.style.visibility = "collapse";
@@ -94,11 +96,39 @@ function changeToClose() {
     // }
 }
 
-onload = function countUpStatistics() {
-    let coffeeNumber = document.getElementById("coffee_value");
-    let girlsNumber = document.getElementById("girls_value");
-    let projectNumber = document.getElementById("project_value");
-    let codingNumber = document.getElementById("hours_value");
+$(".portfolio_1").show();
+$(".portfolio_2").hide();
+$(".portfolio_3").hide();
+
+$("#portfolio_btn_1").click(function(){
+    $(".portfolio_1").fadeIn(500);
+    $(".portfolio_2").fadeOut(500);
+    $(".portfolio_3").fadeOut(500);
+    $(".portfolio_2").hide();
+    $(".portfolio_3").hide();
+});
+
+$("#portfolio_btn_2").click(function(){
+    $(".portfolio_1").fadeOut(500);
+    $(".portfolio_3").fadeOut(500);
+    $(".portfolio_2").fadeIn(500);
+    $(".portfolio_1").hide();
+    $(".portfolio_3").hide();
+});
+
+$("#portfolio_btn_3").click(function(){
+    $(".portfolio_1").fadeOut(500);
+    $(".portfolio_2").fadeOut(500);
+    $(".portfolio_3").fadeIn(500);
+    $(".portfolio_1").hide();
+    $(".portfolio_2").hide();
+});
+
+function countUpStatistics() {
+    let coffeeNumber = $("#coffee_value");
+    let girlsNumber = $("#girls_value");
+    let projectNumber = $("#project_value");
+    let codingNumber = $("#hours_value");
     let statisticSection = document.getElementById("statistic_section");
 
     function countUpTimer() {
@@ -109,9 +139,9 @@ onload = function countUpStatistics() {
             }
             else{
                 coffeeValue += 20;
-                coffeeNumber.innerHTML = coffeeValue + "+";
-                coffeeNumber.style.fontSize = "1.5em";
-                coffeeNumber.style.fontWeight = "bolder";
+                coffeeNumber.html(coffeeValue + "+");
+                coffeeNumber.css("fontSize", "1.5em");
+                coffeeNumber.css("fontWeight","bolder");
             }
         },10);
 
@@ -122,9 +152,9 @@ onload = function countUpStatistics() {
             }
             else{
                 girlsValue += 20;
-                girlsNumber.innerHTML = girlsValue + "+";
-                girlsNumber.style.fontSize = "1.5em";
-                girlsNumber.style.fontWeight = "bolder";
+                girlsNumber.html(coffeeValue + "+");
+                girlsNumber.css("fontSize", "1.5em");
+                girlsNumber.css("fontWeight","bolder");
             }
         },50);
 
@@ -135,9 +165,9 @@ onload = function countUpStatistics() {
             }
             else{
                 projectValue += 20;
-                projectNumber.innerHTML = projectValue + "+";
-                projectNumber.style.fontSize = "1.5em";
-                projectNumber.style.fontWeight = "bolder";
+                projectNumber.html(coffeeValue + "+");
+                projectNumber.css("fontSize", "1.5em");
+                projectNumber.css("fontWeight","bolder");
             }
         },10);
 
@@ -148,9 +178,9 @@ onload = function countUpStatistics() {
             }
             else{
                 codingValue += 5;
-                codingNumber.innerHTML = codingValue + "+";
-                codingNumber.style.fontSize = "1.5em";
-                codingNumber.style.fontWeight = "bolder";
+                codingNumber.html(coffeeValue + "+");
+                codingNumber.css("fontSize", "1.5em");
+                codingNumber.css("fontWeight","bolder");
             }
         },0);
     }
@@ -191,6 +221,8 @@ onload = function countUpStatistics() {
     setInterval(startCarousel, 2000);
     
 }
+
+countUpStatistics();
 
 function initMap() {
     // The location of Code4CT
