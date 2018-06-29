@@ -1,8 +1,6 @@
 // This is the media query for mobile devices
-@media only screen
-  and (min-device-width: 1px)
-  and (max-device-width: 499px)
-  and (-webkit-min-device-pixel-ratio: 2){
+@media (min-width: 1px)
+  and (max-width: 499px){
     #the_portfolio_main{
         grid-area: the_portfolio_main;
         border: $borderSettings;
@@ -37,6 +35,11 @@
                 #solid_border{
                     border-bottom: 3px solid $themeColor;
                 }
+            }
+            h4{
+                font-size: 0.75em;
+                margin-left: 10px;
+                margin-right: 10px;
             }
         }
         #portfolio_img_section{
@@ -127,6 +130,10 @@ and (max-width: 700px){
                     border-bottom: 3px solid $themeColor;
                 }
             }
+            h4{
+                margin-left: 50px;
+                margin-right: 50px;
+            }
         }
         #portfolio_img_section{
             height: 1200px;
@@ -206,6 +213,10 @@ and (max-width: 900px){
                     border-bottom: 3px solid $themeColor;
                 }
             }
+            h4{
+                margin-left: 50px;
+                margin-right: 50px;
+            }
         }
         #portfolio_img_section{
             height: 1500px;
@@ -237,13 +248,13 @@ and (max-width: 900px){
             height: 100px;
 
             #portfolio_btn_1{
-                left: 42%;
+                left: 45%;
             }
             #portfolio_btn_2{
                 left: 50%;
             }
             #portfolio_btn_3{
-                left: 58%;
+                left: 55%;
             }
         }
     }
@@ -275,6 +286,10 @@ and (max-width: 1200px){
                     border-bottom: 3px solid $themeColor;
                 }
             }
+            h4{
+                margin-left: 70px;
+                margin-right: 70px;
+            }
         }
         #portfolio_img_section{
             height: 750px;
@@ -303,13 +318,13 @@ and (max-width: 1200px){
             height: 100px;
 
             #portfolio_btn_1{
-                left: 42%;
+                left: 45%;
             }
             #portfolio_btn_2{
                 left: 50%;
             }
             #portfolio_btn_3{
-                left: 58%;
+                left: 55%;
             }
         }
     }

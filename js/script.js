@@ -6,11 +6,11 @@ $("#slideBtn_1").click(function(){
     $("#img_1").fadeIn("slow");
     $("#img_2").fadeOut("slow");
     $("#img_3").fadeOut("slow");
-    $("#slideBtn_1").css('height', '20px');
+    $("#slideBtn_1").css('height', '12px');
     $("#slideBtn_1").css('background', '#e1918a');
-    $("#slideBtn_2").css('height', '10px');
+    $("#slideBtn_2").css('height', '7px');
     $("#slideBtn_2").css('background', 'white');
-    $("#slideBtn_3").css('height', '10px');
+    $("#slideBtn_3").css('height', '7px');
     $("#slideBtn_3").css('background', 'white');
 });
 
@@ -19,11 +19,11 @@ $("#slideBtn_2").click(function(){
     $("#img_2").fadeIn("slow");
     $("#img_1").fadeOut("slow");
     $("#img_3").fadeOut("slow");
-    $("#slideBtn_1").css('height', '10px');
+    $("#slideBtn_1").css('height', '7px');
     $("#slideBtn_1").css('background', 'white');
-    $("#slideBtn_2").css('height', '20px');
+    $("#slideBtn_2").css('height', '12px');
     $("#slideBtn_2").css('background', '#e1918a');
-    $("#slideBtn_3").css('height', '10px');
+    $("#slideBtn_3").css('height', '7px');
     $("#slideBtn_3").css('background', 'white');
 });
 
@@ -32,23 +32,23 @@ $("#slideBtn_3").click(function(){
     $("#img_3").fadeIn("slow");
     $("#img_1").fadeOut("slow");
     $("#img_2").fadeOut("slow");
-    $("#slideBtn_1").css('height', '10px');
+    $("#slideBtn_1").css('height', '7px');
     $("#slideBtn_1").css('background', 'white');
-    $("#slideBtn_2").css('height', '10px');
+    $("#slideBtn_2").css('height', '7px');
     $("#slideBtn_2").css('background', 'white');
-    $("#slideBtn_3").css('height', '20px');
+    $("#slideBtn_3").css('height', '12px');
     $("#slideBtn_3").css('background', '#e1918a');
 });
 
 
 // This is my simple Smooth scroller, this takes to you to the top of the page when clicked
-// $("#nav_menu_btn").click(function(){
-//     window.scrollTo({
-//         top: 0,
-//         left: 0,
-//         behavior: 'smooth',
-//     })
-// })
+$("#back_to_top").click(function(){
+    window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: 'smooth',
+    })
+})
 
 $("#nav_menu_btn").click(function(){
     let line1 = $("#menu_line1");
@@ -152,7 +152,7 @@ function countUpStatistics() {
             }
             else{
                 girlsValue += 20;
-                girlsNumber.html(coffeeValue + "+");
+                girlsNumber.html(girlsValue + "+");
                 girlsNumber.css("fontSize", "1.5em");
                 girlsNumber.css("fontWeight","bolder");
             }
@@ -165,7 +165,7 @@ function countUpStatistics() {
             }
             else{
                 projectValue += 20;
-                projectNumber.html(coffeeValue + "+");
+                projectNumber.html(projectValue + "+");
                 projectNumber.css("fontSize", "1.5em");
                 projectNumber.css("fontWeight","bolder");
             }
@@ -178,7 +178,7 @@ function countUpStatistics() {
             }
             else{
                 codingValue += 5;
-                codingNumber.html(coffeeValue + "+");
+                codingNumber.html(codingValue + "+");
                 codingNumber.css("fontSize", "1.5em");
                 codingNumber.css("fontWeight","bolder");
             }
@@ -203,14 +203,14 @@ function countUpStatistics() {
             sponsor10];
     
         for (let i = 0; i < theSponsors.length; i++){
-            $(theSponsors[i]).animate({marginLeft: "+=250px"},1000);
+            $(theSponsors[i]).animate({marginLeft: "-=250px"},1000);
         }
 
         function checkSponsorPos() {
 
             for (let i = 0; i < theSponsors.length; i++){
-                if (theSponsors[i].css("margin-left") == "1750px"){
-                    theSponsors[i].css("margin-left","-750px");
+                if (theSponsors[i].css("margin-left") == "-750px"){
+                    theSponsors[i].css("margin-left","1750px");
                 }
             }
         }
@@ -224,7 +224,64 @@ function countUpStatistics() {
 
 countUpStatistics();
 
-function initMap() {
+$(document).ready(function(){
+    $("#back_to_top").css('right', '-70px');
+});
+
+$(window).on('scroll', function(){
+    if (window.scrollY > 400){
+        $("#back_to_top").css('right', '10px');
+    }
+    else if(window.scrollY < 400){
+        $("#back_to_top").css('right', '-70px');
+    }
+});
+
+var bar = new ProgressBar.Circle(percentage_bar1, {
+    strokeWidth: 4,
+    easing: 'easeInOut',
+    duration: 4000,
+    color: '#e1918a',
+    trailColor: '#eee',
+    trailWidth: 1,
+    svgStyle: null
+  });
+bar.animate(0.8);  // Number from 0.0 to 1.0
+
+var bar2 = new ProgressBar.Circle(percentage_bar2, {
+    strokeWidth: 4,
+    easing: 'easeInOut',
+    duration: 4000,
+    color: '#e1918a',
+    trailColor: '#eee',
+    trailWidth: 1,
+    svgStyle: null
+  });
+bar2.animate(0.74);  // Number from 0.0 to 1.0
+
+var bar3 = new ProgressBar.Circle(percentage_bar3, {
+    strokeWidth: 4,
+    easing: 'easeInOut',
+    duration: 4000,
+    color: '#e1918a',
+    trailColor: '#eee',
+    trailWidth: 1,
+    svgStyle: null
+  });
+bar3.animate(0.56);  // Number from 0.0 to 1.0
+
+var bar4 = new ProgressBar.Circle(percentage_bar4, {
+    strokeWidth: 4,
+    easing: 'easeInOut',
+    duration: 4000,
+    color: '#e1918a',
+    trailColor: '#eee',
+    trailWidth: 1,
+    svgStyle: null
+  });
+bar4.animate(0.24);  // Number from 0.0 to 1.0
+
+$(document).ready(function(){
     // The location of Code4CT
     var Code4CT = {lat: -33.924692, lng: 18.448723};
     // The map, centered at Code4CT
@@ -232,9 +289,10 @@ function initMap() {
         document.getElementById('contact_map_box'), {zoom: 18, center: Code4CT});
     // The marker, positioned at Code4CT
     var marker = new google.maps.Marker({position: Code4CT, map: map});
-}
+});
 
-initMap();
+// initMap();
+
 
 // This checks if the webpage is loaded completely
 //   window.onload = function () { alert("It's loaded!") }

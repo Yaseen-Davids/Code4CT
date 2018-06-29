@@ -1,8 +1,4 @@
 // This is the media query for mobile devices
-// @media only screen
-//   and (min-device-width: 1px)
-//   and (max-device-width: 499px)
-//   and (-webkit-min-device-pixel-ratio: 2){
     @media (min-width: 1px)
     and (max-width: 499px){
       // This is the navbar section
@@ -753,6 +749,11 @@
               margin-right: 40px;
           }
       }
+      #back_to_top{
+        padding: 2px 5px;
+        font-size: 0.8em;
+        right: 1px;
+    }
   }
    
   @media (min-width: 500px)
@@ -1416,6 +1417,10 @@
               margin-right: 50px;
           }
       }
+      #back_to_top{
+        padding: 5px 10px;
+        font-size: 1em;
+        }
     }
   
   @media (min-width: 900px)
@@ -1835,6 +1840,10 @@
               margin-right: 70px;
           }
       }    
+      #back_to_top{
+        padding: 10px 10px;
+        font-size: 1.1em;
+        }
   }
   
   @media (min-width:1200px)

@@ -174,38 +174,85 @@
 #circle_percentages_bar{
     grid-area: circle_percentages_bar;
     margin-top: 100px;
-    height: 210px;
+    height: 350px;
     border: $borderSettings;
+    font-family: 'Poppins';
+    background: black;
+    color: white;
 
     .margin-wrapper{
-        margin-left: 100px;
+        margin-left: 200px;
         margin-right: 100px;
-        height: 210px;
+        height: 300px;
         border: $borderSettings;
 
         #percentages_bars{
+            padding: 10px;
             display: grid;
             grid-template-areas: 'percentage_bar1 percentage_bar2 percentage_bar3 percentage_bar4'
+            'percentage_bar1text percentage_bar2text percentage_bar3text percentage_bar4text'
             ;
             grid-template-columns: 1fr 1fr 1fr 1fr;
-            grid-gap: 40px;
-            height: 210px;
+            grid-gap: 10px;
+
+            p{
+                position: absolute;
+                left: 25%;
+                top: 50%;
+                transform: translate(-50%,-50%);
+            }
+
+            h4{
+                font-weight: lighter;
+            }
 
             #percentage_bar1{
                 grid-area: percentage_bar1;
                 border: $borderSettings;
+                position: relative;
             }
             #percentage_bar2{
                 grid-area: percentage_bar2;
                 border: $borderSettings;
+                position: relative;
             }
             #percentage_bar3{
                 grid-area: percentage_bar3;
                 border: $borderSettings;
+                position: relative;
             }
             #percentage_bar4{
                 grid-area: percentage_bar4;
                 border: $borderSettings;
+                position: relative;
+            }
+            #percentage_bar1text{
+                grid-area: percentage_bar1text;
+                border: $borderSettings;
+                height: 100px;
+                width: 60%;
+                margin-left: 5px;
+            }
+            #percentage_bar2text{
+                grid-area: percentage_bar2text;
+                border: $borderSettings;
+                height: 100px;
+                width: 60%;
+                margin-left: 5px;
+            }
+            #percentage_bar3text{
+                grid-area: percentage_bar3text;
+                border: $borderSettings;
+                height: 100px;
+                width: 55%;
+                margin-left: 10px;
+            }
+            #percentage_bar4text{
+                grid-area: percentage_bar4text;
+                border: $borderSettings;
+                height: 100px;
+                width: 55%;
+                margin-left: 10px;
             }
         }
     }

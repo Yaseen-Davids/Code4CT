@@ -586,7 +586,7 @@
 
         // ************ COURSES SECTION 1 COURSES ************ //
         #courses_section1_courses{
-            height: 900px;
+            height: 950px;
             display: grid;
             grid-template-areas: 'section1_courses1 section1_courses2'
             'section1_courses3 .'
@@ -596,23 +596,23 @@
 
             // ************ SECTION 1 COURSES 1 ************ //
             #section1_courses1{
-                height: 330px;
+                height: 350px;
             }
 
             // ************ SECTION 1 COURSES 2 ************ //
             #section1_courses2{
-                height: 420px;
+                height: 450px;
             }
             // ************ SECTION 1 COURSES 3 ************ //
             #section1_courses3{
-                height: 450px;
+                height: 500px;
             }
         }
     }
     // ************ COURSES SECTION 2 ************ //
     #courses_section2{
         margin-top: 100px;
-        height: 850px;
+        height: 900px;
         display: grid;
         grid-template-areas: 'courses_section2_header'
         'courses_section2_courses'
@@ -688,22 +688,22 @@
 
             // ************ SECTION 2 COURSES 4 ************ //
             #section2_courses4{
-                height: 230px;
+                height: 250px;
             }
 
             // ************ SECTION 2 COURSES 5 ************ //
             #section2_courses5{
-                height: 230px;
+                height: 250px;
             }
 
             // ************ SECTION 2 COURSES 6 ************ //
             #section2_courses6{
-                height: 230px;
+                height: 250px;
             }
 
             // ************ SECTION 2 COURSES 7 ************ //
             #section2_courses7{
-                height: 230px;
+                height: 250px;
             }
         }
     }
